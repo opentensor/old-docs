@@ -9,11 +9,11 @@ rust:
 
 before_script:
   - (test -x $HOME/.cargo/bin/cargo-install-update || cargo install cargo-update)
-  - (test -x $HOME/.cargo/bin/mdbook || cargo install --vers "^0.1" mdbook)
+  - (test -x $HOME/.cargo/bin/mdbook || cargo install mdbook)
   - cargo install-update -a
 
 script:
-  - cd $HOME/docs && mdbook build && mdbook test
+  - cd $HOME/opentensor/docs && mdbook build && mdbook test
 
 
 
@@ -21,7 +21,7 @@ deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
-  local-dir: $HOME/docs/book
+  local-dir: $HOME/opentensor/docs/book
   keep-history: false
   on:
     branch: main
