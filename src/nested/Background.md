@@ -1,0 +1,9 @@
+# Background
+
+*What is the significance of this?*
+
+The development of artificial intelligence technology is in its very early stages. Deep neural networks and self-supervised learning have been in use for decades, but “foundation” models have emerged only recently: projects like BERT, DALL-E, and GPT-3 are characterized by their amplified scale and broad adaptability, inspiring both awe and concern. Simultaneously, a handful of powerful deep learning techniques have been developed, allowing for improved model compression, the combination of multiple models for a single task, and access to long-range dependencies (attention). These developments have led to much (justified) enthusiasm about this technology could have in store for us, with generous speculations about industry growth and potential use cases. 
+
+A key characteristic of this new technology is that performance scales with the number of model parameters: the larger the model, the more it can do. The problem is that the computing power necessary to offer this scale, and therefore capabilities, is inaccessible to all but a small handful of tech conglomerates. OpenAI, with its preliminary promise of free, open-source innovation, has locked its technology behind a paywall and has navigated away from its status as a pure non-profit. This lack of sufficient computing power constitutes a major problem in the industry, and one that limits equal access, free collaboration and development. 
+
+Meanwhile, blockchain technology has opened up many new possibilities for governance and coordination, offering potential advantages to every area it has been applied. In particular, blockchain has the potential to align tremendous amounts of resources in service of a common goal. The way we see it, then, combining machine learning with blockchain technology constitutes the perfect solution for the above mentioned problem, and making this work in practice is our key mission. 
