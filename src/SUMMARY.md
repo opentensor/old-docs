@@ -1,4 +1,7 @@
-# Bittensor ![Tao Logo](/opentensor-docs/book/tao.svg)
+# Bittensor
+
+[WELCOME](./index.md)
+
 # Learn
 
 [Learn](Learn.md)
@@ -23,7 +26,3 @@
 
 # Blog Posts
 [BlogPosts](BlogPosts.md)
-
- 
-
-
