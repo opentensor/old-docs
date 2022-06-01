@@ -1,0 +1,6 @@
+[book]
+authors = ["Carro"]
+language = "en"
+multilingual = false
+src = "src"
+title = "bittensor-docs"
