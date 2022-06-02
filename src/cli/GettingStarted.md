@@ -13,36 +13,36 @@ Connecting to a hardware service VPS will be necessary for many users, as will p
 ## Installation
 
 To begin, paste this script into your macOS Terminal or Linus shell prompt: 
-
-> /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/opentensor/bittensor/master/scripts/install.sh)"
-
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/opentensor/bittensor/master/scripts/install.sh)"
+```
 You will be notified when installation is complete, and the next step will be to create your keys. 
 
 
 ## Creating Your Keys
 
-#### Create Your coldkey
+### Create your coldkey
 
 Your coldkey remains on your device and holds your "cold storage". Currency in cold storage cannot be used for immediate activity in the network 
-
-> btcli new_coldkey
-
+```
+btcli new_coldkey
+```
 You will be prompted to name your wallet (refers to the coldkey in this instance) and choose a password, before being provided with a unique mnemonic device. Record this information privately and securely. 
 
 #### Create Your hotkey
 
 This key contains your "hot storage": currency that can be used for immediate activity in the network. Your coldkey can have multiple hotkeys attached to it,  while each hotkey can only be associated with one coldkey. 
-
-> btcli new_hotkey
-
+```
+btcli new_hotkey
+```
 You will be prompted to complete the same steps as with the last key, in addition to specifying which coldkey you would like to connect your hotkey to. 
 
 ## Running a Miner
 
 With your keys created, you can now run your miner. 
-
-> btcli run
-
+```
+btcli run
+```
 You will be immediately prompted to: 
 
 ### Choose a Miner

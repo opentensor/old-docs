@@ -13,5 +13,3 @@ The network blockchain uses a consensus algorithm to reach a common agreement ov
 - The first of these is the “bonding mechanism”: when Validators rank a given Server, they simultaneously purchase equity in that node, and receive inflation proportional to this. Because of the consensus mechanism previously described, Validators benefit from distributing their highest scores to Servers who are likely to be scored highly by other Validators as well - “trusted” Servers. 
 - In addition, Validators are limited in the number and size of scores they are allowed to distribute, and so must choose wisely where their investment is allocated: they must only choose the best and the brightest.
 
-
-[The Protocol](#consensus-incentive-and-bonding)

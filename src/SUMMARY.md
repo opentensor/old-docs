@@ -2,7 +2,7 @@
 
 
 
-[WELCOME](./index.md)
+[BITTENSOR](./index.md)
 
 # Learn
 
@@ -22,9 +22,12 @@
 
 # Customizing
 [Customizing a Miner](CustomizingAMiner.md)
+- [Server Customization](css/ServerCustomization.md)
+- [Validator Customization](css/ValidatorCustomization.md)
 
 # Glossary
 [Glossary](Glossary.md)
+- [Arguments](Arguements.md)
 
 # Blog Posts
 [BlogPosts](BlogPosts.md)
