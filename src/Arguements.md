@@ -104,7 +104,7 @@
 ```
 - The maximum number connection handler threads working simultaneously on this endpoint. The grpc server distributes new worker threads to service requests up to this number
 ```
- --axon.maximum_concurrent_rpcs
+--axon.maximum_concurrent_rpcs
 ```
 - Maximum number of allowed active connections.
 ```
@@ -199,8 +199,10 @@
 --strict
 ```
 - If flagged, config will check that only exact arguemnts have been set.
-```
-Nucleus
+
+## Nucleus
+
+
 ```
 --nucleus.topk
 ```
