@@ -4,3 +4,8 @@ language = "en"
 multilingual = false
 src = "src"
 title = "bittensor-docs"
+
+[output.html]
+default-theme = "light"
+git-repository-url = "https://github.com/opentensor/docs"
+git-repository-icon = "fa-github"
