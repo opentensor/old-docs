@@ -122,7 +122,7 @@ Refers the portion of the one Tao distributed to a single peer each block step.
 When Validators rank Servers, they take on part ownership of them through the bonding matrix. When a Server's incentive is calculated, a portion of this is distributed to Validators who have bonds.
 
 ​
-## Bonding Matrix
+## <a name="bonding-matrix"></a>Bonding/Matrix
 
 Refers to the bonds that Validators hold in Servers. The higher the stake the Validator has, and the more staked in the Server, the larger the dividend the Validator will receive. 
 ​
