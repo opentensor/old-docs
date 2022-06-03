@@ -1,6 +1,6 @@
 # Consensus, Incentive, and Bonding
 
-The network blockchain uses a consensus algorithm to reach a common agreement over who the most valuable participants in the system are and reward them accordingly while encouraging honest activity and deterring collusion. Servers in the network are rewarded based on their performance in individual instances of knowledge production, in addition to earning a general agreement amongst network Validators of their usefulness. Validators, on the other hand, are incentivized to collaborate with highly valuable Servers in the system who are also trusted by the majority through a [Bonding/Matrix](#bonding-matrix) and a limitation in the supply of scores they are able to give.
+The network blockchain uses a consensus algorithm to reach a common agreement over who the most valuable participants in the system are and reward them accordingly while encouraging honest activity and deterring collusion. Servers in the network are rewarded based on their performance in individual instances of knowledge production, in addition to earning a general agreement amongst network Validators of their usefulness. Validators, on the other hand, are incentivized to collaborate with highly valuable Servers in the system who are also trusted by the majority through a [Bonding Matrix](#bonding-matrix) and a limitation in the supply of scores they are able to give.
 
 *Servers receive two separate assessments from Validators that are combined to determine their Tao inflation, thus acting as an incentive.*
 
