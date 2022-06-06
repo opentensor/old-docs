@@ -117,7 +117,7 @@ The amount of currency (1 tao) released into the network at each block step. The
 Refers the portion of the one Tao distributed to a single peer each block step.
 
 ​
-**Dividends**
+## Dividends
 
 When Validators rank Servers, they take on part ownership of them through the bonding matrix. When a Server's incentive is calculated, a portion of this is distributed to Validators who have bonds.
 

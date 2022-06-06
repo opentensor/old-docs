@@ -230,4 +230,4 @@
 ```
 --nucleus.noise_multiplier
 ```
-- Standard deviation multipler on weights
+- Standard deviation multiplier on weights
