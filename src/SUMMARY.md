@@ -26,7 +26,7 @@
   - [Validator Customization](css/ValidatorCustomization.md)
 
 # Index
-- [Glossary](Glossary.md)
+- [Glossary](nested/Glossary.md)
 - [Arguements](Arguements.md)
 
 # Blog Posts
