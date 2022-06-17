@@ -17,6 +17,12 @@ jobs:
             cargo install cargo-update
             cargo install mdbook
             pwd && mdbook build
+
+workflows: 
+  build: 
+    jobs: 
+      - build
+        
         
           
 
