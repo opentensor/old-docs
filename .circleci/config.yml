@@ -35,8 +35,8 @@ jobs:
       - image: node:8.10.0
     steps:
       - add_ssh_keys:
-          - fingerprints:
-              - "7a:2e:e0:09:c6:a9:6b:25:06:85:f1:82:cf:78:24:d4"
+          fingerprints: 
+          - "7a:2e:e0:09:c6:a9:6b:25:06:85:f1:82:cf:78:24:d4"
       - checkout
       - attach_workspace:
           at: book
