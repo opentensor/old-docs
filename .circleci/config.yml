@@ -26,6 +26,8 @@ jobs:
             - "./target"
       - persist_to_workspace:
           root: book
+          paths:
+            - "*"
 
 
   deploy:
