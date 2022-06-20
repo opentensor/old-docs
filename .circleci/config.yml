@@ -34,15 +34,21 @@ jobs:
     docker:
       - image: node:8.10.0
     steps:
+      - add_ssh_keys:
+          - fingerprints:
+              - "7a:2e:e0:09:c6:a9:6b:25:06:85:f1:82:cf:78:24:d4"
       - checkout
       - attach_workspace:
           at: book
       - run:
           name: deploy pages
-          command: npm install -g --silent gh-pages@4.0.0
+          command: npm install -g --silent gh-pages@3.0.0
       - run:
           name: Deploy docs to gh-pages branch
-          command: gh-pages --no-history --branch main --dist book
+          command: |
+            git config user.email "ci-build@opentensor.ai"
+            git config user.name "ci-build"
+            gh-pages --no-history --branch gh-pages --dist book
 
       
 
