@@ -18,15 +18,20 @@ jobs:
             cargo install mdbook
             pwd && mdbook build
 
+      - run: 
+          name: deploy pages
+          command: npm install -g --silent gh-pages@2.0.1
+      
+
+
 workflows: 
   build: 
     jobs: 
       - build
-        
-        
+      
+
           
 
 
 
             
-
