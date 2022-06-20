@@ -25,7 +25,7 @@ jobs:
             - "~/.cargo"
             - "./target"
       - persist_to_workspace:
-          root: docs/books
+          root: books
           paths:
             - book/
 
