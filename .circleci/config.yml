@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       - image: cimg/rust:1.61.0
-      - image: node:8.10.0
+
     steps:
       - checkout
       - run: cargo --version
@@ -18,11 +18,23 @@ jobs:
             cargo install cargo-update
             cargo install mdbook
             pwd && mdbook build
+      - persist_to_workspace:
+          root: docs/_build
+          paths:
+            - build/opentensor/docs/book
 
-      - run: 
+
+  deploy:
+    docker:
+      - image: node:8.10.0
+    steps:
+      - checkout
+      - attach_workspace:
+          at: docs/_build
+      - run:
           name: deploy pages
           command: npm install -g --silent gh-pages@2.0.1
-      - run: 
+      - run:
           name: Deploy docs to gh-pages branch
           command: gh-pages --dist docs/_build/html #I am guessing that I have the wrong path here.
 
@@ -33,6 +45,7 @@ workflows:
   build: 
     jobs: 
       - build
+      - deploy
       
 
           
