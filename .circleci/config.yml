@@ -42,7 +42,7 @@ jobs:
           command: npm install -g --silent gh-pages@4.0.0
       - run:
           name: Deploy docs to gh-pages branch
-          command: gh-pages --no-history --branch main --dist book/
+          command: gh-pages --no-history --branch main --dist book
 
       
 
