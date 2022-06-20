@@ -124,5 +124,25 @@ When Validators rank Servers, they take on part ownership of them through the bo
 ## Bonding Matrix
 
 Refers to the bonds that Validators hold in Servers. The higher the stake the Validator has, and the more staked in the Server, the larger the dividend the Validator will receive. 
+
+## Embeddings
+
+## Logits
+
+## Inputs
+
+## Next Token Prediction
+
+## Masked Token Prediction
+
+## Loss Function
+
+## Cross Entropy Loss
+
+## Shapely Value
+
+A measure of individuals' contributions in a cooperative game.
+
+## Dataset
 ​
 ​
