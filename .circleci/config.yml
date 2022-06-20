@@ -1,0 +1,57 @@
+version: 2.1
+orbs:
+  rust: circleci/rust@1.6.0
+
+jobs:
+  build:
+    resource_class: small
+    docker:
+      - image: cimg/rust:1.61.0
+
+    steps:
+      - checkout
+      - restore_cache:
+          key: mdbooks-cache
+      - run: 
+          name: install cargo & mdbooks
+          command: | 
+            cargo install cargo-update
+            cargo install mdbook
+            pwd && mdbook build
+      - save_cache:
+          key: mdbooks-cache
+          paths:
+            - "~/.cargo"
+            - "./target"
+      - persist_to_workspace:
+          root: book
+          paths:
+            - "*"
+
+  deploy:
+    docker:
+      - image: node:8.10.0
+    steps:
+      - add_ssh_keys:
+          fingerprints: 
+          - "5c:f4:a0:0f:70:dc:65:3f:a4:f7:0a:be:2c:5c:12:fa"
+      - checkout
+      - attach_workspace:
+          at: book
+      - run:
+          name: deploy pages
+          command: npm install -g --silent gh-pages@3.0.0
+      - run:
+          name: Deploy docs to gh-pages branch
+          command: |
+            git config user.email "ci-build@opentensor.ai"
+            git config user.name "ci-build"
+            gh-pages --no-history --branch gh-pages --dist book
+
+workflows:
+  build: 
+    jobs: 
+      - build
+      - deploy:
+          requires:
+            - build
