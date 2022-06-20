@@ -3,13 +3,13 @@ authors = ["Carro"]
 language = "en"
 multilingual = false
 src = "src"
-title = "bittensor-docs"
+title = "Bittensor Documentation"
 
 [output.html]
 default-theme = "light"
 git-repository-url = "https://github.com/opentensor/docs" # adds link to github repository
 git-repository-icon = "fa-github" # creates github icon
-edit-url-template = "https://github.com/opentensor/docs/edit/master/guide/{path}" # adds icon to make edit suggestions (not currently working)
+edit-url-template = "https://github.com/opentensor/docs/edit/master/{path}" # adds icon to make edit suggestions (not currently working)
 
 [output.html.fold]
 enable = true    # whether or not to enable section folding
