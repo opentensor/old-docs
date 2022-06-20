@@ -133,6 +133,8 @@ Refers to the bonds that Validators hold in Servers. The higher the stake the Va
 
 ## Next Token Prediction
 
+Predicting an answer given a context before the place of prediction (i.e. predicting the next word in a sentence)
+
 ## Masked Token Prediction
 
 ## Loss Function
