@@ -4,6 +4,7 @@ orbs:
 
 jobs:
   build:
+    resource_class: small
     docker:
       - image: cimg/rust:1.61.0
 
