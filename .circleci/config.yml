@@ -29,6 +29,11 @@ jobs:
             - "*"
 
   deploy:
+    filters:
+      branches:
+        only:
+          - main
+    resource_class: small
     docker:
       - image: node:8.10.0
     steps:
