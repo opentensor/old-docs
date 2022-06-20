@@ -9,8 +9,6 @@ jobs:
 
     steps:
       - checkout
-      - run: cargo --version
-
       - restore_cache:
           key: mdbooks-cache
       - run: 
@@ -28,7 +26,6 @@ jobs:
           root: book
           paths:
             - "*"
-
 
   deploy:
     docker:
@@ -50,20 +47,10 @@ jobs:
             git config user.name "ci-build"
             gh-pages --no-history --branch gh-pages --dist book
 
-      
-
-
-workflows: 
+workflows:
   build: 
     jobs: 
       - build
       - deploy:
           requires:
             - build
-      
-
-          
-
-
-
-            
