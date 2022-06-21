@@ -1,54 +1,92 @@
 # Subtensor
-
+--- 
 Subtensor is our network blockchain, and keeps record of every transaction that occurs. 1 block is created and recorded every 12 seconds - or "blockstep" - at which time a new round of Tao is distributed. 
+
 
 By connecting to Nakamoto, you automatically gain access to Subtensor. Running a Subtensor instance locally, however, will ensure a faster and more consistent experience in the case that the network is compromised or slowed by high traffic. It is therefore recommended. 
 
-Running Subtensor 
+
+
+## Running Subtensor 
+
 
 1. Prepare your system by updating outdated packages in your system, and installing the newest available ones. You can do this in two commands. 
+
+
 ```bash
 sudo apt-get update
 ```
+
 ```bash
 sudo apt-get upgrade
 ```
+
+
 2. Install an application package software to maintain Subtensor locally. Bittensor mining is very computationally complex, and a software like this will help allocate appropriate resources. We recommend using Docker. For more information, follow this link.
 
+
 Run the following commands:
+
+
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
 ```
+
 ```bash
 sudo sh get-docker.sh
 ```
+
 ```bash
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
+
 ```bash
 sudo chmod +x /usr/local/bin/docker-compose
 ```
+
+
 3. Install Subtensor
+
+
 ```bash
 git clone https://github.com/opentensor/subtensor.git ~/.bittensor/subtensor
 ```
+
+
 4. Connect with the Subtensor directory 
+
+
  ```bash
 cd ~/.bittensor/subtensor
 ```
+
+
 5. Pull the latest Subtensor image 
+
+
 ```bash
 docker pull opentensorfdn/subtensor
 ```
+
+
 6. Run Subtensor inside of your application package software 
+
+
 ```bash
 sudo docker-compose up -d
 ```
-7. Check that Subtensor is fully synced
+
+
+1. Check that Subtensor is fully synced
+
+
 ```bash
 docker logs --since=1h node-subtensor 2>&1  | grep "best"
 ```
+
+
 Here is an example of a synced copy of Subtensor:
+
 
 ```bash
 /node-subtensor    | 2022-04-27 01:32:22 Accepted a new tcp connection from 172.22.0.1:50564.    
@@ -69,6 +107,8 @@ node-subtensor    | 2022-04-27 01:32:22 Accepted a new tcp connection from 172.2
 
 
 In case your Subtensor goes down, here is the command to restart it: 
+
+
 ```bash
 cd ~/.bittensor/subtensor && \
 /usr/local/bin/docker-compose down && \
@@ -83,11 +123,17 @@ Lastly, here are the steps to ensure both Bittensor and Subtensor are up to date
 
 
 Update Bittensor: 
+
+
 ```bash
 git -C ~/.bittensor/bittensor pull origin master
 python3 -m pip install -e ~/.bittensor/bittensor
 ```
+
+
 Update Subtensor: 
+
+
 ```bash
 #Bring Subtensor down
 sudo docker-compose down

@@ -1,5 +1,3 @@
 # Introduction
 
-Bittensor is a protocol that powers a scalable, open-source, and decentralized neural network. By integrating blockchain and machine learning technology, the system is designed to streamline and incentivize the production of artificial intelligence.
-
-*We are, effectively, creating a market for machine intelligence: commodifying mathematical representations of insight gained through data and building an infrastructure to support this.*
+Bittensor is an open-source protocol that powers a scalable, decentralized neural network. The system is designed to incentivize the production of artificial intelligence by training models within a blockchain infrastructure and rewarding performance with a custom digital currency.

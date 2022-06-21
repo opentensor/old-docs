@@ -1,8 +1,16 @@
 # Arguements
+---
 ```
 --config
 ```
 - If set, defaults are overridden by passed file.
+```
+--strict
+```
+- If flagged, config will check that only exact arguemnts have been set.
+
+## Neuron
+
 ```
 --neuron.learning_rate
 ```
@@ -75,6 +83,9 @@
 --neuron.blacklist.time
 ```
 - how often a peer can query you (seconds)
+
+## Wallet
+
 ```
 --wallet.name
 ```
@@ -91,6 +102,9 @@
 --wallet._mock
 ```
 - To turn on wallet mocking for testing purposes.
+  
+## Axon
+
 ```
 --axon.port
 ```
@@ -127,6 +141,9 @@
 --axon.compression
 ```
 - Which compression algorithm to use for compression (gzip, deflate, NoCompression)
+
+## Subtensor
+
 ```
 --subtensor.network
 ```
@@ -139,6 +156,9 @@
 --subtensor._mock
 ```
 - To turn on subtensor mocking for testing purposes.
+
+## Logging
+
 ```
 --logging.debug
 ```
@@ -155,6 +175,9 @@
 --logging.logging_dir
 ```
 - Logging default root directory.
+
+## Dataset
+
 ```
 --dataset.batch_size
 ```
@@ -187,6 +210,9 @@
 --dataset.num_batches
 ```
 - The number of data to download each time(measured by the number of batches).
+
+## Mock Tests
+
 ```
 --dataset._mock
 ```
@@ -201,7 +227,6 @@
 - If flagged, config will check that only exact arguemnts have been set.
 
 ## Nucleus
-
 
 ```
 --nucleus.topk

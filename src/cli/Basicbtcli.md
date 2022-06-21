@@ -1,16 +1,23 @@
 # Basic btcli
-
+---
 Before you begin customizing your Miner to optimize your currency accrual, it is useful to familiarize yourself with our "btcli" commands. Btcli is a command line interface to interact with Bittensor, and commands are used to monitor Miner performance, transfer Tao, and regenerate keys. 
+
+
 ​
 ## Monitoring 
 ​
+
 For an overview of all possible btcli commands, enter: 
+
 
 ```bash
 btcli help
 ```
 
+
 Both the "overview" and "inspect" commands are used to monitor your miner performance: 
+
+
 ```bash
 btcli overview 
 ```
@@ -18,41 +25,62 @@ btcli overview
 
 This command will display the specifics of your progress in the network, and includes your UID, state (active or inactive), stake, rank, trust, consensus, incentive, dividends, and emission. For more information about these performance indicators, refer to our "Consensus, Incentive and Bonding" section. 
 
+
 ```bash
 btcli inspect 
 ```
 ​
+
 This command will not display such a detailed analysis of your performance, but will allow you to see your key identifiers, fingerprints, network, balance, stake, and emission. 
 ​
+
 For a complete list of all created keys, run: 
+
 
 ```bash
 btcli list
 ```
 
+
 ## Transferring Tao
 ​
+
 The 'unstake' command will transfer Tao from a hotkey to your coldkey. 
+
+
 ```bash​
 btcli unstake
 ```
 ​
+
 The transfer Tao from your coldkey to your hotkey, enter: 
+
+
 ```bash​
 btcli stake 
 ```
 
+
 This command moves Tao between coldkeys. A .125 tao burn fee is applied.
+
+
 ```bash​
 btcli transfer
 ```
 
 
+
 ## Key Regeneration
 ​
+
 If you lose access to your keys, they can be easily regenerated with the unique mnemonic device you were provided with upon initial creation. 
+
+
 ```bash​
 btcli regen_coldkey
-​
+​```
+
+
+```bash
 btcli regen_hotkey
 ```

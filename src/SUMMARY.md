@@ -18,7 +18,7 @@
   - [Getting Started](cli/GettingStarted.md)
   - [Subtensor](cli/Subtensor.md)
   - [Basic btcli](cli/Basicbtcli.md)
-  - [Miner Preperation](cli/MinerPreperation.md)
+  - [Preparing Your Miner](cli/MinerPreperation.md)
 
 # Customizing
 - [Customizing a Miner](CustomizingAMiner.md)
@@ -28,6 +28,3 @@
 # Index
 - [Glossary](nested/Glossary.md)
 - [Arguements](Arguements.md)
-
-# Blog Posts
-- [BlogPosts](BlogPosts.md)
