@@ -23,7 +23,7 @@ btcli overview
 ```
 
 
-This command will display the specifics of your progress in the network, and includes your UID, state (active or inactive), stake, rank, trust, consensus, incentive, dividends, and emission. For more information about these performance indicators, refer to our "Consensus, Incentive and Bonding" section. 
+This command will display the specifics of your progress in the network, and includes your UID, state (active or inactive), stake, rank, trust, consensus, incentive, dividends, and emission. For more information about these performance indicators, refer to our "Consensus, Incentive, and Bonding" section.
 
 
 ```bash

@@ -1,4 +1,4 @@
-# Consensus, Incentive, and Bonding
+# The Consensus Mechanism
 
 Once individual scores have been determined, network blockchain uses a consensus algorithm to reach a common agreement over who the most valuable participants in the system in order to reward them accordingly. Servers are rewarded based on their performance in individual instances of knowledge production, in addition to earning a general agreement amongst network Validators of their usefulness. Validators, on the other hand, are incentivized to collaborate with highly valuable Servers in the system who are also trusted by the majority through a bonding mechanism and a limitation in the supply of scores they are able to give.
 
