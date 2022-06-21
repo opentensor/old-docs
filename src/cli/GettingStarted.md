@@ -1,6 +1,6 @@
 # Getting Started
 
-This section will guide you through basic steps necessary to start a miner, and register in our network. Prior to install, it is recommended that you have access to at least: 
+This section will guide you through the basic steps necessary to start a miner and register in our network. Prior to installing, it is recommended that you have access to at least:
 
 
 - 16GB of RAM 
@@ -10,7 +10,7 @@ This section will guide you through basic steps necessary to start a miner, and 
 - A good and stable internet connection 
 
 
-Connecting to a hardware service VPS will be necessary for many users, as will procuring a process manager software to ensure your miner stay online consistently. 
+Connecting to a hardware service VPS will be necessary for many users, as will procuring a process manager software to ensure your miner stays online consistently.
 
 
 ## Installation
@@ -24,7 +24,7 @@ To begin, paste this script into your macOS Terminal or Linus shell prompt:
 ```
 
 
-You will be notified when installation is complete, and the next step will be to create your keys. 
+You will be notified when the installation is complete, and the next step will be to create your keys.
 
 
 ## Creating Your Keys
@@ -42,7 +42,7 @@ btcli new_coldkey
 ```
 
 
-You will be prompted to name your wallet (refers to the coldkey in this instance) and choose a password, before being provided with a unique mnemonic device. Record this information privately and securely. 
+You will be prompted to name your wallet (which refers to the coldkey in this instance) and choose a password, before being provided with a unique mnemonic device. Record this information privately and securely.
 
 
 #### Create Your hotkey
@@ -91,7 +91,7 @@ To start, we recommend you choose "template_miner".
 Ultimately, we suggest that users switch to running the network software locally, after initially registering to Nakamoto. Although this option is more energy intensive, it will give you access to enhanced speed and safety while using the protocol, and is recommended for serious participants. 
 
 
-Registering in the network can take some time, depending on the caliber of your hardware. You will be notified when then process is complete. 
+Registering on the network can take some time, depending on the calibre of your hardware. You will be notified when the process is complete. 
 
 
 

@@ -1,6 +1,6 @@
 # Subtensor
 --- 
-Subtensor is our network blockchain, and keeps record of every transaction that occurs. 1 block is created and recorded every 12 seconds - or "blockstep" - at which time a new round of Tao is distributed. 
+Subtensor is our network blockchain and keeps a record of every transaction that occurs. A new block is created and recorded every 12 seconds - or "blockstep" - at which time a new round of Tao is distributed. 
 
 
 By connecting to Nakamoto, you automatically gain access to Subtensor. Running a Subtensor instance locally, however, will ensure a faster and more consistent experience in the case that the network is compromised or slowed by high traffic. It is therefore recommended. 
@@ -22,7 +22,7 @@ sudo apt-get upgrade
 ```
 
 
-2. Install an application package software to maintain Subtensor locally. Bittensor mining is very computationally complex, and a software like this will help allocate appropriate resources. We recommend using Docker. For more information, follow this link.
+1. Install an application package software to maintain Subtensor locally. Bittensor mining is very computationally complex, and software like this will help allocate appropriate resources. We recommend using Docker. For more information, follow this link.
 
 
 Run the following commands:

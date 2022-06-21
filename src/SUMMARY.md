@@ -7,8 +7,7 @@
 # Learn
 
 - [Learn](Learn.md)
-  - [Introduction](nested/Introduction.md)
-  - [Background](nested/Background.md) 
+  - [Introduction](nested/Introduction.md) 
   - [The Protocol](nested/TheProtocol.md)
   - [The Consensus Mechanism](nested/Mechanisms.md)
   - [Governance and Responsibilty](nested/GovernanceResponsibility.md)

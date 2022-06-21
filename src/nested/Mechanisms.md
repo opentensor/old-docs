@@ -6,8 +6,8 @@ The network blockchain uses a [consensus algorithm](src/../Glossary.md#consensus
 Servers receive two separate assessments from Validators that are combined to determine their Tao inflation, thus acting as an incentive. 
 ​
 
-- The first assessment is the consensus score and is determined by the number of approval votes given by validators (trust). This score is not earned in a linear fashion, as Validators with more stake (Tao) are able to distribute a greater number of votes. The score is also regularized by a sigmoid function: if less than 51% of the votes a Server receives are positive, the score is reduced exponentially, if more than 51% are positive, it is likewise inflated. 
-- This consensus score is then combined with the rank - numerical determinant of value - achieved to determine the server's Tao inflation. Again, this score (rank) is skewed: it is combination of weights set by the validator, and the stake of that validator. 
+- The first assessment is the consensus score, which is determined by the number of approval votes given by validators (trust). This score is not earned in a linear fashion, as Validators with more stake (Tao) are able to distribute a greater number of votes. The score is also regularized by a sigmoid function: if less than 51% of the votes a Server receives are positive, the score is reduced exponentially, if more than 51% are positive, it is likewise inflated.
+- This consensus score is then combined with the rank - numerical determinant of value - achieved to determine the server's Tao inflation. Again, this score (rank) is skewed: it is a combination of weights set by the validator and the stake of that validator.
 ​
 
 Validators, as well, are subject to a set of conditions to incentivize right conduct in the system. 
