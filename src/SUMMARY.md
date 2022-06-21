@@ -8,9 +8,9 @@
 
 - [Learn](Learn.md)
   - [Introduction](nested/Introduction.md)
-  - [Background](nested/Background.md)
+  - [Background](nested/Background.md) 
   - [The Protocol](nested/TheProtocol.md)
-  - [Consensus Incentive Bonding](nested/Mechanisms.md)
+  - [The Consensus Mechanism](nested/Mechanisms.md)
   - [Governance and Responsibilty](nested/GovernanceResponsibility.md)
 
 # Mining
