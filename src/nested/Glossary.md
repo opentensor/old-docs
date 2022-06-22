@@ -137,13 +137,13 @@ Refers to the bonds that Validators hold in Servers. The higher the stake the Va
 
 Predicting an answer given a context before the place of prediction (i.e. predicting the next word in a sentence).
 
-![logit/tokens](IntelligencePath.png)
+![logit/tokens](NextTokenPrediction.png)
 
 ### Masked Token Prediction
 
 Predicting an answer given a context before and after the place of prediction (i.e. predicting the next word in a sentence).
 
-![logit/tokens](IntelligencePath.png)
+![logit/tokens](MaskedTokenPrediction.png)
 
 ### Loss Function
 
