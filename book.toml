@@ -7,6 +7,7 @@ title = "Bittensor Documentation"
 
 [output.html]
 default-theme = "light"
+preferred-dark-theme = "light"
 git-repository-url = "https://github.com/opentensor/docs" # adds link to github repository
 git-repository-icon = "fa-github" # creates github icon
 edit-url-template = "https://github.com/opentensor/docs/edit/master/{path}" # adds icon to make edit suggestions (not currently working)
