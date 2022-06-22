@@ -1,2 +1,5 @@
 # Bittensor
 
+![taologo](taologo.png)
+
+
