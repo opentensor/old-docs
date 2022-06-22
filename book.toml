@@ -27,3 +27,10 @@ boost-paragraph = 1      # ranking boost factor for matches in text
 expand = true            # partial words will match longer terms
 heading-split-level = 3  # link results to heading levels
 copy-js = true           # include Javascript code for search
+
+[output.html.playground]
+editable = true          # allows editing the source code
+copyable = true          # include the copy button for copying code snippets
+copy-js = true           # includes the JavaScript for the code editor
+line-numbers = true     # displays line numbers for editable code
+runnable = true          # displays a run button for rust code
