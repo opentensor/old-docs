@@ -7,7 +7,7 @@ When you first enter the network, you will be running a Server. Until you have a
 ## Choosing a Model 
 ​
 
-By default, your miner is outfitted with the gpt2 model. While the ultimate goals is to upgrade, customize, and design your own model from scratch, choosing one from  is a good place to start. 
+By default, your miner is outfitted with the gpt2 model. While the ultimate goals is to upgrade, customize, and design your own model from scratch, choosing one from [Hugging Face](https://huggingface.co/models) is a good place to start. 
 ​
 
 The argument that downloads a Hugging Face model is:
@@ -39,7 +39,7 @@ These are some popular models, however you are not limited to only these:
 
 As expected, the larger the model is, the more computational resources it will need to run smoothly on the network. 
 
-​*View Hugging Face for more options or fintune your own!*
+​*View [Hugging Face](https://huggingface.co/models) for more options or fintune your own!*
 
 
 
@@ -70,7 +70,7 @@ neuron.padding false
 ## Staking Tao
 
 
-The more Tao you have stake to a hotkey, the more protection that hotkey has from getting deregistered in the network. However, Tao staked in your hotkey, as a Server, does not increased your dividends. 
+The more Tao you have staked to a hotkey, the more protection that hotkey has from getting deregistered in the network. However, Tao staked in your hotkey, as a Server, does not increased your dividends. 
 ​
 
 
@@ -88,4 +88,4 @@ Check your timeouts on your "logs" that pop up the moment your miner starts to r
 ```
 
 
-This will show you requests on the axon and the dendrite as well as weights set on the chain. 
+This will show you requests on the [axon](src/../Glossary.md#axon) and the [dendrite](src/../Glossary.md#dendrite) as well as weights set on the chain. 

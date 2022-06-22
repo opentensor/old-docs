@@ -1,6 +1,6 @@
 # Validator Customization
 ---
-Running a Validator becomes beneficial only once you have accrued a significant amount of Tao. This is due to the bonding matrix: Validators accrue currency in proportion to their stake due to the existence of dividends.  This beneficial tipping point occurs at around ~1000 Tao. 
+Running a Validator becomes beneficial only once you have accrued a significant amount of Tao. This is due to the [bonding matrix](src/../Glossary.md#bonding-matrix): Validators accrue currency in proportion to their stake due to the existence of dividends.  This beneficial tipping point occurs at around ~1000 Tao. 
 ​
 
 In addition, Validators are less sensitive to disconnection compared to Servers, who's incentive will begin falling within 20 minutes of disconnection (100 blocks). Validators, however, will only become inactive after 5000 blocks. 
@@ -70,5 +70,5 @@ This metric determines how "risk averse" your Validator will be in choosing who 
 ## Staking Tao
 ​
 
-If you are running a Validator, the more Tao you have staked in your hotkey, the more inflation through dividends you will earn. Refer to basic btcli to see the commands for transferring Tao. 
+If you are running a Validator, the more Tao you have staked in your hotkey, the more inflation through dividends you will earn. Refer to [basic btcli](../cli/Basicbtcli.md) to see the commands for transferring Tao. 
 ​

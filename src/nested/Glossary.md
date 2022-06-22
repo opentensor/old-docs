@@ -149,4 +149,5 @@ A measure of individuals' contributions in a cooperative game.
 
 ### Dataset
 ​
+### Sigmoid Function
 ​
