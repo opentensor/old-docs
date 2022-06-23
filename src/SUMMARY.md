@@ -6,13 +6,15 @@
 
 # Learn
 
-- [Learn](nested/Introduction.md) 
+- [Learn](Learn.md)
+  - [Introduction](nested/Introduction.md) 
   - [The Protocol](nested/TheProtocol.md)
   - [The Consensus Mechanism](nested/Mechanisms.md)
   - [Governance and Responsibilty](nested/GovernanceResponsibility.md)
 
 # Mining
-- [Getting Started](cli/GettingStarted.md)
+- [Setting up a Miner](RunningAMiner.md)
+  - [Getting Started](cli/GettingStarted.md)
   - [Subtensor](cli/Subtensor.md)
   - [Basic btcli](cli/Basicbtcli.md)
   - [Preparing Your Miner](cli/MinerPreperation.md)
