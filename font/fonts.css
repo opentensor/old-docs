@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 300;
     src: local('Lato Light'), local('Lato-Light'),
@@ -8,7 +8,7 @@
   
   /* open-sans-300italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
   @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-style: italic;
     font-weight: 300;
     src: local('Lato Light Italic'), local('Lato-LightItalic'),
@@ -17,7 +17,7 @@
   
   /* open-sans-regular - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
   @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
     src: local('Lato Regular'), local('Lato-Regular'),
@@ -26,7 +26,7 @@
   
   /* open-sans-italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
   @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-style: italic;
     font-weight: 400;
     src: local('Lato Italic'), local('Lato-Italic'),
@@ -35,7 +35,7 @@
   
   /* open-sans-600 - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
   @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 600;
     src: local('Lato Black'), local('Lato-Black'),
@@ -44,7 +44,7 @@
   
   /* open-sans-600italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
   @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-style: italic;
     font-weight: 600;
     src: local('Lato BoldItalic'), local('Lato-BoldItalic'),
@@ -53,7 +53,7 @@
   
   /* open-sans-700 - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
   @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 700;
     src: local('Lato Black'), local('Lato-Black'),
@@ -62,7 +62,7 @@
   
   /* open-sans-700italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
   @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-style: italic;
     font-weight: 700;
     src: local('Lato Black Italic'), local('Lato-BlackItalic'),
@@ -71,7 +71,7 @@
   
   /* open-sans-800 - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
   @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 800;
     src: local('Lato Black'), local('Lato-Black'),
@@ -80,7 +80,7 @@
   
   /* open-sans-800italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
   @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-style: italic;
     font-weight: 800;
     src: local('Lato Bold Italic'), local('Lato-BoldItalic'),
