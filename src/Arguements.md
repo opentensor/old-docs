@@ -209,7 +209,7 @@
 ```
 --dataset.num_batches
 ```
-- The number of data to download each time(measured by the number of batches).
+- The number of data to download each time (measured by the number of batches).
 
 ## Mock Tests
 
