@@ -1,5 +1,3 @@
-# Bittensor
-
 
 # Learn
 [Introduction](./index.md)
