@@ -2,11 +2,8 @@
 
 
 
-[Introduction](./index.md)
-
-
-
-- [The Protocol](Learn.md)
+- [Introduction](./index.md)
+  - [The Protocol](Learn.md)
   - [The Consensus Mechanism](nested/Mechanisms.md)
   - [Governance and Responsibilty](nested/GovernanceResponsibility.md)
 
