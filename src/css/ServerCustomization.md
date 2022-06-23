@@ -70,6 +70,7 @@ neuron.padding false
 ## Staking Tao
 
 
+
 The more Tao you have staked to a hotkey, the more protection that hotkey has from getting deregistered in the network. However, Tao staked in your hotkey, as a Server, does not increased your dividends. 
 ​
 

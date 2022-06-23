@@ -10,6 +10,7 @@ In addition, Validators are less sensitive to disconnection compared to Servers,
 ## Running a Validator
 
 
+
 Any registered hotkey can be used to run a Validator, and it is as simple as running this code: 
 
 
