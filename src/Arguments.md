@@ -1,4 +1,4 @@
-# Arguements
+# Arguments
 ---
 ```
 --config
