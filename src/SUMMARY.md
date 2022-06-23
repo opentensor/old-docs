@@ -1,7 +1,7 @@
 # Bittensor
 
 
-
+# Learn
 - [Introduction](./index.md)
   - [The Protocol](Learn.md)
   - [The Consensus Mechanism](nested/Mechanisms.md)
