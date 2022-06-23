@@ -77,7 +77,7 @@ sudo docker-compose up -d
 ```
 
 
-1. Check that Subtensor is fully synced
+7. Check that Subtensor is fully synced
 
 
 ```bash
