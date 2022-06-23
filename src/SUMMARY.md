@@ -4,7 +4,7 @@
 
 [Introduction](./index.md)
 
-# Learn
+
 
 - [The Protocol](Learn.md)
   - [The Consensus Mechanism](nested/Mechanisms.md)
