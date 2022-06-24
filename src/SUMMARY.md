@@ -11,6 +11,7 @@
 [Governance and Responsibilty](nested/GovernanceResponsibility.md)
 
 # Tutorials
+
 [Getting Started](RunningAMiner.md)
 
 [Subtensor](cli/Subtensor.md)
