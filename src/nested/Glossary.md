@@ -6,12 +6,7 @@
 ### Miner/Neuron/Peer/Node
 
 Used interchangeably to refer to a participant in the network. 
-​
-## Servers
 
-
-
-## Validators
 
 ### Hotkey
 

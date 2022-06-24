@@ -45,7 +45,7 @@
   /* sans-serif-600italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
   @font-face {
     font-family: 'Lato', sans-serif;
-    font-style: italic;
+    font-style: normal;
     font-weight: 600;
     src: local('Lato Light'), local('Lato-Light'),
          url('Lato-Light.ttf') format('tff');
@@ -54,7 +54,7 @@
   /* sans-serif-700 - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
   @font-face {
     font-family: 'Lato', sans-serif;
-    font-style: normal;
+    font-style: italic;
     font-weight: 700;
     src: local('Lato Light Italic'), local('Lato-LightItalic'),
          url('Lato-LightItalic.ttf') format('tff');
@@ -63,7 +63,7 @@
   /* sans-serif-700italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
   @font-face {
     font-family: 'Lato', sans-serif;
-    font-style: italic;
+    font-style: normal;
     font-weight: 700;
     src: local('Lato Regular'), local('Lato-Regular'),
          url('Lato-Regular.ttf') format('tff');
