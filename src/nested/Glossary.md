@@ -9,6 +9,8 @@ Used interchangeably to refer to a participant in the network.
 ​
 ## Servers
 
+
+
 ## Validators
 
 ### Hotkey
@@ -129,9 +131,15 @@ Refers to the bonds that Validators hold in Servers. The higher the stake the Va
 
 ### Embeddings
 
+Also referred to as representations, embeddings are a way of expressing information (i.e the comprehensible meaning of a word) as a very high-dimensional vector.
+
 ### Logits
 
+The probability of a word in NTP (next token prediction) or MTP (masked token prediction).
+
 ### Inputs
+
+
 
 ### Next Token Prediction
 
@@ -145,15 +153,15 @@ Predicting an answer given a context before and after the place of prediction (i
 
 ![logit/tokens](MaskedTokenPrediction.png)
 
-### Loss Function
-
-### Cross Entropy Loss
-
 ### Shapely Value
 
 A measure of individuals' contributions in a cooperative game.
 
 ### Dataset
 ​
+Bittensor uses a 1.5 Terrabyte corpus dataset for training known as the Mountain.
+
 ### Sigmoid Function
+
+The sigmoid produces a threshold-like scaling which rewards connected peers and punishes the non-trusted.
 ​
