@@ -23,7 +23,7 @@ btcli overview
 ```
 
 
-This command will display the specifics of your progress in the network, and includes your UID, state (active or inactive), [stake](src/../Glossary.md#stake), [rank](src/../Glossary.md#rank), [trust](src/../Glossary.md#trust), [consensus](src/../Glossary.md#consensus), [incentive](src/../Glossary.md#incentive), [dividends](src/../Glossary.md#dividends), and [emission](inflation). For more information about these performance indicators, refer to the ["Consensus Mechanism"](../nested/Mechanisms.md) section.
+This command will display the specifics of your progress in the network, and includes your UID, state (active or inactive), [stake](src/../Glossary.md#stake), [rank](src/../../nested/Glossary.md), [trust](src/../../nested/Glossary.md#trust), [consensus](src/../../nested/Glossary.md#consensus), [incentive](src/../../nested/Glossary.md#incentive), [dividends](src/../../nested/Glossary.md#dividends), and [emission](src/../../nested/Glossary.md#inflation). For more information about these performance indicators, refer to the ["Consensus Mechanism"](../nested/Mechanisms.md) section.
 
 
 ```bash

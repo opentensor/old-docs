@@ -88,4 +88,4 @@ Check your timeouts on your "logs" that pop up the moment your miner starts to r
 ```
 
 
-This will show you requests on the [axon](src/../Glossary.md#axon) and the [dendrite](src/../Glossary.md#dendrite) as well as weights set on the chain. 
+This will show you requests on the [axon](src/../../nested/Glossary.md#axon) and the [dendrite](src/../../nested/Glossary.md#dendrite) as well as weights set on the chain. 
