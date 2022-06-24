@@ -1,10 +1,6 @@
 
 # Learn
 
-# Learn
-
-# Learn
-
 [Introduction](./index.md)
 
 [The Protocol](Learn.md)
