@@ -2,8 +2,8 @@
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 300;
-    src: local('Lato Light'), local('Lato-Light'),
-         url('Lato-Light.ttf') format('tff');
+    src: local('Lato Black'), local('Lato-Black'),
+         url('Lato-Black.ttf') format('tff');
   }
   
   /* sans-serif-300italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
@@ -11,8 +11,8 @@
     font-family: 'Lato', sans-serif;
     font-style: italic;
     font-weight: 300;
-    src: local('Lato Light Italic'), local('Lato-LightItalic'),
-         url('Lato-LightItalic.ttf') format('tff');
+    src: local('Lato Black Italic'), local('Lato-BlackItalic'),
+         url('Lato-BlackItalic.ttf') format('tff');
   }
   
   /* sans-serif-regular - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
@@ -20,8 +20,8 @@
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
-    src: local('Lato Regular'), local('Lato-Regular'),
-         url('Lato-Regular.ttf') format('tff');
+    src: local('Lato Bold'), local('Lato-Bold'),
+         url('Lato-Bold.ttf') format('tff');
   }
   
   /* sans-serif-italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
@@ -29,8 +29,8 @@
     font-family: 'Lato', sans-serif;
     font-style: italic;
     font-weight: 400;
-    src: local('Lato Italic'), local('Lato-Italic'),
-         url('Lato-Italic.ttf') format('tff');
+    src: local('Lato Bold Italic'), local('Lato-BoldItalic'),
+         url('Lato-BoldItalic.ttf') format('tff');
   }
   
   /* sans-serif-600 - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
@@ -38,8 +38,8 @@
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 600;
-    src: local('Lato Black'), local('Lato-Black'),
-         url('Lato-Black.ttf') format('tff');
+    src: local('Lato Italic'), local('Lato-Italic'),
+         url('Lato-Italic.ttf') format('tff');
   }
   
   /* sans-serif-600italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
@@ -47,8 +47,8 @@
     font-family: 'Lato', sans-serif;
     font-style: italic;
     font-weight: 600;
-    src: local('Lato BoldItalic'), local('Lato-BoldItalic'),
-         url('Lato-BoldItalic.ttf') format('tff');
+    src: local('Lato Light'), local('Lato-Light'),
+         url('Lato-Light.ttf') format('tff');
   }
   
   /* sans-serif-700 - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
@@ -56,8 +56,8 @@
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 700;
-    src: local('Lato Black'), local('Lato-Black'),
-         url('Lato-Black.ttf') format('tff');
+    src: local('Lato Light Italic'), local('Lato-LightItalic'),
+         url('Lato-LightItalic.ttf') format('tff');
   }
   
   /* sans-serif-700italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
@@ -65,8 +65,8 @@
     font-family: 'Lato', sans-serif;
     font-style: italic;
     font-weight: 700;
-    src: local('Lato Black Italic'), local('Lato-BlackItalic'),
-         url('Lato-BlackItalic.ttf') format('tff');
+    src: local('Lato Regular'), local('Lato-Regular'),
+         url('Lato-Regular.ttf') format('tff');
   }
   
   /* sans-serif-800 - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
@@ -74,8 +74,8 @@
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 800;
-    src: local('Lato Black'), local('Lato-Black'),
-         url('Lato-Black.ttf') format('tff');
+    src: local('Lato Thin'), local('Lato-Thin'),
+         url('Lato-Thin.ttf') format('tff');
   }
   
   /* sans-serif-800italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
@@ -83,8 +83,8 @@
     font-family: 'Lato', sans-serif;
     font-style: italic;
     font-weight: 800;
-    src: local('Lato Bold Italic'), local('Lato-BoldItalic'),
-         url('Lato-BoldItalic.ttf') format('tff');
+    src: local('Lato Thin Italic'), local('Lato-ThinItalic'),
+         url('Lato-ThinItalic.ttf') format('tff');
   }
   
   /* source-code-pro-500 - latin_vietnamese_latin-ext_greek_cyrillic-ext_cyrillic */
