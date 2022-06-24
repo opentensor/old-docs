@@ -6,7 +6,7 @@
          url('Lato-Light.ttf') format('tff');
   }
   
-  /* open-sans-300italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
+  /* sans-serif-300italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
   @font-face {
     font-family: 'Lato', sans-serif;
     font-style: italic;
@@ -15,7 +15,7 @@
          url('Lato-LightItalic.ttf') format('tff');
   }
   
-  /* open-sans-regular - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
+  /* sans-serif-regular - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
   @font-face {
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -24,7 +24,7 @@
          url('Lato-Regular.ttf') format('tff');
   }
   
-  /* open-sans-italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
+  /* sans-serif-italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
   @font-face {
     font-family: 'Lato', sans-serif;
     font-style: italic;
@@ -33,7 +33,7 @@
          url('Lato-Italic.ttf') format('tff');
   }
   
-  /* open-sans-600 - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
+  /* sans-serif-600 - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
   @font-face {
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -42,7 +42,7 @@
          url('Lato-Black.ttf') format('tff');
   }
   
-  /* open-sans-600italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
+  /* sans-serif-600italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
   @font-face {
     font-family: 'Lato', sans-serif;
     font-style: italic;
@@ -51,7 +51,7 @@
          url('Lato-BoldItalic.ttf') format('tff');
   }
   
-  /* open-sans-700 - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
+  /* sans-serif-700 - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
   @font-face {
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -60,7 +60,7 @@
          url('Lato-Black.ttf') format('tff');
   }
   
-  /* open-sans-700italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
+  /* sans-serif-700italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
   @font-face {
     font-family: 'Lato', sans-serif;
     font-style: italic;
@@ -69,7 +69,7 @@
          url('Lato-BlackItalic.ttf') format('tff');
   }
   
-  /* open-sans-800 - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
+  /* sans-serif-800 - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
   @font-face {
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -78,7 +78,7 @@
          url('Lato-Black.ttf') format('tff');
   }
   
-  /* open-sans-800italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
+  /* sans-serif-800italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
   @font-face {
     font-family: 'Lato', sans-serif;
     font-style: italic;
