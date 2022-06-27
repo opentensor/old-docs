@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -5,40 +6,67 @@
     src: 
          url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap%27')
   }
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    src: url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+}
   
 
 h1 {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 48px;
     line-height: 1.2;
     margin-bottom: 1.5rem;
-}
-
-h2 {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
+    color: #3b454e;
 }
 
 p {
     font-family: 'Lato', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 24px;
     margin-bottom: 1.5rem;
 }
 
 li {
     font-family: 'Lato', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 24px;
     margin-bottom: 1.5rem;
 }
+
+.chapter li.chapter-item {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 1.5rem;
+}
+
+
+.chapter li.part-title {
+    color: #6a7883;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.light {
+    --sidebar-bg: #f4f7f9;
+    --sidebar-fg: #8f99a2;
+    --sidebar-active: #e1da3a;
+    --fg: #3b454e;
+}
+
+/* .sidebar {
+    background-color: #8899a8;
+} */
+
+/* 8899a8 */
