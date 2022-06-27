@@ -12,20 +12,20 @@ h1 {
     font-family: 'Ledger', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 18px;
     color: #333333;
-    display: none; 
+    
 }
 
 h2 {
     font-family: 'Ledger', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 18px;
      color:#333333; 
-     display: none; 
+  
 }
 
 h3 {
