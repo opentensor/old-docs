@@ -18,17 +18,17 @@ h1 {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 30px;
     line-height: 1.2;
     margin-bottom: 1.5rem;
-    color: #3b454e;
+    color: #333333;
 }
 
 h2 {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 20px;
     line-height: 36px;
     margin-bottom: 1.5rem;
 }
@@ -37,7 +37,7 @@ h3 {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 15px;
     line-height: 1.2;
     margin-bottom: 1.5rem;
 }
@@ -54,8 +54,8 @@ h4 {
 p {
     font-family: 'Lato', sans-serif;
     font-style: normal;
-    font-weight: 200;
-    font-size: 16px;
+    font-weight: 300;
+    font-size: 12px;
     line-height: 24px;
     margin-bottom: 1.5rem;
 }
