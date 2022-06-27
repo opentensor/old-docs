@@ -22,7 +22,6 @@ h1 {
     font-weight: 400;
     font-size: 25px;
     line-height: 18px;
-    margin-bottom: 1.5rem;
     color: #333333;
 }
 
@@ -32,8 +31,6 @@ h2 {
     font-weight: 400;
     font-size: 20px;
     line-height: 18px;
-    margin-bottom: 1.5rem;
-    color: blue; 
 }
 
 h3 {
@@ -42,7 +39,6 @@ h3 {
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
-    margin-bottom: 1.5rem;
     color: #333333;
 }
 
@@ -52,7 +48,6 @@ h4 {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-    margin-bottom: 1.5rem;
     color: #333333;
 }
 
@@ -62,7 +57,7 @@ p {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-    margin-bottom: 1.5rem;
+
     color: #333333;
 }
 
@@ -72,7 +67,7 @@ li {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-    margin-bottom: 1.5rem;
+  
     color: #333333;
 }
 
@@ -82,7 +77,7 @@ li {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-    margin-bottom: 1.5rem;
+  
     color: #333333;
 }
 
