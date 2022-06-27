@@ -13,6 +13,7 @@ no-section-label = false
 git-repository-url = "https://github.com/opentensor/docs" # adds link to github repository
 git-repository-icon = "fa-github" # creates github icon
 edit-url-template = "https://github.com/opentensor/docs/edit/main/{path}" # adds icon to make edit suggestions
+additional-css = ["theme/custom.css"]
 
 [output.html.fold]
 enable = true    # whether or not to enable section folding
