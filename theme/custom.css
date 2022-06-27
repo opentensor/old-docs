@@ -12,7 +12,7 @@ h1 {
     font-family: 'Ledger', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 18px;
     color: #333333;
     
@@ -22,7 +22,7 @@ h2 {
     font-family: 'Ledger', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 18px;
      color:#333333; 
   
@@ -77,7 +77,7 @@ li {
 .chapter li.part-title {
     color: #333333;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 18px;
     color: #333333;
     
