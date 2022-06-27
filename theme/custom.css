@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'Lato', sans-serif;
-    font-family: 'Ledger', sans-serif;
+    font-family: 'Ledger', serif;
     font-style: normal;
     font-weight: 400;
     src:url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap%27');
@@ -9,7 +9,7 @@
   }
 
 h1 {
-    font-family: 'Ledger', sans-serif;
+    font-family: 'Ledger', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Ledger', sans-serif;
+    font-family: 'Ledger', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -76,14 +76,14 @@ li {
     color: #333333;
     font-size: 15px;
     line-height: 18px;
-    color: #ffffff;
+    color: #333333;
     
 }
 
 .light {
-    --sidebar-bg:#000000;
-    --sidebar-fg:  #ffffff;
-    --sidebar-active: darkblue;
+    --sidebar-bg:#ffffff;
+    --sidebar-fg:  #333333;
+    --sidebar-active: #818589;
     --fg: #333333;
 }
 
