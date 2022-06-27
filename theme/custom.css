@@ -17,13 +17,13 @@
 
 
 h1 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Ledger', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 18px;
     margin-bottom: 1.5rem;
-    color: #FF0000;
+    color: #333333;
 }
 
 h2 {
@@ -33,7 +33,7 @@ h2 {
     font-size: 20px;
     line-height: 18px;
     margin-bottom: 1.5rem;
-    color: #333333;
+    color: blue; 
 }
 
 h3 {
