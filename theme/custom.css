@@ -4,12 +4,13 @@
     font-style: normal;
     font-weight: 400;
     src: 
-         url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap%27')
+         url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap%27');
   }
 
 @font-face {
     font-family: 'Lato', sans-serif;
     font-style: normal;
+    font-weight: 400;
     src: url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
 }
   
@@ -18,8 +19,8 @@ h1 {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
-    line-height: 1.2;
+    font-size: 25px;
+    line-height: 18px;
     margin-bottom: 1.5rem;
     color: #333333;
 }
@@ -29,7 +30,7 @@ h2 {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 36px;
+    line-height: 18px;
     margin-bottom: 1.5rem;
 }
 
@@ -46,7 +47,7 @@ h4 {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 12px;
     line-height: 1.2;
     margin-bottom: 1.5rem;
 }
@@ -54,7 +55,7 @@ h4 {
 p {
     font-family: 'Lato', sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 12px;
     line-height: 24px;
     margin-bottom: 1.5rem;
@@ -63,8 +64,8 @@ p {
 li {
     font-family: 'Lato', sans-serif;
     font-style: normal;
-    font-weight: 200;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 12px;
     line-height: 24px;
     margin-bottom: 1.5rem;
 }
@@ -73,21 +74,21 @@ li {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 22px;
     margin-bottom: 1.5rem;
 }
 
 
 .chapter li.part-title {
-    color: #6a7883;
-    font-size: 16px;
+    color: #333333;
+    font-size: 15px;
     line-height: 18px;
 }
 
 .light {
     --sidebar-bg: #f4f7f9;
-    --sidebar-fg: #8f99a2;
+    --sidebar-fg: #333333;
     --sidebar-active: #333333;
     --fg: #3b454e;
 }
