@@ -3,7 +3,7 @@ authors = ["Yuma Rao"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Bittensor Documentation"
+title = "Bittensor"
 
 [output.html]
 default-theme = "light"
