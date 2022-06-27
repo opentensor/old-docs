@@ -10,7 +10,6 @@
 @font-face {
     font-family: 'Ledger', sans-serif;
     font-style: normal;
-    font-weight: 400;
     src:url('https://fonts.googleapis.com/css2?family=Ledger&display=swap');
   }
   
@@ -22,7 +21,7 @@ h1 {
     font-weight: 400;
     font-size: 20px;
     line-height: 18px;
-    color: lightblue;
+    color: #333333;
 }
 
 h2 {
@@ -31,7 +30,7 @@ h2 {
     font-weight: 400;
     font-size: 20px;
     line-height: 18px;
-     color:pink; 
+     color:#333333; 
 }
 
 h3 {
@@ -40,7 +39,7 @@ h3 {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-    color: red; 
+    color: #333333; 
 }
 
 h4 {
@@ -49,7 +48,7 @@ h4 {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-    color: blue;
+    color: #333333;
 }
 
 p {
@@ -58,8 +57,7 @@ p {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-
-    color: yellow;
+    color: #333333;
 }
 
 li {
@@ -68,8 +66,7 @@ li {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-  
-    color: purple;
+    color: #333333;
 }
 
 .chapter li.chapter-item {
@@ -78,8 +75,7 @@ li {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-  
-    color: orange;
+    color: #333333;
 }
 
 
@@ -93,8 +89,8 @@ li {
 
 .light {
     --sidebar-bg:#000000;
-    --sidebar-fg:  #FFFFFF;
-    --sidebar-active: #333333;
+    --sidebar-fg:  #ffffff;
+    --sidebar-active: darkblue;
     --fg: #333333;
 }
 
