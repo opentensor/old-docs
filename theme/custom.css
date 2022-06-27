@@ -33,6 +33,7 @@ h2 {
     font-size: 20px;
     line-height: 18px;
     margin-bottom: 1.5rem;
+    color: #333333;
 }
 
 h3 {
@@ -40,8 +41,9 @@ h3 {
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    line-height: 1.2;
+    line-height: 18px;
     margin-bottom: 1.5rem;
+    color: #333333;
 }
 
 h4 {
@@ -49,8 +51,9 @@ h4 {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.2;
+    line-height: 18px;
     margin-bottom: 1.5rem;
+    color: #333333;
 }
 
 p {
@@ -58,8 +61,9 @@ p {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 18px;
     margin-bottom: 1.5rem;
+    color: #333333;
 }
 
 li {
@@ -67,8 +71,9 @@ li {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 18px;
     margin-bottom: 1.5rem;
+    color: #333333;
 }
 
 .chapter li.chapter-item {
@@ -76,8 +81,9 @@ li {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 22px;
+    line-height: 18px;
     margin-bottom: 1.5rem;
+    color: #333333;
 }
 
 
@@ -85,13 +91,15 @@ li {
     color: #333333;
     font-size: 15px;
     line-height: 18px;
+    color: #333333;
+    
 }
 
 .light {
-    --sidebar-bg: #f4f7f9;
-    --sidebar-fg: #333333;
+    --sidebar-bg:#FFFF00;
+    --sidebar-fg:  #FF0000;
     --sidebar-active: #333333;
-    --fg: #3b454e;
+    --fg: #0000FF;
 }
 
 /* .sidebar {
