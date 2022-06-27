@@ -78,7 +78,8 @@ If you lose access to your keys, they can be easily regenerated with the unique 
 
 ```bash​
 btcli regen_coldkey
-​```
+```
+
 
 
 ```bash
