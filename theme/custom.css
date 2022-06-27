@@ -24,6 +24,33 @@ h1 {
     color: #3b454e;
 }
 
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
 p {
     font-family: 'Lato', sans-serif;
     font-style: normal;
