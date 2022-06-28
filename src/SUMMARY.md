@@ -27,4 +27,4 @@
 
 - [Glossary](nested/Glossary.md)
 
-- [Arguments](Arguments.md)
+- [Flags](Arguments.md)

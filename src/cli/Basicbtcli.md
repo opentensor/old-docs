@@ -62,7 +62,7 @@ btcli stake
 ​
 
 
-To expedite longer staking and unstaking operations, you can string these arguments to ``btcli stake`` and ``btcli unstake``:
+To expedite longer staking and unstaking operations, you can string these flags to ``btcli stake`` and ``btcli unstake``:
 ```bash
 #stake or unstake from all hotkeys
 --wallet.all_hotkeys 

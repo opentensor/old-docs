@@ -1,4 +1,4 @@
-# Arguments
+# Flags
 ---
 ```
 --config

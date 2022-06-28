@@ -3,7 +3,7 @@
 Once your Miner is registered in the network you and have Subtensor running locally, your basic setup is complete. Your Miner will begin processing data, generating value for the network, and accruing Tao. 
 ​
 
-This area of the documentation will guide you through the basic customizations that can be made to your Miner in the form of "arguments," in order to set your Miner up for success in the network.
+This area of the documentation will guide you through the basic customizations that can be made to your Miner in with flags, in order to set your Miner up for success in the network.
  
 ​
 
