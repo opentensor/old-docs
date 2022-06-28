@@ -59,9 +59,9 @@ The transfer Tao from your coldkey to your hotkey, enter:
 ```bash​
 btcli stake 
 ```
+​
 
-​
-​
+
 To expedite longer staking and unstaking operations, you can string these arguments to ``btcli stake`` and ``btcli unstake``:
 ```bash
 #stake or unstake from all hotkeys
@@ -74,7 +74,8 @@ To expedite longer staking and unstaking operations, you can string these argume
 --max_stake
 ```
 ​
-​
+
+
 This command moves Tao between coldkeys. A .125 tao burn fee is applied.
 
 
