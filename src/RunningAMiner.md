@@ -16,7 +16,7 @@ Connecting to a hardware service VPS will be necessary for many users, as will p
 ## Installation
 
 
-To begin, paste this script into your macOS Terminal or Linus shell prompt:
+To begin, paste this script into your macOS Terminal or Linux shell prompt:
 
 
 ```bash
