@@ -1,5 +1,5 @@
 # Preparing your Miner
----
+
 Once your Miner is registered in the network you and have Subtensor running locally, your basic setup is complete. Your Miner will begin processing data, generating value for the network, and accruing Tao. 
 ​
 
