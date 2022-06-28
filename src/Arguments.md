@@ -102,6 +102,22 @@
 --wallet._mock
 ```
 - To turn on wallet mocking for testing purposes.
+```
+--wallet.all_hotkeys
+```
+- stake or unstake from all hotkeys simultaneously.
+```
+--wallet.hotkeys
+```
+- stake or unstake from a specific set of hotkeys simultaneously.
+```
+--wallet.exclude_hotkeys
+```
+- stake or unstake from all hotkeys simultaneously while exluding a specific set of hotkeys.
+```
+--max_stake
+```
+- stake or unstake to a specific amount of stake on a hotkey.
   
 ## Axon
 

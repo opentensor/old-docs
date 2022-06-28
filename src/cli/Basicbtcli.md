@@ -61,6 +61,21 @@ btcli stake
 ```
 
 
+To expedite longer staking and unstaking operations, you can string these arguments to ``btcli stake`` and ``btcli unstake``:
+
+
+```bash
+#stake or unstake from all hotkeys
+--wallet.all_hotkeys 
+#stake or unstake from a specific set of hotkeys
+--wallet.hotkeys
+#stake or unstake from all hotkeys while exluding a specific set of hotkeys
+--wallet.exclude_hotkeys
+#stake or unstake to a specific amount of stake on a hotkey
+--max_stake
+```
+
+
 This command moves Tao between coldkeys. A .125 tao burn fee is applied.
 
 
