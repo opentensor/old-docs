@@ -12,7 +12,7 @@ hr {
     display: none; 
 } 
 
-code {
+code, pre {
      font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
