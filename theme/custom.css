@@ -8,6 +8,21 @@
     src:url('https://fonts.googleapis.com/css2?family=Ledger&display=swap');
   }
 
+hr {
+    display: none; 
+} 
+
+code {
+     font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;
+}
+    
+
+
 h1 {
     font-family: 'Lato', sans-serif;
     font-style: normal;
