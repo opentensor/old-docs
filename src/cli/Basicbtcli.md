@@ -61,6 +61,7 @@ btcli stake
 ```
 
 ​
+​
 To expedite longer staking and unstaking operations, you can string these arguments to ``btcli stake`` and ``btcli unstake``:
 ```bash
 #stake or unstake from all hotkeys
@@ -72,7 +73,7 @@ To expedite longer staking and unstaking operations, you can string these argume
 #stake or unstake to a specific amount of stake on a hotkey
 --max_stake
 ```
-
+​
 ​
 This command moves Tao between coldkeys. A .125 tao burn fee is applied.
 
