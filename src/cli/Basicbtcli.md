@@ -1,6 +1,6 @@
 # Basic btcli
 ---
-Before you begin customizing your Miner to optimize your currency accrual, it is useful to familiarize yourself with our "btcli" commands. Btcli is a command line interface to interact with Bittensor, and commands are used to monitor Miner performance, transfer Tao, and regenerate keys. 
+Before you begin customizing your Miner to optimize your currency accrual, it is useful to familiarize yourself with our``btcli`` commands. Btcli is a command line interface to interact with Bittensor, and commands are used to monitor Miner performance, transfer Tao, and regenerate keys. 
 
 
 ​
