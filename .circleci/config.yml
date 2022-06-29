@@ -40,8 +40,8 @@ jobs:
       - attach_workspace:
           at: book
       - run:
-        name: Docs Bittensor Page
-        command: echo "docs.bittensor.com" > public/CNAME
+          name: Docs Bittensor Page
+          command: echo "docs.bittensor.com" > public/CNAME
       - run:
           name: deploy pages
           command: npm install -g --silent gh-pages@3.0.0
