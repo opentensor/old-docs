@@ -38,7 +38,7 @@ A Python torch object that produces a view into the network. This tool is used i
 
 ### Tao 
 
-The digital token that functions as currency in the network. 
+The digital token that functions as currency in the network. Tao uses the same tokenomics as Bitcoin with a 4 year halving cycle and a max supply of 21 millions tokens.
 ​
 
 ### Subtensor
@@ -131,9 +131,6 @@ Also referred to as representations, embeddings are a way of expressing informat
 ### Logits
 
 The probability of a word in NTP (next token prediction) or MTP (masked token prediction).
-
-### Inputs
-
 
 
 ### Next Token Prediction
