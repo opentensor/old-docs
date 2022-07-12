@@ -22,7 +22,7 @@ sudo apt-get upgrade
 ```
 
 
-1. Install an application package software to maintain Subtensor locally. Bittensor mining is very computationally complex, and software like this will help allocate appropriate resources. We recommend using Docker. For more information, follow this link.
+2. Install an application package software to maintain Subtensor locally. Bittensor mining is very computationally complex, and software like this will help allocate appropriate resources. We recommend using Docker. For more information, follow this link.
 
 
 Run the following commands:
