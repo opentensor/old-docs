@@ -157,7 +157,7 @@ Bittensor uses a 1.5 Terrabyte corpus dataset for training known as the Mountain
 
 The sigmoid produces a threshold-like scaling which rewards connected peers and punishes the non-trusted.
 
-## Chain Security
+### Chain Security
 
 Connecting to the Polkadot infrastructure will offer greater network security. Polkadot takes the concept of validation security away from the chain so that the Polkadot relay chain is now responsible for security. Read more about [Polkadot security.](https://wiki.polkadot.network/docs/learn-security)
 
