@@ -52,7 +52,6 @@ This is another way to increase power - and therefore earning potential - given 
 ```bash
 --nucleus.nlayers <>
 ```
-​
 
 
 ## Optimizing Importance 
