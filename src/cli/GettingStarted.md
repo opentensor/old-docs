@@ -42,7 +42,7 @@ btcli new_coldkey
 ```
 
 
-You will be prompted to name your wallet (which refers to the coldkey in this instance) and choose a password, before being provided with a unique mnemonic device. Record this information privately and securely.
+You will be prompted to name your wallet (which refers to the coldkey in this instance) and choose a password, before being provided with a unique mnemonic device. Record this information privately and securely. [*Refer here to learn more about keeping your private key files safe.*](#personal-security) 
 
 
 #### Create Your hotkey
@@ -93,5 +93,8 @@ Ultimately, we suggest that users switch to running the network software locally
 
 Registering on the network can take some time, depending on the calibre of your hardware. You will be notified when the process is complete. 
 
+
+### Personal Security
+Between your coldkey and your hotkey, your coldkey is the most important. As long as no one can see your private coldkey, your wallet is secure. You may refer to [these guides](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys) to learn how to better secure your private files.
 
 
