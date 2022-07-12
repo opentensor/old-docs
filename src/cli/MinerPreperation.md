@@ -4,7 +4,6 @@ Once your Miner is registered in the network you and have Subtensor running loca
 ​
 
 This area of the documentation will guide you through the basic customizations that can be made to your Miner in with flags, in order to set your Miner up for success in the network.
- 
 ​
 
 ## Choosing your Hardware
@@ -45,7 +44,7 @@ You can also select a network endpoint:
 ```bash
 --subtensor.chain_endpoint
 ```
-​
+
 
 ## Choosing a Wallet 
 ​
