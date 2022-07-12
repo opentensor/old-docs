@@ -53,7 +53,6 @@ This is another way to increase power - and therefore earning potential - given 
 --nucleus.nlayers <>
 ```
 
-
 ## Optimizing Importance 
 ​
 
