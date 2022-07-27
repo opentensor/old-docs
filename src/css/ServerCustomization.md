@@ -1,6 +1,6 @@
 # Customizing your miner - Server
 ---
-When you first enter the network, you will likely be running a Server. Until you have accrued ~700 Tao, serving is the only way to mine a significant amount of Tao, and the ultimate goal is to upgrade, customize and design your model in such a way as to optimize this. 
+When you first enter the network, you will likely be running a Server. Until you have accrued ~1000 Tao, serving is the only way to mine a significant amount of Tao, and the ultimate goal is to upgrade, customize and design your model in such a way as to optimize this. 
 
 
 
@@ -9,13 +9,13 @@ When you first enter the network, you will likely be running a Server. Until you
 
 By default, your miner is outfitted with the gpt2 model. While the ultimate goals is to upgrade, customize, and design your own model from scratch, choosing one from [Hugging Face](https://huggingface.co/models) is a good place to start.
 
-*String to ``btcli run`` or any other mining start command.*
+*Attach these arguments to the end of a btcli call or mining start command.*
 
 The argument that downloads a Hugging Face model is:
 
 
 ```bash
---neuron.model_name 
+--neuron.model_name <>
 ```
 
 
@@ -30,7 +30,7 @@ For example, if you want to run Eleuther AI's gpt-j-6B model:
 
 As expected, the larger the model is, the more computational resources it will need to run smoothly on the network. 
 
-*View [Hugging Face](https://huggingface.co/models) for more options or [finetune](../nested/FineTuning.md) your own!*
+*View [Hugging Face](https://huggingface.co/models) for more options or [finetune](https://github.com/opentensor/clm_model_tuning) your own!*
 
 
 

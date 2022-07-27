@@ -60,11 +60,11 @@ To expedite longer staking and unstaking operations, you can string these flags 
 #stake or unstake from all hotkeys
 --wallet.all_hotkeys 
 #stake or unstake from a specific set of hotkeys
---wallet.hotkeys
+--wallet.hotkeys <>
 #stake or unstake from all hotkeys while exluding a specific set of hotkeys
---wallet.exclude_hotkeys
+--wallet.exclude_hotkeys <>
 #stake or unstake to a specific amount of stake on a hotkey
---max_stake
+--max_stake <>
 ```
 ​
 

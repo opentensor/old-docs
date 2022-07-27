@@ -39,15 +39,21 @@ The final way to configure a miner is through environment variables.
 
 All environment variables have the same structure:
 
-``BT_<object name>_<parameter name>``
+```
+BT_<object name>_<parameter name>
+```
 
 To change an environment variable:
 
-``export BT_VARIABLE_I_WISH_TO_CHANGE=<>``
+```
+export BT_VARIABLE_I_WISH_TO_CHANGE=<>
+```
 
 For example, if you wanted to specify the default port to 3000:
 
-``export BT_AXON_PORT=3000``
+```
+export BT_AXON_PORT=3000
+```
 
 [Full list of environment variables](../Arguments.md)
 

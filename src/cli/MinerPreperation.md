@@ -3,7 +3,7 @@
 Once your miner is registered in the network and you have Subtensor running locally, your basic setup is complete. Your miner will begin processing data, generating value for the network, and accruing Tao. 
 
 
-This area of the documentation will guide you through the basic customizations that can be made to your miner with flags in order to set your miner up for success in the network. *Pair these flags with ``btcli run`` or any other mining start command.*
+This area of the documentation will guide you through the basic customizations that can be made to your miner with flags in order to set your miner up for success in the network. *Pair these flags with calls to ``btcli`` or any other mining start command.*
 
 You may also configure your miner through a config file or environment variables. See [Methods of Configuration](ConfigurationMethods.md) and [Configuration Settings](../Arguments.md) for more.
 
@@ -14,20 +14,13 @@ You may also configure your miner through a config file or environment variables
 While the current network parameters typically do not demand the computational power of a GPU, larger models may. 
 
 
-To run with GPU:
+To run with GPU or CPU:
 
 
 ```bash
---neuron.device cuda
+--neuron.device <cuda | cpu>
 ```
 
-
-To run with CPU:
-
- 
-```bash
---neuron.device cpu
- ```
 
 
 
@@ -38,7 +31,7 @@ This argument specifies which instance of Subtensor you will connect to: a local
 
 
 ```
---subtensor.network 
+--subtensor.network <local | nakamoto | nobunaga>
 ```
 
 
@@ -46,7 +39,7 @@ You can also select a network endpoint:
 
 
 ```bash
---subtensor.chain_endpoint
+--subtensor.chain_endpoint <>
 ```
 
 
@@ -57,12 +50,12 @@ Every running miner must be connected to a registered hotkey. This code will spe
 
 
 ```bash
---wallet.name 
+--wallet.name <>
 ```
 
 
 ```bash
---hotkey.name
+--wallet.hotkey <>
 ```
 
 
@@ -76,7 +69,7 @@ The miner communicates with the network through its communication endpoint, the 
 
 
 ```bash
---axon.port
+--axon.port <>
 ```
 ex.
 ```bash
@@ -98,20 +91,12 @@ Only use this argument when if wish to restart your training from the beginning.
 
 ## Different ways to start a miner
 
-While ``btcli run`` is the quickest way to run a miner, you may also use a python script.
+*This is for advanced or power users of Bittensor*
 
-For a template_server
-```bash
-python3 -u ~/.bittensor/bittensor/bittensor/_neuron/text/template_server/main.py --no_prompt --subtensor.network local --wallet.name <> --wallet.hotkey <>
-```
+Sometimes you may want to create your own validator or your own server, in which case btcli will not work as it is pointed at specific files within the Bittensor repository. The following commands demonstrate how to run your own custom script along with the same Bittensor flags. Note that the path of the script that the command examples are using are the same ones that btcli uses currently.
 
-For a core_validator
 ```bash
-python3 -u ~/.bittensor/bittensor/bittensor/_neuron/text/core_validator/main.py --no_prompt --subtensor.network local --wallet.name <> --wallet.hotkey <>
-```
-For an advanced_server
-```bash
-python3 -u ~/.bittensor/bittensor/bittensor/_neuron/text/advanced_server/main.py --no_prompt --subtensor.network local --wallet.name <> --wallet.hotkey <>
+python3 -u ~/.bittensor/bittensor/bittensor/_neuron/text/<template_server | core_validator | advanced_server>/main.py --no_prompt --subtensor.network local --wallet.name <> --wallet.hotkey <>
 ```
 
 Process managers like [PM2](https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/) and [TMUX](https://github.com/tmux/tmux/wiki) are another option, however since they are not a part of Bittensor, they will not be a part of this documentation.
