@@ -1,9 +1,9 @@
-# Subtensor
+# Running locally - Subtensor
 --- 
 Subtensor is our network blockchain and keeps a record of every transaction that occurs. A new block is created and recorded every 12 seconds - or "blockstep" - at which time a new round of Tao is distributed. 
 
 
-By connecting to Nakamoto, you automatically gain access to Subtensor. Running a Subtensor instance locally, however, will ensure a faster and more consistent experience in the case that the network is compromised or slowed by high traffic. It is therefore recommended. 
+By connecting to Nakamoto, you automatically gain access to Subtensor. Running a Subtensor instance locally, however, will ensure a faster and more consistent experience in the case that the network is compromised or slowed by high traffic. It is therefore **highly** recommended to run Subtensor locally for serious miners.
 
 
 
@@ -22,7 +22,7 @@ sudo apt-get upgrade
 ```
 
 
-2. Install an application package software to maintain Subtensor locally. Bittensor mining is very computationally complex, and software like this will help allocate appropriate resources. We recommend using Docker. For more information, follow this link.
+2. Install an application package software to maintain Subtensor locally. Bittensor mining is very computationally complex, and software like this will help allocate appropriate resources. We recommend using Docker. For more information, follow this [link](https://www.docker.com/).
 
 
 Run the following commands:
@@ -56,7 +56,7 @@ git clone https://github.com/opentensor/subtensor.git ~/.bittensor/subtensor
 4. Connect with the Subtensor directory 
 
 
- ```bash
+```bash
 cd ~/.bittensor/subtensor
 ```
 
@@ -110,12 +110,18 @@ In case your Subtensor goes down, here is the command to restart it:
 
 
 ```bash
+# quick restart
+cd ~/.bittensor/subtensor && \
+/usr/local/bin/docker-compose down && \
+/usr/local/bin/docker-compose up -d
+
+# full restart
 cd ~/.bittensor/subtensor && \
 /usr/local/bin/docker-compose down && \
 docker system prune -a -f && \
 git -C ~/.bittensor/subtensor pull origin master && \
 docker pull opentensorfdn/subtensor && \
-/usr/local/bin/docker-compose up -d 
+/usr/local/bin/docker-compose up -d
 ```
 
 

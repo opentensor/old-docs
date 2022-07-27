@@ -4,7 +4,7 @@
 
 - [Introduction](index.md)
 
-- [The Protocol](Learn.md)
+- [The Protocol](nested/TheProtocol2.md)
 
 - [The Consensus Mechanism](nested/Mechanisms.md)
 
@@ -14,17 +14,19 @@
 # Tutorials
 
 - [Getting Started](RunningAMiner.md)
-
+ 
 - [Subtensor](cli/Subtensor.md)
 
-- [Basic btcli](cli/Basicbtcli.md)
+- [Wallet](cli/Basicbtcli.md)
 
 - [Preparing Your Miner](cli/MinerPreperation.md)
-
+     
 - [Server Customization](css/ServerCustomization.md)
 
 - [Validator Customization](css/ValidatorCustomization.md)
 
+- [Methods of Configuration](cli/ConfigurationMethods.md)
+
 - [Glossary](nested/Glossary.md)
 
-- [Flags](Arguments.md)
+- [Confguration Settings](Arguments.md)

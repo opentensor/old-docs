@@ -77,7 +77,7 @@ You will be immediately prompted to:
 ### Choose a Miner
 
 
-To start, we recommend you choose "template_miner". 
+To start, we recommend you choose "template_server". 
 
 
 
@@ -88,13 +88,14 @@ To start, we recommend you choose "template_miner".
 - To start mining immediately, choose Nakamoto, our main network. 
 
 
-Ultimately, we suggest that users switch to running the network software locally, after initially registering to Nakamoto. Although this option is more energy intensive, it will give you access to enhanced speed and safety while using the protocol, and is recommended for serious participants. 
+Ultimately, we suggest that users switch to running the network software [locally](Subtensor.md), after initially registering to Nakamoto. Although this option is more energy intensive, it will give you access to enhanced speed and safety while using the protocol, and is recommended for serious participants.
 
 
 Registering on the network can take some time, depending on the calibre of your hardware. You will be notified when the process is complete. 
 
 
 ### Personal Security
+
 Between your coldkey and your hotkey, your coldkey is the most important. As long as no one can see your private coldkey, your wallet is secure. You may refer to [these guides](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys) to learn how to better secure your private files.
 
 
