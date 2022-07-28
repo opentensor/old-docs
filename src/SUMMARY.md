@@ -25,8 +25,12 @@
 
 - [Validator Customization](css/ValidatorCustomization.md)
 
+- [Fine Tuning](nested/FineTuning.md)
+
 - [Methods of Configuration](cli/ConfigurationMethods.md)
+
+- [Bittensor Dataset](nested/TheDataset.md)
 
 - [Glossary](nested/Glossary.md)
 
-- [Confguration Settings](Arguments.md)
+- [Configuration Settings](Arguments.md)

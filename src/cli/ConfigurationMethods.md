@@ -11,7 +11,7 @@ Command line arguments take the highest priority with environmental variables be
 
 ## Command line arguments
 
-Command line arguments take the form of flags and can be strung to your miner run command.
+Command line arguments take the form of flags and can be strung to btcli calls or your miner run command.
 
 For example, specify which port to use:
 ```bash

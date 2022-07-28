@@ -21,6 +21,9 @@ btcli run
 Choose ``core_validator``
 
 
+
+
+*Optionally attach the following arguments to the end of a btcli call or mining start command to customize your Validator's parameters.*
 ## Optimizing traffic 
 
 
