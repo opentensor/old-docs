@@ -73,7 +73,7 @@ You will be immediately prompted to:
 ## Enter a network
 
 
-To immediately gain access to Subtensor - our network blockchain - choose “nakamoto.” Nakamoto is useful for quick connections to the network like checking your wallet balance, however it is not reliable for mining. For seriuous miners we recommend running an instance of [Subtensor locally](cli/Subtensor.md) in order to maximize speed and connection. Should you be running Subtensor locally, choose “local.”
+To immediately gain access to Subtensor - our network blockchain - choose “nakamoto.” Nakamoto is useful for quick connections to the network like checking your wallet balance, however it is not reliable for mining. For serious miners we recommend running an instance of [Subtensor locally](cli/Subtensor.md) in order to maximize speed and connection. Should you be running Subtensor locally, choose “local.”
 
 To familiarize yourself with the protocol without mining, choose our test network, [Nobunaga](https://www.notion.so/Nobunaga-Guide-caa0b84ae45840d6ae0eceacfa98d028).
 

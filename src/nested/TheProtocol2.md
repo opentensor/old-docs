@@ -6,5 +6,5 @@ There are two types of [nodes](src/../Glossary.md#miner/neuron/peer/node) that c
 Each validation process begins when a Validator locates a Server in the network and sends its input in the form of tokenized text, also referred to as [**tokens**](src/../Glossary.md#tokens). The Servers will then respond with [**logits**](src/../Glossary.md#logits), which represent their best attempt at [**next token prediction (NTP)**](src/../Glossary.md#next-token-prediction). This constitutes the central value-producing activity of the network. The Validator will then score each Server according to their response, using a series of information-based processes and game theoretic strategies to determine the usefulness of the information received. 
 
 
-The Validators are able to do this efficiently because they have the data on hand that they are serving, they already have the “answer” needed to properly assess the predicative responses they are recieving.
+The Validators are able to do this efficiently because they have the data on hand that they are serving, they already have the “answer” needed to properly assess the predicative responses they are receiving.
 ![IntelligencePath](IntelligencePath.png)

@@ -51,7 +51,7 @@ The network blockchain.
 Our main network. 
 
 
-### Nobunagu
+### Nobunaga
 
 Our test network. 
 

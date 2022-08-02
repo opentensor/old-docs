@@ -1,6 +1,6 @@
 # The Consensus Mechanism
 
-The distribution of Tao is not linear and is not determined by a single transaction.  Our consensus mechanism is designed so that nodes that are valuable in the network recieve more reward at an increasing rate. Once individual scores have been determined, the network blockchain uses a [consensus algorithm](src/../Glossary.md#consensus-mechanism) to reach a common agreement over who the most valuable participants in the system are in order to reward them accordingly, while deterring the activity of malicious nodes in the network. 
+The distribution of Tao is not linear and is not determined by a single transaction.  Our consensus mechanism is designed so that nodes that are valuable in the network receive more reward at an increasing rate. Once individual scores have been determined, the network blockchain uses a [consensus algorithm](src/../Glossary.md#consensus-mechanism) to reach a common agreement over who the most valuable participants in the system are in order to reward them accordingly, while deterring the activity of malicious nodes in the network. 
 
 
 Servers are rewarded based on their performance in individual instances of knowledge production, and in addition, they must prove useful to the majority of Validators in the network to optimize their earnings. Validators, on the other hand, are incentivized to collaborate with highly valuable Servers in the system who are also trusted by the majority through a bonding mechanism and a limitation in the supply of scores they are able to give.
