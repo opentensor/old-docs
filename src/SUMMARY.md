@@ -8,6 +8,8 @@
 
 - [The Consensus Mechanism](nested/Mechanisms.md)
 
+- [Taokenomics](nested/Taokenomics.md)
+
 - [Governance and Responsibilty](nested/GovernanceResponsibility.md)
 
 
@@ -34,3 +36,5 @@
 - [Glossary](nested/Glossary.md)
 
 - [Configuration Settings](Arguments.md)
+  
+- [Return Codes](nested/ReturnCodes.md)
