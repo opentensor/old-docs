@@ -1,6 +1,6 @@
 # Return Codes
 
-The following return codes from backward and foward calls can be used for diagnosing your miner:
+The following return codes from backward and forward calls can be used for diagnosing your miner:
 
 
 
