@@ -26,7 +26,6 @@ For example, if you want to run Eleuther AI's gpt-j-6B model:
 --neuron.model_name EleutherAI/gpt-j-6B
 ```
 
-*Choose ``advanced_server`` when using a pretrained model.*
 
 As expected, the larger the model is, the more computational resources it will need to run smoothly on the network. 
 

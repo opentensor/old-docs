@@ -96,7 +96,7 @@ Only use this argument when if wish to restart your training from the beginning.
 Sometimes you may want to create your own validator or your own server, in which case btcli will not work as it is pointed at specific files within the Bittensor repository. The following commands demonstrate how to run your own custom script along with the same Bittensor flags. Note that the path of the script that the command examples are using are the same ones that btcli uses currently.
 
 ```bash
-python3 -u ~/.bittensor/bittensor/bittensor/_neuron/text/<template_server | core_validator | advanced_server>/main.py --no_prompt --subtensor.network local --wallet.name <> --wallet.hotkey <>
+python3 -u ~/.bittensor/bittensor/bittensor/_neuron/text/<core_server | core_validator>/main.py --no_prompt --subtensor.network local --wallet.name <> --wallet.hotkey <>
 ```
 
 Process managers like [PM2](https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/) and [TMUX](https://github.com/tmux/tmux/wiki) are another option, however since they are not a part of Bittensor, they will not be a part of this documentation.

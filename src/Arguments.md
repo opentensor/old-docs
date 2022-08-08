@@ -99,6 +99,21 @@ neuron.blocks_per_epoch:
 neuron.blacklist.time:
 ```
 - How often a peer can query you (seconds).
+```
+--neuron.local_train
+neruon.local_train:
+```
+- If true, allow local training.
+```
+--neuron.remote_train
+neuron.remote_train:
+```
+- If true, allow remote training.
+```
+--neuron.validation_synapse
+neuron.validation_synapse:
+```
+- For Validators only. Synpase used for validation <TextCausalLMNext | TextCausalLM>. Default TextCausalLMNext. This should generally not be used. 
 
 ## Wallet
 

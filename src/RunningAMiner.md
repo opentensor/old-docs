@@ -85,7 +85,7 @@ Enter the name of your coldkey and hotkey credentials. *note: your will need a s
 
 ## Choosing a miner
 
-From here, you may choose: ``template_server/core_validator/advanced_server``
+From here, you may choose: ``core_validator/core_server``
 
 Your miner is now running and solving the proof of work to register to the network. 
 Registering on the network can take some time, depending on the calibre of your hardware. Please note that registration is CPU intensive, and GPU registration is not currently supported. Generally the more CPU power you have, the faster your will miner will become registered.

@@ -14,6 +14,7 @@
 
 
 # Tutorials
+- [SYNAPSE UPDATE](nested/SynapseUpdate.md)
 
 - [Getting Started](RunningAMiner.md)
  
