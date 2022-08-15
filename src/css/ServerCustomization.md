@@ -48,7 +48,7 @@ By associating only with high-stake Validators, Servers are able to optimize the
 ## Padding parameter
 
 
-The padding parameter adjusts the embedding dimensions for your model to match the network dimension, which is currently set to 1024. By default, the padding is turned on, however, while this is useful for smaller models, it might be useful to turn it off for larger models. This command only works for advanced servers.
+The padding parameter adjusts the embedding dimensions for your model to match the network dimension, which is currently set to 1024. By default, the padding is turned on, however, while this is useful for smaller models, it might be useful to turn it off for larger models.
 
 
 ```bash
