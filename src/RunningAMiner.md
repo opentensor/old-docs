@@ -80,7 +80,7 @@ To familiarize yourself with the protocol without mining, choose our test networ
 
 ## Enter your wallet
 
-Enter the name of your coldkey and hotkey credentials. *note: your will need a separate hotkey for each miner you run.*
+Enter the name of your coldkey and hotkey credentials. *note: you will need a separate hotkey for each miner you run.*
 
 
 ## Choosing a miner
