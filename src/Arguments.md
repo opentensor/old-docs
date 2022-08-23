@@ -154,6 +154,18 @@ BT_WALLET_MOCK
 ```
 - Stake or unstake from all hotkeys simultaneously while exluding a specific set of hotkeys.
 ```
+--wallet.sort_by
+```
+- Sort the hotkeys by the specified column title (e.g. name, uid, axon).
+```
+--wallet.sort_order
+```
+- Sort the hotkeys in the specified ordering. (ascending/asc or descending/desc/reverse).
+```
+--wallet.reregister
+```
+- Whether to reregister the wallet if it is not already registered.
+```
 --max_stake
 ```
 - Stake or unstake to a specific amount of stake on a hotkey.
@@ -399,6 +411,26 @@ dataset._mock:
 --nucleus.noise_multiplier
 ```
 - Standard deviation multiplier on weights.
+
+## CUDA
+
+```
+--cuda
+```
+- Uses CUDA for registration.
+```
+--cuda.dev_id
+```
+Which GPU to use for registration.
+```
+--cuda.TPB
+```
+- The number of threads per block in the CUDA kernel. This should be left at the default 256 or raised to 512. The registration process may crash if this is set too high. Only set to powers of 2.
+```
+--cuda.update_interval
+```
+- The number of nonces to solve between chain updates. Default setting is 50_000. Setting to a higher value may mean less frequent chain updates, which may lead to submitting a solution outside of the valid solve window for that block (not efficient).
+
 
 ## Wandb
 
