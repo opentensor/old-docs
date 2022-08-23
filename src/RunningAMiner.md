@@ -1,14 +1,30 @@
 # Getting started
 
-This section will guide you through the basic steps necessary to run a miner in the Bittensor network. Considering the rapid expansion of - and competition within - the network since its launch in November 2021, registration difficulty is constantly shifting and there is no guarantee that the same calibre of hardware will always be sufficient. As of now, the bare minimum hardware requirement to register in the network is:
+This section will guide you through the basic steps necessary to run a miner in the Bittensor network. Considering the rapid expansion of - and competition within - the network since its launch in November 2021, registration difficulty is constantly shifting and there is no guarantee that the same caliber of hardware will always be sufficient. As of now, the bare minimum hardware requirement to register in the network is:
 
-- 16 dedicated CPU cores 
-- 32GB of RAM
+- NVIDIA GPU
 - 100GB of disk space
 - Ubuntu LTS releases or Macintosh 
 - A good and stable internet connection 
 
-*as of July 25, 2022*
+To run a competitive Server:
+
+- NVIDIA GPU 
+- 8GB of VRAM
+- 32 GB of RAM
+- 100GB of disk space
+- Ubuntu LTS releases or Macintosh 
+- A good and stable internet connection 
+
+To run a Validator:
+
+- 16 dedicated CPU cores
+- 16 GB of RAM
+- 100GB of disk space
+- Ubuntu LTS releases or Macintosh 
+- A good and stable internet connection 
+
+*as of August 23, 2022*
 
 
 
@@ -55,17 +71,61 @@ btcli new_hotkey
 You will be prompted to complete the same steps as with the last key, in addition to specifying which coldkey you would like to connect your hotkey to. 
 
 
-## Running a miner
+## Registering a hotkey
+
+Before you can begin mining Tao, you must first register a hotkey to the network by solving the proof of work (POW). The Bittensor network is comprised of 4096 miners, and each time a new hotkey is registered to the network, the lowest ranked miner is kicked off of the network. Unless otherwise specified, registration will utilize your CPU, however, a GPU is often a minimum requirement to register depending on the current difficulty.
+
+## Registering with a GPU
+
+Before you can utilize the CUDA registration, you must first install CUDA-toolkit and cubit. Please note that CUDA registration only supports sm_86 enabled CUDA GPU (30XX series, Axxxx series or higher) Other GPUs may require additional configuration for registration.
+
+### Installing CUDA-toolkit
+
+Install [CUDA-toolkit 11.3](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&target_type=deb_local) or higher in accordance with your operating system and version if you have yet to do so. deb(local), deb(network), and runfile(local) should each be sufficient installer types.
+
+<img src="toolkit.png" width="66%" height="66%" />
 
 
-
-With your keys created, you can now run your miner. 
-
+### Enter the Bittensor directory
 
 ```bash
-btcli run
+cd ~/.bittensor/bittensor
 ```
 
+### Install cubit
+
+```bash
+pip install -e .[cubit]
+```
+
+### Troubleshooting and testing
+
+Should the previous installation fail, you may also install cubit through the wheel: 
+```bash
+#For Python 3.6
+pip install https://github.com/opentensor/cubit/releases/download/v1.0.5/cubit-1.0.5-cp36-cp36m-linux_x86_64.whl
+#For Python 3.7
+pip install https://github.com/opentensor/cubit/releases/download/v1.0.5/cubit-1.0.5-cp37-cp37m-linux_x86_64.whl
+#For Python 3.8
+pip install https://github.com/opentensor/cubit/releases/download/v1.0.5/cubit-1.0.5-cp38-cp38-linux_x86_64.whl
+#For Python 3.9
+pip install https://github.com/opentensor/cubit/releases/download/v1.0.5/cubit-1.0.5-cp39-cp39-linux_x86_64.whl 
+```
+
+You can check if your GPU is being seen through torch:
+```python
+python3
+>>> import torch
+>>> torch.cuda.is_available()
+```
+
+A quick way to test if the GPU registration process is working properly is by choosing the test network, Nobunaga, upon the miner startup described below. Registration to the Nobunaga network should only take a few minutes. Additional configurations may optimize your registration speed. Please see [here](Arguments.md#cuda) for a full list of CUDA registration flags.
+
+With your keys created and CUDA registration installed, you can now run your miner. 
+
+```bash
+btcli run --cuda
+```
 
 You will be immediately prompted to: 
 
@@ -75,7 +135,7 @@ You will be immediately prompted to:
 
 To immediately gain access to Subtensor - our network blockchain - choose “nakamoto.” Nakamoto is useful for quick connections to the network like checking your wallet balance, however it is not reliable for mining. For serious miners we recommend running an instance of [Subtensor locally](cli/Subtensor.md) in order to maximize speed and connection. Should you be running Subtensor locally, choose “local.”
 
-To familiarize yourself with the protocol without mining, choose our test network, [Nobunaga](https://www.notion.so/Nobunaga-Guide-caa0b84ae45840d6ae0eceacfa98d028).
+To familiarize yourself with the protocol without mining, choose our test network,Nobunaga
 
 
 ## Enter your wallet
@@ -87,11 +147,8 @@ Enter the name of your coldkey and hotkey credentials. *note: your will need a s
 
 From here, you may choose: ``core_validator/core_server``
 
-Your miner is now running and solving the proof of work to register to the network. 
-Registering on the network can take some time, depending on the calibre of your hardware. Please note that registration is CPU intensive, and GPU registration is not currently supported. Generally the more CPU power you have, the faster your will miner will become registered.
-
-Once the proof of work is solved, your miner will automatically begin mining Tao.
-
 Should your miner become deregistered, your miner will automatically begin the registration process again.
 
-**Mining Tao is highly competitive so that only the best miners outfitted with the best models will do well. The challenge of optimizing your miner is the responsibility of the user.**
+**Mining Tao is highly competitive so only the best miners outfitted with the best models will do well. The challenge of optimizing your miner is the responsibility of the user.**
+
+## [Learn more about optimizing a Server](css/ServerCustomization.md)

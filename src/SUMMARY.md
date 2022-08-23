@@ -16,13 +16,15 @@
 # Tutorials
 - [SYNAPSE UPDATE](nested/SynapseUpdate.md)
 
-- [Getting Started](RunningAMiner.md)
- 
+- [Installation](RunningAMiner.md)
+
 - [Subtensor](cli/Subtensor.md)
 
 - [Wallet](cli/Basicbtcli.md)
 
-- [Preparing Your Miner](cli/MinerPreperation.md)
+- [Running a Miner](cli/MinerPreperation.md)
+
+- [Registration](Registration.md)
      
 - [Server Customization](css/ServerCustomization.md)
 
