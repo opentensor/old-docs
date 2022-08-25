@@ -23,8 +23,6 @@
 - [Wallet](cli/Basicbtcli.md)
 
 - [Running a Miner](cli/MinerPreperation.md)
-
-- [Registration](Registration.md)
      
 - [Server Customization](css/ServerCustomization.md)
 
