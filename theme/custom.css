@@ -1,110 +1,15 @@
-
-@font-face {
-    font-family: 'Lato', sans-serif;
-    font-family: 'Ledger', serif;
-    font-style: normal;
-    font-weight: 400;
-    src:url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap%27');
-    src:url('https://fonts.googleapis.com/css2?family=Ledger&display=swap');
-  }
-
 hr {
     display: none; 
 } 
 
-code, pre {
-     font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 18px;
-    color: #333333;
-}
-    
-
-
-h1 {
+h1, h2, h3, h4, p, li {
     font-family: 'Lato', sans-serif;
-    font-style: normal;
+    font-size: 12px;
+    line-height: 18px;
+}   
+
+h1, h2 {
     font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
-    color: #333333;
-    
-}
-
-h2 {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
-     color:#333333; 
-  
-}
-
-h3 {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    color: #333333; 
-}
-
-h4 {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    color: #333333;
-}
-
-p {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    color: #333333;
-}
-
-li {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    color: #333333;
-}
-
-.chapter li.chapter-item {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    color: #333333;
-}
-
-
-.chapter li.part-title {
-    font-family: 'Lato', sans-serif;
-    color: #333333;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 18px;
-    color: #333333;
-    
-    
-}
-
-.light {
-    --sidebar-bg:#ffffff;
-    --sidebar-fg:  #333333;
-    --sidebar-active: #d3d3d3;
-    --fg: #333333;
 }
 
 .Taokenomics2 {
