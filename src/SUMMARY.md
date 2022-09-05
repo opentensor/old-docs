@@ -14,7 +14,7 @@
 
 
 # Tutorials
-- [SYNAPSE UPDATE](nested/SynapseUpdate.md)
+- [Updates](nested/Updates.md)
 
 - [Installation](RunningAMiner.md)
 
