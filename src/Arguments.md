@@ -1,13 +1,13 @@
 # Configuration Settings
 ---
 ```
---config
+--config.file
 ```
 - If set, defaults are overridden by the passed file.
 ```
---strict
+--config.strict
 ```
-- If flagged, config will check that only exact arguments have been set.
+- If flagged, config.file will check that only exact arguments have been set.
 
 ## Neuron
 
