@@ -25,9 +25,9 @@ btcli run --axon.port <>
 Another way to configure your miner is through the configuration file. To call upon a configuration file, pass:
 
 ```bash
---congig <path_to_congiguration_file>
+--config.file <path_to_configuration_file>
 # e.g.
-btcli run --config my_config_directory/my_custom_config_file.txt
+btcli run --config.file my_config_directory/my_custom_config_file.txt
 ```
 
 [Refer to sample configuration files](https://github.com/opentensor/bittensor/tree/master/sample_configs)

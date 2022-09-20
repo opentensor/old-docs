@@ -464,7 +464,7 @@ BT_WANDB_PROJECT
 ```
 - Pass Wandb project name.
 ```
-wandb.run_group
+--wandb.run_group
 wandb.run_group:
 BT_WANDB_RUN_GROUP
 ```
