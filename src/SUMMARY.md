@@ -6,12 +6,6 @@
 
 - [The Protocol](nested/TheProtocol2.md)
 
-- [The Consensus Mechanism](nested/Mechanisms.md)
-
-- [Taokenomics](nested/Taokenomics.md)
-
-- [Governance and Responsibilty](nested/GovernanceResponsibility.md)
-
 
 # Tutorials
 - [Updates](nested/Updates.md)
