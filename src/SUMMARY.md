@@ -34,4 +34,4 @@
   
 - [Return Codes](nested/ReturnCodes.md)
 
-- [Validator Hyperparameter](Hyperparameters.md)
+- [Validator Hyperparameters](Hyperparameters.md)
