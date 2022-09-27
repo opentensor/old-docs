@@ -40,7 +40,7 @@ neuron.model_name:
 --neuron.pretrained
 neuron.pretrained:
 ```
-- Ff the model should be pretrained.
+- If the model should be pretrained.
 ```
 --neuron.padding
 neuron.padding:
@@ -103,12 +103,12 @@ neuron.blacklist.time:
 --neuron.local_train
 neruon.local_train:
 ```
-- If true, allow local training.
+- Allow local training. local_train is "false" by default. Do not set to "false."
 ```
 --neuron.remote_train
 neuron.remote_train:
 ```
-- If true, allow remote training.
+- Allow remote training. Remote training is "false" by default. Do not set to "false."
 ```
 --neuron.validation_synapse
 neuron.validation_synapse:
@@ -429,7 +429,7 @@ Which GPU to use for registration.
 ```
 --cuda.update_interval
 ```
-- The number of nonces to solve between chain updates. Default setting is 50_000. Setting to a higher value may mean less frequent chain updates, which may lead to submitting a solution outside of the valid solve window for that block (not efficient).
+- The number of nonces to solve between chain updates. Default setting is 50_000. Setting to a higher value may mean less frequent chain updates, which may lead to submitting a solution outside of the valid solve window for that block (not efficient). Avoid setting this above 80_000.
 
 
 ## Wandb
@@ -450,7 +450,7 @@ BT_WANDB_DIRECTORY
 wandb.name:
 BT_WANDB_NAME
 ```
-- Pass Wandb project name.
+- Pass Wandb name.
 ```
 --wandb.offline
 wandb.offline:

@@ -100,17 +100,7 @@ pip install -e .[cubit]
 
 ### Troubleshooting and testing
 
-Should the previous installation fail, you may also install cubit through the wheel: 
-```bash
-#For Python 3.6
-pip install https://github.com/opentensor/cubit/releases/download/v1.0.5/cubit-1.0.5-cp36-cp36m-linux_x86_64.whl
-#For Python 3.7
-pip install https://github.com/opentensor/cubit/releases/download/v1.0.5/cubit-1.0.5-cp37-cp37m-linux_x86_64.whl
-#For Python 3.8
-pip install https://github.com/opentensor/cubit/releases/download/v1.0.5/cubit-1.0.5-cp38-cp38-linux_x86_64.whl
-#For Python 3.9
-pip install https://github.com/opentensor/cubit/releases/download/v1.0.5/cubit-1.0.5-cp39-cp39-linux_x86_64.whl 
-```
+Should the previous installation fail, you may install from source or the wheel: [cubit installation](https://github.com/opentensor/cubit/#install)
 
 You can check if your GPU is being seen through torch:
 ```python

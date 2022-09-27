@@ -1,3 +1,4 @@
+
 | **Validator Hyperparameter**       | **Value** |
 |------------------------------------|-----------|
 | **activityCutoff**                 | 5000      |

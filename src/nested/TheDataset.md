@@ -30,14 +30,14 @@ Output:
 
 Genesis is organized under the following hash:
 ```bash
-QmXL3fiJUBtpn7zSN3FVnS2spZoe4N1c1aCRatn773qPFZ
+QmSdDg6V9dgpdAFtActs75Qfc36qJtm9y8a7yrQ1rHm7ZX
 ```
 
 Querying this hash returns the subdirectories of the dataset, for instance, Arxiv, which make up the entire dataset.
 
 Command:
 ```bash
-curl -X POST "http://ipfs.opentensor.ai/api/v0/object/get?arg=QmXL3fiJUBtpn7zSN3FVnS2spZoe4N1c1aCRatn773qPFZ"
+curl -X POST "http://ipfs.opentensor.ai/api/v0/object/get?arg=QmSdDg6V9dgpdAFtActs75Qfc36qJtm9y8a7yrQ1rHm7ZX"
 ```
 Output:
 ```LaTeX

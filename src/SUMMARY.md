@@ -10,7 +10,7 @@
 # Tutorials
 - [Updates](nested/Updates.md)
 
-- [Installation](RunningAMiner.md)
+- [Installation](Installation.md)
 
 - [Subtensor](cli/Subtensor.md)
 
@@ -35,3 +35,4 @@
 - [Return Codes](nested/ReturnCodes.md)
 
 - [Validator Hyperparameters](Hyperparameters.md)
+

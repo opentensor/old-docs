@@ -21,67 +21,47 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
-
-2. Install an application package software to maintain Subtensor locally. Bittensor mining is very computationally complex, and software like this will help allocate appropriate resources. We recommend using Docker. For more information, follow this [link](https://www.docker.com/).
-
-
-Run the following commands:
-
+2. Grant permmissions to use Docker.
 
 ```bash
-curl -fsSL https://get.docker.com -o get-docker.sh
+chmod +x ./get-docker.sh
 ```
+
+3. Install Docker. For more information, follow this [link](https://www.docker.com/).
 
 ```bash
-sudo sh get-docker.sh
+sudo ./get-docker.sh
 ```
 
-```bash
-sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-```
-
-```bash
-sudo chmod +x /usr/local/bin/docker-compose
-```
-
-
-3. Install Subtensor
-
+4. Clone the Subtensor repository
 
 ```bash
 git clone https://github.com/opentensor/subtensor.git ~/.bittensor/subtensor
 ```
 
-
-4. Connect with the Subtensor directory 
-
+5. Open the Subtensor directory 
 
 ```bash
 cd ~/.bittensor/subtensor
 ```
 
-
-5. Pull the latest Subtensor image 
-
+6. Pull the latest Subtensor image
 
 ```bash
-docker pull opentensorfdn/subtensor
+sudo docker pull opentensorfdn/subtensor
 ```
 
-
-6. Run Subtensor inside of your application package software 
-
+7. Run Subtensor inside of Docker 
 
 ```bash
-sudo docker-compose up -d
+sudo docker compose up -d
 ```
 
-
-7. Check that Subtensor is fully synced
+8. Check that Subtensor is fully synced
 
 
 ```bash
-docker logs --since=1h node-subtensor 2>&1  | grep "best"
+sudo docker logs --since=1h node-subtensor 2>&1  | grep "best"
 ```
 
 
@@ -142,11 +122,11 @@ Update Subtensor:
 
 ```bash
 #Bring Subtensor down
-sudo docker-compose down
+sudo docker compose down
 #Connect to directory
 cd ~/.bittensor/subtensor
 #update Subtensor
 sudo git pull
 #Bring Subtensor back up 
-sudo docker-compose up -d
+sudo docker compose up -d
 ```
