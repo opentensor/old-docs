@@ -4,9 +4,11 @@ Bittensor is an open-source protocol that powers a decentralized, blockchain-bas
 
 Ultimately, our vision is to create a pure market for artificial intelligence, an incentivized arena in which consumers and producers of this valuable commodity can interact in a trustless, open and transparent context.
 
+
 **Bittensor enables:**
+
 
 - A novel, optimized strategy for the development and distribution of artificial intelligence technology by leveraging the possibilities of a distributed ledger. Specifically, its facilitation of open access/ownership, decentralized governance, and the ability to harness globally-distributed resources of computing power and innovation within an incentivized framework.
 - An open-source repository of machine intelligence, accessible to anyone, anywhere, thus creating the conditions for open and permission-less innovation on a global internet scale.
-- The distribution of rewards and network ownership to users in direct proportion to the value they have added 
+- Distribution of rewards and network ownership to users in direct proportion to the value they have added. 
 
