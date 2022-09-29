@@ -11,12 +11,6 @@ btcli run
 
 ## Monitoring 
 
-For a complete list of all created keys, run: 
-
-```bash
-btcli list
-```
-
 For an overview of all possible btcli commands, enter: 
 
 ```bash
@@ -27,6 +21,12 @@ For an overview of all possible flags, enter:
 
 ```bash
 btcli help
+```
+
+For a complete list of all created keys, run: 
+
+```bash
+btcli list
 ```
 
 Both the "overview" and "inspect" commands are used to monitor your miner performance: 
