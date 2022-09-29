@@ -421,7 +421,7 @@ dataset._mock:
 ```
 --cuda.dev_id
 ```
-Which GPU to use for registration.
+- Which GPU to use for registration.
 ```
 --cuda.TPB
 ```
