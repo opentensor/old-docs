@@ -22,13 +22,13 @@ apt-get update
 apt-get upgrade
 ```
 
-2. Download Docker
+2. Download Docker.
 
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
 ```
 
-3. Grant permmissions to use Docker.
+3. Make the Docker install script executable.
 
 ```bash
 chmod +x ./get-docker.sh
@@ -40,31 +40,31 @@ chmod +x ./get-docker.sh
 ./get-docker.sh
 ```
 
-5. Clone the Subtensor repository
+5. Clone the Subtensor repository.
 
 ```bash
 git clone https://github.com/opentensor/subtensor.git ~/.bittensor/subtensor
 ```
 
-6. Open the Subtensor directory 
+6. Open the Subtensor directory.
 
 ```bash
 cd ~/.bittensor/subtensor
 ```
 
-7. Pull the latest Subtensor image
+7. Pull the latest Subtensor image.
 
 ```bash
 docker pull opentensorfdn/subtensor
 ```
 
-8. Run Subtensor inside of Docker 
+8. Run Subtensor inside of Docker.
 
 ```bash
 docker compose up -d
 ```
 
-9. Check that Subtensor is fully synced
+9. Check that Subtensor is fully synced.
 
 
 ```bash
