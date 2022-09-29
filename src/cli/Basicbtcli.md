@@ -4,14 +4,26 @@ Before you begin customizing your miner to optimize your currency accrual, it is
 
 ## Running a miner
 
+
 ```bash
 btcli run
 ```
 
 ## Monitoring 
-​
+
+For a complete list of all created keys, run: 
+
+```bash
+btcli list
+```
 
 For an overview of all possible btcli commands, enter: 
+
+```bash
+btcli -h
+```
+
+For an overview of all possible flags, enter:
 
 ```bash
 btcli help
@@ -29,17 +41,9 @@ btcli overview
 btcli inspect 
 ```
 ``btcli inspect`` will not display such a detailed analysis of your performance, but will allow you to see your key identifiers, fingerprints, network, balance, stake, and emission. 
-​
-
-For a complete list of all created keys, run: 
-
-```bash
-btcli list
-```
 
 ## Transferring Tao
 ​
-
 The "unstake" command will transfer Tao from a hotkey to your coldkey. 
 
 ```bash​
@@ -75,7 +79,6 @@ btcli transfer
 ```
 
 ## Key regeneration
-​
 
 If you lose access to your keys, they can be easily regenerated with the unique mnemonic device you were provided with upon initial creation. 
 
