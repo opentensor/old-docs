@@ -9,59 +9,66 @@ By connecting to Nakamoto, you automatically gain access to Subtensor. Running a
 
 ## Running Subtensor 
 
+*Should any of the below commands fail, try running with sudo.*
 
 1. Prepare your system by updating outdated packages in your system, and installing the newest available ones. You can do this in two commands. 
 
 
 ```bash
-sudo apt-get update
+apt-get update
 ```
 
 ```bash
-sudo apt-get upgrade
+apt-get upgrade
 ```
 
-2. Grant permmissions to use Docker.
+2. Download Docker
+
+```bash
+curl -fsSL https://get.docker.com -o get-docker.sh
+```
+
+3. Grant permmissions to use Docker.
 
 ```bash
 chmod +x ./get-docker.sh
 ```
 
-3. Install Docker. For more information, follow this [link](https://www.docker.com/).
+4. Install Docker. For more information, follow this [link](https://www.docker.com/).
 
 ```bash
-sudo ./get-docker.sh
+./get-docker.sh
 ```
 
-4. Clone the Subtensor repository
+5. Clone the Subtensor repository
 
 ```bash
 git clone https://github.com/opentensor/subtensor.git ~/.bittensor/subtensor
 ```
 
-5. Open the Subtensor directory 
+6. Open the Subtensor directory 
 
 ```bash
 cd ~/.bittensor/subtensor
 ```
 
-6. Pull the latest Subtensor image
+7. Pull the latest Subtensor image
 
 ```bash
-sudo docker pull opentensorfdn/subtensor
+docker pull opentensorfdn/subtensor
 ```
 
-7. Run Subtensor inside of Docker 
+8. Run Subtensor inside of Docker 
 
 ```bash
-sudo docker compose up -d
+docker compose up -d
 ```
 
-8. Check that Subtensor is fully synced
+9. Check that Subtensor is fully synced
 
 
 ```bash
-sudo docker logs --since=1h node-subtensor 2>&1  | grep "best"
+docker logs --since=1h node-subtensor 2>&1  | grep "best"
 ```
 
 
@@ -122,11 +129,11 @@ Update Subtensor:
 
 ```bash
 #Bring Subtensor down
-sudo docker compose down
+docker compose down
 #Connect to directory
 cd ~/.bittensor/subtensor
 #update Subtensor
-sudo git pull
+git pull
 #Bring Subtensor back up 
-sudo docker compose up -d
+docker compose up -d
 ```
