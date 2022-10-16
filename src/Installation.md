@@ -95,12 +95,12 @@ cd ~/.bittensor/bittensor
 ### Install cubit
 
 ```bash
-pip install -e .[cubit]
+pip install git+https://github.com/opentensor/cubit.git@v1.1.2
 ```
 
 ### Troubleshooting and testing
 
-Should the previous installation fail, you may install from source or the wheel: [cubit installation](https://github.com/opentensor/cubit/#install)
+Should the previous installation fail, you may install from source or a wheel: [cubit installation](https://github.com/opentensor/cubit/#install)
 
 You can check if your GPU is being seen through torch:
 ```python
