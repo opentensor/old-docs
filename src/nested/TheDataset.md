@@ -8,7 +8,7 @@ Servers in Bittensor are validated for their ability to understand the text cont
 ## Storage
 
 
-In order to ensure global access and make the network robust to single points of failure, Genesis is stored on The InterPlanetary File System [(IPFS)](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs) as a set of small chunks, files no larger than 1Mb, each containing a small sample of the larger dataset. These small chunks are organized into a set of 22 datasets each with a standard data format, for instance, Arxiv articles or Github code.
+In order to ensure global access and make the network robust to single points of failure, The Mountain is stored on The InterPlanetary File System [(IPFS)](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs) as a set of small chunks, files no larger than 1Mb, each containing a small sample of the larger dataset. These small chunks are organized into a set of 22 datasets each with a standard data format, for instance, Arxiv articles or Github code.
 
 ## Querying
 
