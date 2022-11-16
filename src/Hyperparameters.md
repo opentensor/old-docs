@@ -1,11 +1,10 @@
 
 | **Validator Hyperparameter**       | **Value** |
 |------------------------------------|-----------|
-| **activityCutoff**                 | 5000      |
 | **adjustmentInterval**             | 100       |
 | **blocksPerStep**                  | 100       |
 | **bondsMovingAverage**             | 900,000   |
-| **immunityPeriod**                 | 2048      |
+| **immunityPeriod**                 | 3072      |
 | **incentivePruningDenominator**    | 1         |
 | **kappa**                          | 2         |
 | **maxAllowedMaxMinRatio**          | 64        |
@@ -17,7 +16,12 @@
 | **targetRegistrationsPerInterval** | 2         |
 | **validatorBatchSize**             | 32        |
 | **validatorEpochLen**              | 250       |
-| **validatorSequenceLength**        | 128       |
+| **ValidatorEpochsPerReset**        | 60        |
+| **validatorSequenceLength**        | 256       |
+| **validatorExcludeQuantile**       | 5         |
+| **scalingLawPower**                | 50        |
+| **synergyScalingLawPower**         | 60        |
+| **MaxWeightLimit**                 | 17_179_868|
 
 
 ## adjustmentInterval
