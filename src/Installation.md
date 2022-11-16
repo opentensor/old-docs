@@ -7,7 +7,7 @@ This section will guide you through the basic steps necessary to run a miner in 
 - Ubuntu LTS releases or Macintosh 
 - A good and stable internet connection 
 
-To run a competitive Server:
+To run a functional Server:
 
 - NVIDIA GPU 
 - 8GB of VRAM
