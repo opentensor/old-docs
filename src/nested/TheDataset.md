@@ -3,7 +3,7 @@
 
 The Mountain Dataset is a Bittensor’s current language modeling dataset consisting of a set of smaller datasets combined together. Currently, it contains 1500 GiB of unlabeled text.
 
-Servers in Bittensor are validated for their ability to understand the text contained in the Genesis Dataset. To do this, Validators query Servers who must produce [embeddings](Glossary.md#embeddings) and [token predictions](Glossary.md#next-token-prediction) in response. Scores derived from these responses determine the incentives Servers see, thus guiding the network to understand the dataset better. 
+Servers in Bittensor are validated for their ability to understand the text contained in the The Mountain Dataset. To do this, Validators query Servers who must produce [embeddings](Glossary.md#embeddings) and [token predictions](Glossary.md#next-token-prediction) in response. Scores derived from these responses determine the incentives Servers see, thus guiding the network to understand the dataset better. 
 
 ## Storage
 
