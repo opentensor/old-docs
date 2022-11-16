@@ -16,7 +16,7 @@
 | **targetRegistrationsPerInterval** | 2         |
 | **validatorBatchSize**             | 32        |
 | **validatorEpochLen**              | 250       |
-| **ValidatorEpochsPerReset**        | 60        |
+| **validatorEpochsPerReset**        | 60        |
 | **validatorSequenceLength**        | 256       |
 | **validatorExcludeQuantile**       | 5         |
 | **scalingLawPower**                | 50        |
