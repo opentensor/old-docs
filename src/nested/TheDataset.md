@@ -1,7 +1,7 @@
-# The Genesis Dataset
+# The Mountain Dataset
 
 
-The Genesis Dataset is a Bittensor’s current language modeling dataset consisting of a set of smaller datasets combined together. Currently, it contains 1500 GiB of unlabeled text.
+The Mountain Dataset is a Bittensor’s current language modeling dataset consisting of a set of smaller datasets combined together. Currently, it contains 1500 GiB of unlabeled text.
 
 Servers in Bittensor are validated for their ability to understand the text contained in the Genesis Dataset. To do this, Validators query Servers who must produce [embeddings](Glossary.md#embeddings) and [token predictions](Glossary.md#next-token-prediction) in response. Scores derived from these responses determine the incentives Servers see, thus guiding the network to understand the dataset better. 
 
@@ -13,7 +13,7 @@ In order to ensure global access and make the network robust to single points of
 ## Querying
 
 
-Every file on Genesis can be accessed via its unique hash. These can be queried directly using a tool like Curl and the hash of the file.  For instance, we can query an individual file like so.
+Every file on The Mountain can be accessed via its unique hash. These can be queried directly using a tool like Curl and the hash of the file.  For instance, we can query an individual file like so.
 
 Command:
 ```bash
@@ -28,7 +28,7 @@ Output:
 ## Organization
 
 
-Genesis is organized under the following hash:
+The Mountain is organized under the following hash:
 ```bash
 QmSdDg6V9dgpdAFtActs75Qfc36qJtm9y8a7yrQ1rHm7ZX
 ```
