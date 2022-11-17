@@ -80,6 +80,28 @@
 
 - Determines the number of blocks per epoch for each Validator. This parameter controls how often each Validator will set its weights.
 
+## validatorEpochsPerReset	
+
+- When active, Validators can reset their local scoring storage and start scoring without previous history.
+
 ## validatorSequenceLength
 
 - Determines the size of each validation request sent by Validators. Each validation request has a consistent state [batch size, sequence length]. Increasing sequence length forces increased load onto Servers forcing them to improve hardware.
+
+## validatorExcludeQuantile
+
+- Validators exclude from weight setting the lowest quantile or percentile performing Servers recorded locally.
+
+## scalingLawPower	
+
+- Adjusts through a power coefficient the estimated number of model parameters.
+
+## synergyScalingLawPower
+
+- Adjusts through a power coefficient the estimated number of model parameters due to synergy.
+
+## MaxWeightLimit
+
+- The maximum weight a Validator is allowed to set on a Server.
+
+
