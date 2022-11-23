@@ -82,17 +82,22 @@ btcli transfer
 
 If you lose access to your keys, they can be easily regenerated with the unique mnemonic device you were provided with upon initial creation. 
 
+
+Regen a full coldkey:
+
 ```bash​
 btcli regen_coldkey
 ```
 
 
-To regen only the public portion of coldkey:
+To regen only the public portion of a coldkey:
 
 ```bash
 btcli regen_coldkeypub --ss58 <>
 ```
 
+
+Regen a hotkey:
 
 ```bash
 btcli regen_hotkey
