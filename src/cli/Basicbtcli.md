@@ -87,6 +87,12 @@ btcli regen_coldkey
 ```
 
 
+To regen only the public portion of coldkey:
+
+```bash
+btcli regen_coldkeypub --ss58 <>
+```
+
 
 ```bash
 btcli regen_hotkey
