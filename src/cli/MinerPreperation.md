@@ -11,9 +11,6 @@ You may also configure your miner through a config file or environment variables
 ## Choosing your hardware
 
 
-While the current network parameters typically do not demand the computational power of a GPU, larger models may. 
-
-
 To run with GPU or CPU:
 
 
