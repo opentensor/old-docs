@@ -16,6 +16,12 @@
     src:url('https://fonts.googleapis.com/css2?family=Ledger&display=swap');
   }
 
+@font-face {
+    font-family: 'Haffer';
+    font-weight: normal;
+    src: local('Haffer'), url('Haffer-Regular.ttf') format('truetype');
+  }
+
 html {
     color: var(--fg);
     background-color: var(--bg);
@@ -30,8 +36,8 @@ body {
 }
 
 code, pre {
-    font-family: 'Lato', sans-serif;
-    font-size: 10px;
+    font-family: 'Haffer', sans-serif;
+    font-size: 12px;
     line-height: 18px;
 }
 
