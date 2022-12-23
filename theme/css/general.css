@@ -19,7 +19,7 @@
 @font-face {
     font-family: 'Haffer';
     font-weight: normal;
-    src: local('Haffer'), url('Haffer-Regular.ttf') format('truetype');
+    src: local('Haffer'), url('../fonts/Haffer-Regular.ttf') format('truetype');
   }
 
 html {
