@@ -24,7 +24,7 @@ To run a Validator:
 - Ubuntu LTS releases or Macintosh 
 - A good and stable internet connection 
 
-*as of August 23, 2022*
+*as of January 7, 2023*
 
 
 
