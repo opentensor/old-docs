@@ -4,7 +4,7 @@
 
 # Delegating
 
-Any hotkey may nominate themselves as a delegate and receive stake delegations from other wallets in the network. Key owners of delegates collect an 18% tax through the emissions of all nominated Tao. 
+Any hotkey may nominate themselves as a delegate and receive stake delegations from other wallets in the network. Key owners of delegates collect an 18% "take" on emissions of all delegated Tao. 
 Learn more [here](Delegation.md)
 
 
