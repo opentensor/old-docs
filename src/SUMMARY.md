@@ -8,6 +8,8 @@
 
 
 # Tutorials
+- [Finney](Finney.md)
+
 - [Updates](nested/Updates.md)
 
 - [Installation](Installation.md)
@@ -15,6 +17,8 @@
 - [Subtensor](cli/Subtensor.md)
 
 - [Wallet](cli/Basicbtcli.md)
+
+- [Delegation](Delegation.md)
 
 - [Running a Miner](cli/MinerPreperation.md)
      
