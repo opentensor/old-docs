@@ -1,5 +1,7 @@
 # Delegation
 
+*~this feature is only available on the finney branch. Refer [here](https://www.notion.so/Finney-How-to-test-5abffaaf28934f4a88c615c72d9bf083) to learn how to test the finney branch.*
+
 Any hotkey may become a delegate and receive nominations of stake from other wallets in the network. Key owners of delegates collect a 18% tax on emissions of all nominated Tao. 
 
 When a coldkey creates a hotkey delegate, it will receive all of the emissions from the stake it adds to its hotkey delegate. The delegate owner will also collect 18% of the emissions from all nominated stake. 
