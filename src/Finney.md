@@ -10,7 +10,7 @@ Learn more [here](Delegation.md)
 
 ## Turn your hotkey into a delegate:
 ```
-btcli nonminate
+btcli nominate
 ```
 
 ## Stake to a delegate account:
