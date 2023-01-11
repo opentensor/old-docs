@@ -8,7 +8,7 @@ When a coldkey creates a hotkey delegate, it will receive all of the emissions f
 
 ## Turn your hotkey into a delegate:
 ```
-btcli nonminate
+btcli nominate
 ```
 
 ## Stake to a delegate account:
