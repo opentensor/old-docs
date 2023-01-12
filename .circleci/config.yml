@@ -41,7 +41,7 @@ jobs:
           at: book
       - run:
           name: Docs Bittensor Page
-          command: echo "docs.bittensor.com" > ./build/CNAME
+          command: echo "docs.bittensor.com" > ./book/CNAME
       - run:
           name: deploy pages
           command: npm install -g --silent gh-pages@3.0.0
