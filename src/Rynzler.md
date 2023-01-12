@@ -1,6 +1,6 @@
 # Rynzler
 
-Rynzler is the test Subtensor network for Finney. 
+Rynzler is the test Subtensor network for Finney. This page assumes you have Docker and Bittensor installed and are on the [Finney branch](SwitchingBranches.md).
 
 ## Running a Rynzler Endpoint
 
