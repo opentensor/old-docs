@@ -1,6 +1,6 @@
 # Finney - Everything New
 
-*~these features are only available on the finney branch. Refer [here](SwichingBranches.md) to learn how to test the finney branch.*
+*~these features are only available on the finney branch. Refer [here](SwitchingBranches.md) to learn how to test the finney branch.*
 
 # Delegating
 
