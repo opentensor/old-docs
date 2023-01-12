@@ -1,6 +1,6 @@
 # Delegation
 
-*~this feature is only available on the finney branch. Refer [here](https://www.notion.so/Finney-How-to-test-5abffaaf28934f4a88c615c72d9bf083) to learn how to test the finney branch.*
+*~this feature is only available on the finney branch. Refer [here](SwitchingBranches.md) to learn how to test the finney branch.*
 
 Any hotkey may become a delegate and receive nominations of stake from other wallets in the network. Key owners of delegates collect an 18% "take" on emissions of all delegated Tao.
 
