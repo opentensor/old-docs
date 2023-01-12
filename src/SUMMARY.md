@@ -10,7 +10,7 @@
 # Tutorials
 - [Finney](Finney.md)
   
-    - [Switching Brnaches](SwitchingBranched.md)
+    - [Switching Branches](SwitchingBranches.md)
   
     - [Delegation](Delegation.md)
 
