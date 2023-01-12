@@ -9,6 +9,12 @@
 
 # Tutorials
 - [Finney](Finney.md)
+  
+    - [Switching Brnaches](SwitchingBranched.md)
+  
+    - [Delegation](Delegation.md)
+
+    - [Rynzler](Rynzler.md)
 
 - [Updates](nested/Updates.md)
 
@@ -17,8 +23,6 @@
 - [Subtensor](cli/Subtensor.md)
 
 - [Wallet](cli/Basicbtcli.md)
-
-- [Delegation](Delegation.md)
 
 - [Running a Miner](cli/MinerPreperation.md)
      
