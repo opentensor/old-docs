@@ -21,5 +21,5 @@ cd ~/.bittensor/rynzler
 
 4. Run a Rynzler endpoint locally
 ```bash
-sudo docker compose up -d
+docker compose up -d
 ```
