@@ -6,7 +6,7 @@ jobs:
   build:
     resource_class: small
     docker:
-      - image: cimg/rust:1.61.0
+      - image: cimg/rust:1.64.0
 
     steps:
       - checkout
