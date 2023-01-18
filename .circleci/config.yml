@@ -40,16 +40,17 @@ jobs:
       - attach_workspace:
           at: book
       - run:
+          name: Install and configure dependencies
+          command: |
+            npm install -g --silent gh-pages@3.0.0
+            git config user.email "ci-build@opentensor.ai"
+            git config user.name "ci-build"
+      - run:
           name: Docs Bittensor Page
           command: echo "docs-staging.bittensor.com" > ./book/CNAME
       - run:
-          name: deploy pages
-          command: npm install -g --silent gh-pages@3.0.0
-      - run:
           name: Deploy docs to gh-pages branch
           command: |
-            git config user.email "ci-build@opentensor.ai"
-            git config user.name "ci-build"
             gh-pages --no-history --branch gh-pages --dist book
 
 workflows:
