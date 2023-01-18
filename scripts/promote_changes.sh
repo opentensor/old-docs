@@ -14,6 +14,10 @@ function echo_good_news {
     echo -e "${GREEN}[GOOD ]${NC} $1"
 }
 
+function echo_warning {
+    echo -e "${YELLOW}[OOPS ]${NC} $1"
+}
+
 function echo_error {
     echo -e "${RED}[ERROR]${NC} $1"
 }
@@ -87,11 +91,25 @@ fi
 echo_good_news "Remote exists '$REMOTE_NAME' -> $REMOTE_URL"
 
 USER_EMAIL=`git config user.email`
-if [ -z $USER_EMAIL]; then
+if [ -z $USER_EMAIL ]; then
     USER_EMAIL='unknown'
 fi
 
 TS=$(date +%Y_%m_%d)
 BRANCH_TO_PUSH="promote-changes/$TS/$USER_EMAIL"
 
+echo_info "Pushing changes to remote branch '$BRANCH_TO_PUSH'"
 git push $REMOTE_NAME main:$BRANCH_TO_PUSH
+
+case $OSTYPE in
+    "linux-gnu"*)
+        xdg-open https://github.com/opentensor/docs/pull/new/$BRANCH_TO_PUSH
+    ;;
+    "darwin"*)
+        open https://github.com/opentensor/docs/pull/new/$BRANCH_TO_PUSH
+    ;;
+    *)
+        echo_warning "OS type '$OSTYPE' not supported."
+        echo_good_news "You can open the PR with the following URL: https://github.com/opentensor/docs/pull/new/$BRANCH_TO_PUSH"
+    ;;
+esac
