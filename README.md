@@ -1,4 +1,4 @@
-# Documentation for the Bittensor network.
+# Documentation for the Bittensor network
 
 ## Local development
 
