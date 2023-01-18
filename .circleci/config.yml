@@ -28,7 +28,7 @@ jobs:
           paths:
             - "*"
 
-  docs-deploy:
+  deploy:
     resource_class: small
     docker:
       - image: node:8.10.0
