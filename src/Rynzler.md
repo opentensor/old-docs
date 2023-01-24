@@ -16,7 +16,7 @@ git clone https://github.com/opentensor/rinzler
 
 3. Open the Rinzler repository
 ```bash
-cd ~/.bittensor/rynzler
+cd ~/.bittensor/rinzler
 ```
 
 4. Run a Rinzler endpoint locally
