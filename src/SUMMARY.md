@@ -5,8 +5,6 @@
 - [Introduction](index.md)
 
 - [The Protocol](nested/TheProtocol2.md)
-  
-- [Taonomics](Taonomics.md)
 
 # Tutorials
 - [Finney](Finney.md)
@@ -15,7 +13,7 @@
   
     - [Delegation](Delegation.md)
 
-    - [Rynzler](Rynzler.md)
+    - [Rinzler](Rinzler.md)
 
 - [Updates](nested/Updates.md)
 
