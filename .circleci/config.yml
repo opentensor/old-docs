@@ -52,7 +52,7 @@ jobs:
             git config user.name "ci-build"
       - run:
           name: Docs Bittensor Page
-          command: echo "docs-staging.bittensor.com" > ./book/CNAME
+          command: echo $BT_DOCS_CNAME > ./book/CNAME
       - run:
           name: Deploy docs to gh-pages branch
           command: |
