@@ -6,7 +6,7 @@ jobs:
   build:
     resource_class: small
     docker:
-      - image: cimg/rust:1.61.0
+      - image: cimg/rust:1.64.0
 
     steps:
       - checkout
@@ -37,22 +37,23 @@ jobs:
       - image: node:8.10.0
     steps:
       - add_ssh_keys:
-          fingerprints: 
-          - "5c:f4:a0:0f:70:dc:65:3f:a4:f7:0a:be:2c:5c:12:fa"
+          fingerprints:
+          - "0f:60:a5:03:4a:dd:26:05:91:3a:97:1e:be:c7:d4:f7"
       - checkout
       - attach_workspace:
           at: book
       - run:
-          name: Docs Bittensor Page
-          command: echo "docs.bittensor.com" > ./book/CNAME
+          name: Install and configure dependencies
+          command: |
+            npm install -g --silent gh-pages@3.0.0
+            git config user.email "ci-build@opentensor.ai"
+            git config user.name "ci-build"
       - run:
-          name: deploy pages
-          command: npm install -g --silent gh-pages@3.0.0
+          name: Docs Bittensor Page
+          command: echo "docs-staging.bittensor.com" > ./book/CNAME
       - run:
           name: Deploy docs to gh-pages branch
           command: |
-            git config user.email "ci-build@opentensor.ai"
-            git config user.name "ci-build"
             gh-pages --no-history --branch gh-pages --dist book
 
 workflows:
