@@ -12,17 +12,20 @@ jobs:
       - checkout
       - restore_cache:
           key: mdbooks-cache
-      - run: 
-          name: install cargo & mdbooks
-          command: | 
-            cargo install cargo-update
-            cargo install mdbook
-            pwd && mdbook build
-      - save_cache:
-          key: mdbooks-cache
-          paths:
-            - "~/.cargo"
-            - "./target"
+      - run:
+          command: mdbook build
+# Below was used to create the cached mdbook, keeping this in case we need to update it.
+#      - run:
+#          name: install cargo & mdbooks
+#          command: |
+#            cargo install cargo-update
+#            cargo install mdbook
+#            pwd && mdbook build
+#      - save_cache:
+#          key: mdbooks-cache
+#          paths:
+#            - "~/.cargo"
+#            - "./target"
       - persist_to_workspace:
           root: book
           paths:
@@ -56,11 +59,11 @@ jobs:
 workflows:
   build: 
     jobs: 
-      - build
-      - deploy:
-          requires:
-            - build
+      - build:
           filters:
             branches:
               only:
                 - main
+      - deploy:
+          requires:
+            - build
