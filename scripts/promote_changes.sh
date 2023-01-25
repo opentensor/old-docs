@@ -90,13 +90,13 @@ fi
 
 echo_good_news "Remote exists '$REMOTE_NAME' -> $REMOTE_URL"
 
-USER_EMAIL=`git config user.email`
-if [ -z $USER_EMAIL ]; then
-    USER_EMAIL='unknown'
+USER_NAME=`git config user.name`
+if [ -z $USER_NAME ]; then
+    USER_NAME='unknown'
 fi
 
 TS=$(date +%Y_%m_%d)
-BRANCH_TO_PUSH="promote-changes/$TS/$USER_EMAIL"
+BRANCH_TO_PUSH="promote-changes/$TS/$USER_NAME"
 
 echo_info "Pushing changes to remote branch '$BRANCH_TO_PUSH'"
 git push $REMOTE_NAME main:$BRANCH_TO_PUSH
