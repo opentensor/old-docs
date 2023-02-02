@@ -11,22 +11,27 @@ Tao is the token for Bittensor and gatekeeps access, representing bandwidth to t
 Servers and Validators evenly split emissions per block, with the most emissions issued to the best-performing miners.
 
 
+# Validation and B (Bonds)
 
-# Validation
+The Validators determine the proportion of emissions received by each Server in the network. Validators, responsible for validating the action of Servers, assign rankings to Servers based on their performance. In doing so, Validators accumulate bonded relationships in the Servers they rank. Unlike traditional bonding, our bonding is defined by:
 
-Validators determine the proportion of emissions received by each Server in the network. Validators, who are responsible for validating the action of Servers, assign rankings to Servers based on their performance. In doing so, Validators accumulate bonds in the Servers they rank. The more stake held by a Validator, the more weight their rankings carry. This bonding mechanism creates an incentive for Validators to rank and bond with Servers expected to perform well by the majority of Validation stake in the network, similar to making a marked-based speculation on a traditional financial entity. 
+\\[ {\Delta}{B}={W}*{S} \\]
 
-Validators attempting to form a cabal or collude with other Validators will see the value of their bonds diminish. This attack is only possible if the cabal holds more than 50% of the Validation stake in the network, as Servers that have yet to reach Consensus earn exponentially fewer emissions than those that have.
+In this way, peers accumulate bonds in the peers they rank, thus ’bonding’ themselves to those that they are connected to.
+
+\\[ {\Delta}B_{t+1}={B_t}+{W}*{S} \\]
+
+Validators attempting to form a cabal or collude with other Validators will see the size of their bonds diminish. This attack is only possible if the cabal holds more than 50% of the Validation stake in the network. Servers that have yet to reach Consensus recieve exponentially fewer emissions than those that have.
 
 
 
-# Trust
+# T (Trust)
 
 Trust is the measurement of the number of non-zero rankings Servers receive from Validators. 
 
 
 
-# Conensus
+# C (Conensus)
 
 Consensus is defined using a continuous sigmoid function. This sigmoid produces threshold-like scaling, which rewards connected and well-performing Servers and punishes the non-trusted. 
 
@@ -39,13 +44,13 @@ Servers who have reached ‘Consensus’ are peers with non-zero rankings from m
 
 
 
-# Incentive + Emissions
+# I (Incentive) + Emissions
 
 \\[ {I}={R}*{C} \\]
 
 Due to threshold like sigmoid rewards, the majority of Incentive distributes to Servers trusted by the majority stake in the network. 
 
-\\[ {Server} {Emissions}=({I}/{2})*{100} \\]
+\\[ {Server} {Emissions}=\frac{I}{2}*{100} \\]
 
 
 
