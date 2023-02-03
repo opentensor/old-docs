@@ -35,7 +35,7 @@ Trust is the measurement of the number of non-zero rankings Servers receive from
 
 Consensus is defined using a continuous sigmoid function. This sigmoid produces threshold-like scaling, which rewards connected and well-performing Servers and punishes the non-trusted. 
 
-\\[ {C}={σ}(({T^T}*{S}-{0.5})) \\]
+\\[ {C}={σ}({\rho}({T^T}*{S}-{0.5})) \\]
 
 
 Servers who have reached ‘Consensus’ are peers with non-zero rankings from more than 50% of the Validation stake in the network. 
@@ -46,12 +46,27 @@ Servers who have reached ‘Consensus’ are peers with non-zero rankings from m
 
 # I (Incentive) + Emissions
 
+As Servers attain more weight in the network they increase their inflation exponentially up to 0.5 
+
 \\[ {I}={R}*{C} \\]
 
-Due to threshold like sigmoid rewards, the majority of Incentive distributes to Servers trusted by the majority stake in the network. 
+Using the bond matrix, the chain distributes Incentive scores to ensure that each Server receives a fixed proportion of emission in line with their performance in the network.
 
-\\[ {Server} {Emissions}=\frac{I}{2}*{100} \\]
-
-
+\\[{\Delta}S=0.5B^T*I+0.5I \\]
 
 
+**KEY**
+---
+B = Bonds
+
+C = Consensus
+
+I = Incentive
+
+R = Rank
+
+S = Stake
+
+T = Trust
+
+W = Weight
