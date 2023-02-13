@@ -55,7 +55,7 @@ echo_info 'Checking git remote origin...'
 
 ORIGIN_BRANCH=`git remote -v | grep origin | grep push | awk '{ print $2}'`
 case "$ORIGIN_BRANCH" in
-    *opentensor/docs-staging.git)
+    *opentensor/docs-staging*)
         echo_good_news 'Correct remote origin'
     ;;
     *)
