@@ -2,6 +2,11 @@ version: 2.1
 orbs:
   rust: circleci/rust@1.6.0
 
+parameters:
+  is_manual:
+    type: string
+    default: "no"
+
 jobs:
   build:
     resource_class: small
@@ -11,21 +16,9 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: mdbooks-cache
+          key: mdbook-cache
       - run:
           command: mdbook build
-# Below was used to create the cached mdbook, keeping this in case we need to update it.
-#      - run:
-#          name: install cargo & mdbooks
-#          command: |
-#            cargo install cargo-update
-#            cargo install mdbook
-#            pwd && mdbook build
-#      - save_cache:
-#          key: mdbooks-cache
-#          paths:
-#            - "~/.cargo"
-#            - "./target"
       - persist_to_workspace:
           root: book
           paths:
@@ -52,11 +45,26 @@ jobs:
             git config user.name "ci-build"
       - run:
           name: Docs Bittensor Page
-          command: echo "docs-staging.bittensor.com" > ./book/CNAME
+          command: echo $BT_DOCS_CNAME > ./book/CNAME
       - run:
           name: Deploy docs to gh-pages branch
           command: |
             gh-pages --no-history --branch gh-pages --dist book
+
+  build_mdbook:
+    resource_class: large
+    docker:
+      - image: cimg/rust:1.64.0
+    steps:
+      - restore_cache: # save compute time if it already exists.
+            key: mdbook-cache
+      - run:
+          name: Install mdbook
+          command: cargo install mdbook
+      - save_cache:
+          key: mdbook-cache
+          paths:
+            - "~/.cargo"
 
 workflows:
   build: 
@@ -69,3 +77,11 @@ workflows:
       - deploy:
           requires:
             - build
+
+  make_cache:
+    when:
+      or:
+        - equal: [ "build_mdbook", << pipeline.schedule.name >> ]
+        - equal: [ "yes", << pipeline.parameters.is_manual >> ]
+    jobs:
+      - build_mdbook
