@@ -22,6 +22,15 @@ git checkout finney
 python3 -m pip install -e
 ```
 
+# Finney Chain Endpoint
+
+You may connect to the chain endpoint:
+``
+wss://public.finney.opentensor.ai:443
+``
+```bash
+--subtensor.chain_endpoint wss://public.finney.opentensor.ai:443
+```
 
 
 # Return to the master branch
@@ -35,3 +44,4 @@ cd ~/.bittensor/bittensor
 ```bash
 git checkout master
 ```
+
