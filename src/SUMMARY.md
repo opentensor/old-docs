@@ -15,8 +15,6 @@
   
     - [Delegation](Delegation.md)
 
-    - [Rinzler](Rinzler.md)
-
 - [Updates](nested/Updates.md)
 
 - [Installation](Installation.md)
