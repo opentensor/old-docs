@@ -24,10 +24,11 @@ python3 -m pip install -e
 
 # Finney Chain Endpoint
 
-You may connect to the chain endpoint:
+You can connect to the custom chain endpoint by adding the following flag to your command:
 ``
 wss://public.finney.opentensor.ai:443
 ``
+For example:
 ```bash
 --subtensor.chain_endpoint wss://public.finney.opentensor.ai:443
 ```
