@@ -14,7 +14,7 @@ btcli update
 
 3. Jump to the finney branch
 ```
-git checkout finney
+git checkout release/3.7.0
 ```
 
 4. Install
