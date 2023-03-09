@@ -14,7 +14,7 @@ btcli update
 
 3. Jump to the finney branch
 ```
-git checkout finney
+git checkout release/3.7.0
 ```
 
 4. Install
@@ -22,7 +22,16 @@ git checkout finney
 python3 -m pip install -e
 ```
 
+# Finney Chain Endpoint
 
+You can connect to the custom chain endpoint ``wss://public.finney.opentensor.ai:443`` by adding the following flag to your command:
+```bash
+--subtensor.network finney
+```
+For example:
+```bash
+btcli run --subtensor.network finney
+```
 
 # Return to the master branch
 
@@ -35,3 +44,4 @@ cd ~/.bittensor/bittensor
 ```bash
 git checkout master
 ```
+
