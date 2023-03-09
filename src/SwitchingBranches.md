@@ -26,11 +26,11 @@ python3 -m pip install -e
 
 You can connect to the custom chain endpoint ``wss://public.finney.opentensor.ai:443`` by adding the following flag to your command:
 ```bash
---subtensor.chain_endpoint wss://public.finney.opentensor.ai:443
+--subtensor.network finney
 ```
 For example:
 ```bash
-btcli run --subtensor.chain_endpoint wss://public.finney.opentensor.ai:443
+btcli run --subtensor.network finney
 ```
 
 # Return to the master branch
