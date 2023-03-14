@@ -1,11 +1,24 @@
 # Preparing your miner
 
-Once your miner is registered in the network and you have Subtensor running locally, your basic setup is complete. Your miner will begin processing data, generating value for the network, and accruing Tao. 
+Once your miner is registered in the network and you have Subtensor running locally, you are ready to begin Serving or Validating.
 
 
-This area of the documentation will guide you through the basic customizations that can be made to your miner with flags in order to set your miner up for success in the network. *Pair these flags with calls to ``btcli`` or any other mining start command.*
+This area of the documentation will guide you through how to Serve and Validate on the network, and how to make basic customizations with flags in order to set your miner up for success in the network. *Pair these flags with calls to ``btcli`` or any other mining start command.*
 
 You may also configure your miner through a config file or environment variables. See [Methods of Configuration](ConfigurationMethods.md) and [Configuration Settings](../Arguments.md) for more.
+
+# Running a miner
+
+To run a basic miner with no specific conficurations:
+
+```bash
+btcli run
+```
+
+
+## Adding flags
+
+You may add flags to your ``btcli run`` mining script to customize how you would like your miner to behave.
 
 
 ## Choosing your hardware
@@ -21,14 +34,14 @@ To run with GPU or CPU:
 
 
 
-## Choosing a network 
+## Choosing a chain 
 
 
-This argument specifies which instance of Subtensor you will connect to: a local copy, the public Nakamoto copy, or the test network Nobunaga. 
+This argument specifies which instance of Subtensor you will connect to: a local copy, the public Finney copy, or the test chain Nobunaga. 
 
 
 ```
---subtensor.network <local | nakamoto | nobunaga>
+--subtensor.network <local | nobunaga | finney>
 ```
 
 
@@ -39,6 +52,14 @@ You can also select a network endpoint:
 --subtensor.chain_endpoint <>
 ```
 
+
+## Choosing a subnetwork
+
+This argument specifies which subnetwork you would like to mine on.
+
+```bash
+--net.uid <>
+```
 
 ## Specifying a wallet 
 

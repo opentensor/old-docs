@@ -2,6 +2,8 @@
 
 # Learn
 
+- [FINNEY UPDATE](Finney.md)
+
 - [Introduction](index.md)
 
 - [The Protocol](nested/TheProtocol2.md)
@@ -9,11 +11,6 @@
 - [Taonomics](tokenomics.md)
 
 # Tutorials
-- [Finney](Finney.md)
-  
-    - [Switching Branches](SwitchingBranches.md)
-  
-    - [Delegation](Delegation.md)
 
 - [Updates](nested/Updates.md)
 
@@ -23,11 +20,15 @@
 
 - [Wallet](cli/Basicbtcli.md)
 
+- [Registering a Miner](Registration.md)
+
 - [Running a Miner](cli/MinerPreperation.md)
      
 - [Server Customization](css/ServerCustomization.md)
 
 - [Validator Customization](css/ValidatorCustomization.md)
+
+- [Delegation](Delegation.md)
 
 - [Fine Tuning](nested/FineTuning.md)
 
