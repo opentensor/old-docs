@@ -1,30 +1,61 @@
 # Finney - Everything New
 
-*~these features are only available on the finney branch. Refer [here](SwitchingBranches.md) to learn how to test the finney branch.*
+
+
+
+# Update your miners and restart them on the new Finney network
+
+
+1. Pull the latest master and install.
+
+```bash
+git -C ~/.bittensor/bittensor pull origin master
+python3 -m pip install -e ~/.bittensor/bittensor
+```
+
+2. Restart your miners
+
+A simple stop and start will do.
+
+# StakePruningMin
+
+The StakePruningMin hyperparemter, which provided deregistration immunity to any key above X amount of Tao now only applies to the 100 highest staked keys.
 
 # Delegating
 
-Any hotkey may nominate themselves as a delegate and receive stake delegations from other wallets in the network. Key owners of delegates collect an 18% "take" on emissions of all delegated Tao. 
+Delegation introduces a new way for miners to stake Tao to support the most honest and inovative Validators in the network. Any hotkey may nominate themselves as a delegate and receive stake delegations from other wallets in the network. Key owners of delegates collect an 18% "take" on emissions of all delegated Tao.
 Learn more [here](Delegation.md)
 
 
 ## Turn your hotkey into a delegate:
-```
+```bash
 btcli nominate
 ```
 ## Stake to a delegate account:
-```
+```bash
 btcli delegate
 ```
 ## List all the delagates in the network
-```
+```bash
 btcli list_delegates
 ```
 
+# Recycle Registration
 
+A hotkey may now decide between registering through the proof of work or through the ``recycle_register`` mechanism, which charges a hotkey a fee paid in Tao. "Recycled register" Tao fees are recycled by adding to the end of the 21 million supply. Like the proof of work, the ''recycle_register`` fee is dynamic with demand to enter the network.
 
-# Subnetworks
+## Pay to register with Tao
 
-Hotkeys can register to multiple networks concurrently. Each network has its own consensus mechanism and UID slots. There is a base net that hotkeys must first pass before entering any of the primary networks. For now, there is only one primary net. 
+```bash
+btcli recycle_register
+```
 
-Hotkeys must achieve a ranking greater than or equal to the minimum emission threshold and solve a secondary POW before entering a primary net. Once admitted to the primary network, the hotkey from the base network will continue serving alongside its new primary net counterpart, and the two will share the same axon and IP. A base network key that drops out of the emission threshold or loses registration will not affect the primary net key counterpart. However, should the primary net key lose registration, the base net key will have to be brought back into the minimum emission threshold before the primary net key can regain entry.
+# Specifying subnetworks
+
+While the Finney upgrade will not introduce any new subnetworks intially, they are on the horizon. Miners need to specify which subnetwork they are mining or registering on with ``--net.uid`` or by following the user interface prompts.
+
+For example, mine to subnetwork 1:
+
+```bash
+btcli run --net.uid 1
+```
