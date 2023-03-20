@@ -70,14 +70,3 @@ btcli new_hotkey
 
 
 You will be prompted to complete the same steps as with the last key, in addition to specifying which coldkey you would like to connect your hotkey to. 
-
-
-
-## Choosing a miner
-
-From here, you may choose: ``core_validator/core_server``
-
-
-**Mining Tao is highly competitive so only the best miners outfitted with the best models will do well. The challenge of optimizing your miner is the responsibility of the user.**
-
-## [Learn more about optimizing a Server](css/ServerCustomization.md)
