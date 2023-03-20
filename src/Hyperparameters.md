@@ -1,36 +1,46 @@
 
-| **Validator Hyperparameter**       | **Value** |
-|------------------------------------|-----------|
-| **AdjustmentInterval**             | 150       |
-| **BlocksPerStep**                  | 100       |
-| **BondsMovingAverage**             | 900,000   |
-| **ImmunityPeriod**                 | 3072      |
-| **IncentivePruningDenominator**    | 1         |
-| **Kappa**                          | 2         |
-| **MaxAllowedMaxMinRatio**          | 64        |
-| **MaxAllowedUids**                 | 4096      |
-| **MinAllowedWeights**              | 1024      |
-| **Rho**                            | 10        |
-| **StakePruningDenominator**        | 20        |
-| **StakePruningMin**                | 1024      |
-| **TargetRegistrationsPerInterval** | 2         |
-| **ValidatorBatchSize**             | 32        |
-| **ValidatorEpochLen**              | 250       |
-| **ValidatorEpochsPerReset**        | 60        |
-| **ValidatorSequenceLength**        | 256       |
-| **ValidatorExcludeQuantile**       | 5         |
-| **ScalingLawPower**                | 50        |
-| **SynergyScalingLawPower**         | 50        |
-| **MaxWeightLimit**                 | 17_179_868|
+| **Validator Hyperparameters**       | **Value**       |
+|------------------------------------|-----------------|
+| **Rho**                            | 10              |
+| **Kappa**                          | 32_767          |
+| **MaxAllowedUids**                 | 4096            |
+| **Issuance**                       | 0               |
+| **MinAllowedWeights**              | 1024            |
+| **EmissionValue**                  | 1_000_000_000   |
+| **MaxWeightsLimit**                | 1000            |
+| **ValidatorBatchSize**             | 32              |
+| **ValidatorSequenceLen**           | 256             |
+| **ValidatorEpochLen**              | 100             |
+| **ValidatorEpochsPerReset**        | 60              |
+| **ValidatorExcludeQuantile**       | 6554            |
+| **ValidatorPruneLen**              | 1               |
+| **ValidatorLogitsDivergence**      | 1310            |
+| **ScalingLawPower**                | 50              |
+| **SynergyScalingLawPower**         | 50              |
+| **MaxAllowedValidators**           | 128             |
+| **Tempo**                          | 99              |
+| **Difficulty**                     | 10_000_000      |
+| **AdjustmentInterval**             | 100             |  
+| **TargetRegistrationsPerInterval** | 2               |
+| **ImmunityPeriod**                 | 4096            |
+| **ActivityCutoff**                 | 5000            |
+| **MaxRegistrationsPerBlock**       | 1               |
+| **PruningScore**                   | MAX             |
+| **BondsMovingAverage**             | 900_000         |
+| **DefaultTake**                    | 11_796          |
+| **WeightsVersionKey**              | 370             |
+| **MinDifficulty**                  | 10_000_000      |
+| **MaxDifficulty**                  | 4               |
+| **ServingRateLimit**               | 50              |         
+| **Burn**                           | 100_000_000_000 |
+| **MinBurn**                        | 1_000_000_000   |
+| **MaxBurn**                        | 100_000_000_000 |
+| **TxRateLimit**                    | 1000            |
 
 
 ## AdjustmentInterval
 
 - The interval over which we calculate the rate of new peer registrations, if the rate exceeds **TargetRegistrationsPerInterval** then the POW difficulty is doubled.
-
-## BlocksPerStep
-
-- The number of blocks which pass between a recalculation of incentive terms: Rank, Trust, Consensus, Incentive, Dividends, Emissions, the distribution of newly minted stake, and the calculation of the next bond matrix.
 
 ## BondsMovingAverage
 
@@ -40,17 +50,9 @@
 
 - How many blocks a a hotkey is immune from deregistration after joining the network.
 
-## IncentivePruningDenominator
-
-- Works together with the **StakePruningDenominator** to determine the ratio between stake and incentive for a minimum bound of score to keep a hotkey registered. 
-
 ## Kappa
 
 - The temperature of sigmoid activation function to regularize Trust and become Consensus. 
-
-## MaxAllowedMaxMinRatio
-
-- Sets the ratio between the highest weight and lowest weight a Validator can set in one weight setting. This influences the reward skew.
 
 ## MaxAllowedUids
 
@@ -59,14 +61,6 @@
 ## MinAllowedWeights
 
 - The lower limit on the number of non zero weights a Validator sets after each epoch. Increasing **MinAllowedWeights** increases the size of the consensus set: the number of peers with greater than 50% trust.
-
-## StakePruningDenominator
-
-- works together with the incentivePruningDenominator, to determine the ratio between stake and incentive for a minimum bound of score to keep a hotkey registered. 
-
-## StakePruningMin
-
-- The threshold value which separates Servers from Validators during a pruning operation. Miners with stake greater than stakePruningMin are not pruned based on incentive.
 
 ## TargetRegistrationsPerInterval
 
@@ -84,7 +78,7 @@
 
 - When active, Validators can reset their local scoring storage and start scoring without previous history.
 
-## ValidatorSequenceLength
+## ValidatorSequenceLen
 
 - Determines the size of each validation request sent by Validators. Each validation request has a consistent state [batch size, sequence length]. Increasing sequence length forces increased load onto Servers forcing them to improve hardware.
 
@@ -100,8 +94,5 @@
 
 - Adjusts through a power coefficient the estimated number of model parameters due to synergy.
 
-## MaxWeightLimit
-
-- The maximum weight a Validator is allowed to set on a Server.
 
 
