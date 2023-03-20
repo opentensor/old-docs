@@ -5,9 +5,9 @@
 
 # Update your miners and restart them on the new Finney network
 
-1. Do not transfer, stake, unstake, or perform chain operations on nakamoto, since these will not be reflected on the finney chain.
+## Do not transfer, stake, unstake, or perform chain operations on nakamoto, since these will not be reflected on the finney chain
 
-2. During the period between Nakamoto closing and Finney coming up, update all your bittensor repositories to the branch ``release/3.7.0``.
+## During the period between Nakamoto closing and Finney coming up, update all your bittensor repositories to the branch ``release/3.7.0``
 
 ```bash
 cd ~/.bittensor/bittensor
@@ -22,7 +22,7 @@ git checkout release/3.7.0
 python3 -m pip install -e .
 ```
 
-3. Run SubtensorV3
+## Run SubtensorV3
 
 ```bash
 git clone https://github.com/opentensor/subtensorv3.git
@@ -34,7 +34,9 @@ cd subtensorv3
 docker-compose up -d
 ```
 
-4. Once your Bittensor release/3.7.0 branch is properly installed and you have SubtensorV3 running, you can prepare your Servers and Validators to connect into the Finney chain. The command to run your Servers and Validators is entirely the same with the exception of the command line argument ``--netuid <>``. At ~5pm EST we will open Finney and you will be able to re-run your Server and Validator commands (as normal with the additional ``--netuid <>`` argument). If you had a registered miner on the previous Nakamoto network it will still be registered, with stake on the Finney chain on sub-network 3. Your axon-ip endpoint will update automatically when running the miner.
+## Add ``--netuid 3`` to your mining script 
+
+At ~5pm EST we will open Finney and you will be able to re-run your Server and Validator commands (as normal with the additional ``--netuid <>`` argument). If you had a registered miner on the previous Nakamoto network it will still be registered, with stake on the Finney chain on sub-network 3. Your axon-ip endpoint will update automatically when running the miner.
 
 For example, if your mining script is normally:
 
@@ -50,7 +52,7 @@ btcli run --netuid 3
 
 Net UID 3 is the only available network at this time.
 
-5. Over the next 48 hours registrations will be turned off on Finney, giving all miners on the previous network time to begin their Servers/Validators and time for the incentive mechanism to re-stabilize. Devs will be avialable to help people bridge this period on the official Bittensor discord.
+Over the next 48 hours registrations will be turned off on Finney, giving all miners on the previous network time to begin their Servers/Validators and time for the incentive mechanism to re-stabilize. Devs will be avialable to help people bridge this period on the official Bittensor discord.
 
 # StakePruningMin
 
@@ -68,7 +70,7 @@ btcli nominate
 ```bash
 btcli delegate
 ```
-## List all the delagates in the network
+## List all the delegates in the network
 ```bash
 btcli list_delegates
 ```
