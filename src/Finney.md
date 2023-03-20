@@ -34,7 +34,7 @@ cd subtensorv3
 docker-compose up -d
 ```
 
-4. Once your Bittensor release/3.7.0 branch is properly installed and you have SubtensorV3 running, you can prepare your Servers and Validators to connect into the Finney chain. The command to run your Servers and Validators is entirely the same with the exception of the command line argument ``net.uid <>``. At ~5pm EST we will open Finney and you will be able to re-run your Server and Validator commands (as normal with the additional ``--net.uid <>`` argument). If you had a registered miner on the previous Nakamoto network it will still be registered, with stake on the Finney chain on sub-network 3. Your axon-ip endpoint will update automatically when running the miner.
+4. Once your Bittensor release/3.7.0 branch is properly installed and you have SubtensorV3 running, you can prepare your Servers and Validators to connect into the Finney chain. The command to run your Servers and Validators is entirely the same with the exception of the command line argument ``--netuid <>``. At ~5pm EST we will open Finney and you will be able to re-run your Server and Validator commands (as normal with the additional ``--netuid <>`` argument). If you had a registered miner on the previous Nakamoto network it will still be registered, with stake on the Finney chain on sub-network 3. Your axon-ip endpoint will update automatically when running the miner.
 
 For example, if your mining script is normally:
 
@@ -45,7 +45,7 @@ btcli run
 It becomes:
 
 ```bash
-btcli run --net.uid 3
+btcli run --netuid 3
 ```
 
 Net UID 3 is the only available network at this time.
@@ -89,10 +89,10 @@ btcli recycle_register
 
 # Specifying subnetworks
 
-While the Finney upgrade will not introduce any new subnetworks intially, they are on the horizon. Miners need to specify which subnetwork they are mining or registering on with ``--net.uid`` or by following the user interface prompts.
+While the Finney upgrade will not introduce any new subnetworks intially, they are on the horizon. Miners need to specify which subnetwork they are mining or registering on with ``--netuid`` or by following the user interface prompts.
 
-For example, run on subnetwork 1:
+For example, run on subnetwork 3:
 
 ```bash
-btcli run --net.uid 1
+btcli run --netuid 3
 ```
