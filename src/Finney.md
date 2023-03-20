@@ -37,9 +37,7 @@ cd subtensorv3
 docker compose up -d
 ```
 
-4. Once your Bittensor release/3.7.0 branch is properly installed and you have SubtensorV3 running, you can prepare your Servers and Validators to connect into the Finney chain. The command to run your Servers and Validators is entirely the same with the exception of the command line argument ``net.uid <>``
-
-At ~5pm EST we will open Finney and you will be able to re-run your Server and Validator commands (as normal with the additional ``--net.uid <>`` argument). If you had a registered miner on the previous Nakamoto network it will still be registered, with stake on the Finney chain on sub-network 3. Your axon-ip endpoint will update automatically when running the miner.
+4. Once your Bittensor release/3.7.0 branch is properly installed and you have SubtensorV3 running, you can prepare your Servers and Validators to connect into the Finney chain. The command to run your Servers and Validators is entirely the same with the exception of the command line argument ``net.uid <>``. At ~5pm EST we will open Finney and you will be able to re-run your Server and Validator commands (as normal with the additional ``--net.uid <>`` argument). If you had a registered miner on the previous Nakamoto network it will still be registered, with stake on the Finney chain on sub-network 3. Your axon-ip endpoint will update automatically when running the miner.
 
 For example, if your mining script is normally:
 
