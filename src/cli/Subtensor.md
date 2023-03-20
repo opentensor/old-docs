@@ -43,19 +43,19 @@ chmod +x ./get-docker.sh
 5. Clone the Subtensor repository.
 
 ```bash
-git clone https://github.com/opentensor/subtensor.git ~/.bittensor/subtensor
+git clone https://github.com/opentensor/subtensorv3.git
 ```
 
 6. Open the Subtensor directory.
 
 ```bash
-cd ~/.bittensor/subtensor
+cd subtensorv3
 ```
 
 7. Pull the latest Subtensor image.
 
 ```bash
-docker pull opentensorfdn/subtensor
+docker pull opentensor/subtensor
 ```
 
 8. Run Subtensor inside of Docker.
@@ -98,17 +98,17 @@ In case your Subtensor goes down, here is the command to restart it:
 
 ```bash
 # quick restart
-cd ~/.bittensor/subtensor && \
-/usr/local/bin/docker-compose down && \
-/usr/local/bin/docker-compose up -d
+cd subtensorv3 && \
+docker-compose down && \
+docker-compose up -d
 
 # full restart
-cd ~/.bittensor/subtensor && \
-/usr/local/bin/docker-compose down && \
+cd subtensorv3 && \
+docker-compose down && \
 docker system prune -a -f && \
-git -C ~/.bittensor/subtensor pull origin master && \
-docker pull opentensorfdn/subtensor && \
-/usr/local/bin/docker-compose up -d
+git pull && \
+docker pull opentensor/subtensor && \
+docker-compose up -d
 ```
 
 
@@ -131,7 +131,7 @@ Update Subtensor:
 #Bring Subtensor down
 docker compose down
 #Connect to directory
-cd ~/.bittensor/subtensor
+cd subtensorv3
 #update Subtensor
 git pull
 #Bring Subtensor back up 
