@@ -14,7 +14,7 @@ btcli nominate
 btcli delegate
 ```
 
-## List all the delagates in the network:
+## List all the delegates in the network:
 ```
 btcli list_delegates
 ```
