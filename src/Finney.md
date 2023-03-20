@@ -19,9 +19,6 @@ git fetch origin release/3.7.0
 git checkout release/3.7.0
 ```
 ```bash
-cd ..
-```
-```bash
 python3 -m pip install -e .
 ```
 
