@@ -58,7 +58,7 @@ You can also select a network endpoint:
 This argument specifies which subnetwork you would like to mine on.
 
 ```bash
---net.uid <>
+--netuid <>
 ```
 
 ## Specifying a wallet 
