@@ -14,11 +14,15 @@ btcli nominate
 btcli delegate
 ```
 
-## List all the delagates in the network
+## List all the delagates in the network:
 ```
 btcli list_delegates
 ```
 
+## Show who you are delegating to:
+```bash
+btcli my_delegates
+```
 
 
 **E** = emissions earned by the key per block

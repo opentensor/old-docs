@@ -5,17 +5,44 @@
 
 # Update your miners and restart them on the new Finney network
 
+1. Do not transfer, stake, unstake, or perform chain operations, since these will not be reflected on the finney chain.
 
-1. Pull the latest master and install.
+2. During the period between Nakamoto closing and and Finney coming up, update all your bittensor repositories to the branch ``release/3.7.0``.
 
 ```bash
-git -C ~/.bittensor/bittensor pull origin master
-python3 -m pip install -e ~/.bittensor/bittensor
+cd ~/.bittensor/bittensor
+```
+```bash
+git fetch origin release/3.7.0
+```
+```bash
+git checkout release/3.7.0
+```
+```bash
+cd ..
+```
+```bash
+python3 -m pip install -e .
 ```
 
-2. Restart your miners
+3. Once your Bittensor release/3.7.0 branch is properly installed, you can prepare your Servers and Validators to connect into the Finney chain. The command to run your Servers and Validators is entirely the same with the exception of the command line argument ``net.uid <>``
 
-A simple stop and start will do.
+At ~5pm EST we will open Finney and you will be able to re-run your Server and Validator commands (as normal with the additional ``--net.uid <>`` argument). If you had a registered miner on the previous Nakamoto network it will still be registered, with stake on the Finney chain on sub-network 3. Your axon-ip endpoint will update automatically when running the miner.
+
+For example, if your mining script is normally:
+
+```bash
+btcli run
+```
+
+It becomes:
+
+```bash
+btcli run --net.uid 3
+```
+
+Net UID 3 is the only available network at this time.
+
 
 # StakePruningMin
 
@@ -25,17 +52,21 @@ The StakePruningMin hyperparemter, which provided deregistration immunity to any
 
 Delegation introduces a new way for miners to stake Tao to support the network's most honest and innovative Validators. Any hotkey may nominate themselves as a delegate and receive stake delegations from other wallets in the network. Key owners of delegates collect an 18% "take" on emissions of all delegated Tao.
 Learn more [here](Delegation.md)
-## Turn your hotkey into a delegate:
+## Turn your hotkey into a delegate
 ```bash
 btcli nominate
 ```
-## Stake to a delegate account:
+## Stake to a delegate account
 ```bash
 btcli delegate
 ```
 ## List all the delagates in the network
 ```bash
 btcli list_delegates
+```
+## Show who you are delegating to
+```bash
+btcli my_delegates
 ```
 
 # Recycle Registration

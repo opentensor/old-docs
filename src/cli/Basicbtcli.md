@@ -123,3 +123,9 @@ View a list of all delegate hotkeys:
 ```bash
 btcli list_delegates
 ```
+
+Show who you are delegating to:
+
+```bash
+btcli my_delegates
+```
