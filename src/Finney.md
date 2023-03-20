@@ -34,7 +34,7 @@ git clone https://github.com/opentensor/subtensorv3.git
 cd subtensorv3
 ```
 ```bash
-docker compose up -d
+docker-compose up -d
 ```
 
 4. Once your Bittensor release/3.7.0 branch is properly installed and you have SubtensorV3 running, you can prepare your Servers and Validators to connect into the Finney chain. The command to run your Servers and Validators is entirely the same with the exception of the command line argument ``net.uid <>``
