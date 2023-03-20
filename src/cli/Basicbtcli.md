@@ -1,6 +1,6 @@
 # Basic btcli
 
-Before you begin customizing your miner to optimize your currency accrual, it is useful to familiarize yourself with our``btcli`` commands. Btcli is a command line interface to interact with Bittensor, and commands are used to monitor miner performance, transfer Tao, regenerate keys, and run a miner. 
+Before you begin customizing your miner, it is useful to familiarize yourself with our``btcli`` commands. Btcli is a command line interface to interact with Bittensor, and commands are used to monitor miner performance, transfer Tao, regenerate keys, and run a miner. 
 
 ## Running a miner
 
@@ -101,4 +101,31 @@ Regen a hotkey:
 
 ```bash
 btcli regen_hotkey
+```
+
+
+## Delegating
+
+Nominate your hotkey as a delegate:
+
+```bash
+btcli nominate
+```
+
+Delegate stake to someone else's delegate hotkey:
+
+```bash
+btcli delegate
+```
+
+View a list of all delegate hotkeys:
+
+```bash
+btcli list_delegates
+```
+
+Show who you are delegating to:
+
+```bash
+btcli my_delegates
 ```
