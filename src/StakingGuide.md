@@ -12,15 +12,15 @@ For a list of Delegates and their hotkeys: https://github.com/opentensor/bittens
 ![Extrinsics](images/step2.png)
 
 
-3. In the drop down, select SubtensorModule.
+3. In the drop down, select `SubtensorModule`.
 ![SubtensorModule](images/step3.png)
 
 
-4. In the drop down menu corresponding to the SubtensorModule drop down, select addStake. 
+4. In the drop down menu corresponding to the `SubtensorModule` drop down, select `addStake`.(If you want to undelegate, select `removeStake` ) 
 ![AddStake](images/step4.png)
 
 
-5. Paste the hotkey of the delegate in the drop down box labeled "hotkey".
+5. Paste the hotkey of the delegate in the drop down box labeled `hotkey`.
 ![delegatehotkey](images/step5.png)
 
 
@@ -28,6 +28,6 @@ For a list of Delegates and their hotkeys: https://github.com/opentensor/bittens
 ![amountstaked](images/step6.png)
 
 
-7. Once you have verified the keys and amounts, click Submit Transaction to sign and submit this transaction to be included on the chain.
+7. Once you have verified the keys and amounts, click `Submit Transaction` to sign and submit this transaction to be included on the chain.
 ![signandsubmit](images/step7.png)
 
