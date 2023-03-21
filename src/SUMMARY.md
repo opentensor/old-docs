@@ -22,6 +22,8 @@
 
 - [Registering a Miner](Registration.md)
 
+- [Staking to Opentensor Foundation](StakingGuide.md)
+
 - [Running a Miner](cli/MinerPreperation.md)
      
 - [Server Customization](css/ServerCustomization.md)
