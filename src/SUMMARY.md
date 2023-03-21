@@ -30,6 +30,8 @@
 
 - [Delegation](Delegation.md)
 
+- [Delegation via PolkadotJS](StakingGuide.md)
+
 - [Fine Tuning](nested/FineTuning.md)
 
 - [Methods of Configuration](cli/ConfigurationMethods.md)
