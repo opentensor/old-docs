@@ -22,8 +22,6 @@
 
 - [Registering a Miner](Registration.md)
 
-- [Staking to Opentensor Foundation](StakingGuide.md)
-
 - [Running a Miner](cli/MinerPreperation.md)
      
 - [Server Customization](css/ServerCustomization.md)
@@ -31,6 +29,8 @@
 - [Validator Customization](css/ValidatorCustomization.md)
 
 - [Delegation](Delegation.md)
+
+- [Delegation to via PolkadotJS](StakingGuide.md)
 
 - [Fine Tuning](nested/FineTuning.md)
 
