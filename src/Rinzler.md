@@ -1,6 +1,8 @@
 # Rinzler
 
-Rinzler is the test Subtensor network for Finney. This page assumes you have Docker and Bittensor installed and are on the [Finney branch](SwitchingBranches.md).
+Rinzler is the test Subtensor network for Finney. This page assumes you have
+Docker and Bittensor installed and are on the
+[Finney branch](SwitchingBranches.md).
 
 ## Running a Rinzler Endpoint
 
