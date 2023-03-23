@@ -2,3 +2,7 @@ book
 .vs_code
 .DS_Store
 **/.vscode/
+
+## Vim (BTW™)
+*.swp
+*.swo
