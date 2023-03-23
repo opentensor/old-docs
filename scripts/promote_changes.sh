@@ -68,10 +68,10 @@ esac
 
 ORIGIN_TYPE="$(get_remote_origin_type "$ORIGIN_BRANCH")"
 case $ORIGIN_TYPE in
-    $REMOTE_ORIGIN_HTTP)
+    "$REMOTE_ORIGIN_HTTP")
     REMOTE_URL=$REMOTE_HTTP
     ;;
-    $REMOTE_ORIGIN_SSH)
+    "$REMOTE_ORIGIN_SSH")
     REMOTE_URL=$REMOTE_SSH
     ;;
 esac
