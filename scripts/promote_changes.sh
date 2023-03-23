@@ -43,7 +43,7 @@ REMOTE_HTTP='https://github.com/opentensor/docs.git'
 REMOTE_SSH='git@github.com:opentensor/docs.git'
 REMOTE_NAME='tmp-promote-changes'
 function check_if_remote_exists {
-    URL_COUNT="$(git remote -v | grep $REMOTE_NAME | wc -l)"
+    URL_COUNT="$(git remote -v | grep -c $REMOTE_NAME)"
     if (( URL_COUNT > 0 )); then
         echo "yes"
     else
