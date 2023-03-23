@@ -43,7 +43,7 @@ REMOTE_HTTP='https://github.com/opentensor/docs.git'
 REMOTE_SSH='git@github.com:opentensor/docs.git'
 REMOTE_NAME='tmp-promote-changes'
 function check_if_remote_exists {
-    URL_COUNT=`git remote -v | grep $REMOTE_NAME | wc -l`
+    URL_COUNT="$(git remote -v | grep $REMOTE_NAME | wc -l)"
     if (( $URL_COUNT > 0 )); then
         echo "yes"
     else
@@ -53,7 +53,7 @@ function check_if_remote_exists {
 
 echo_info 'Checking git remote origin...'
 
-ORIGIN_BRANCH=`git remote -v | grep origin | grep push | awk '{ print $2}'`
+ORIGIN_BRANCH="$(git remote -v | grep origin | grep push | awk '{ print $2 }')"
 case "$ORIGIN_BRANCH" in
     *opentensor/docs-staging*)
         echo_good_news 'Correct remote origin'
@@ -66,7 +66,7 @@ case "$ORIGIN_BRANCH" in
 esac
 
 
-ORIGIN_TYPE=`get_remote_origin_type $ORIGIN_BRANCH`
+ORIGIN_TYPE="$(get_remote_origin_type $ORIGIN_BRANCH)"
 case $ORIGIN_TYPE in
     $REMOTE_ORIGIN_HTTP)
     REMOTE_URL=$REMOTE_HTTP
@@ -78,19 +78,19 @@ esac
 
 echo_info "Creating git remote '$REMOTE_NAME' '$REMOTE_URL' if not exists"
 
-REMOTE_ALREADY_EXIST=`check_if_remote_exists`
+REMOTE_ALREADY_EXIST="$(check_if_remote_exists)"
 if [ $REMOTE_ALREADY_EXIST == "no" ]; then
     git remote add $REMOTE_NAME $REMOTE_URL
 fi
 
-REMOTE_ALREADY_EXIST=`check_if_remote_exists`
+REMOTE_ALREADY_EXIST="$(check_if_remote_exists)"
 if [ $REMOTE_ALREADY_EXIST == "no" ]; then
     echo_error "Something went wrong, unable to create git remote $REMOTE_NAME"
 fi
 
 echo_good_news "Remote exists '$REMOTE_NAME' -> $REMOTE_URL"
 
-USER_NAME=`git config user.name`
+USER_NAME="$(git config user.name)"
 if [ -z $USER_NAME ]; then
     USER_NAME='unknown'
 fi
