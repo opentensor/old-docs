@@ -1,7 +1,6 @@
 # Registration
 
 
-
 ## Registering a hotkey
 
 Before you can begin mining Tao, you must first register a hotkey to the
@@ -46,10 +45,11 @@ Should the previous installation fail, you may install from source or a wheel:
 [cubit installation](https://github.com/opentensor/cubit/#install)
 
 You can check if your GPU is being seen through torch:
+
 ```python
-python3
->>> import torch
->>> torch.cuda.is_available()
+# python3
+import torch
+torch.cuda.is_available()
 ```
 
 A quick way to test if the GPU registration process is working properly is by
