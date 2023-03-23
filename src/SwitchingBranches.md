@@ -7,17 +7,17 @@ To begin testing the Finney network, hop to the Finney branch.
 cd ~/.bittensor/bittensor
 ```
 
-2. Run a quick update
+1. Run a quick update
 ```bash
 btcli update
 ```
 
-3. Jump to the finney branch
+1. Jump to the finney branch
 ```
 git checkout release/3.7.0
 ```
 
-4. Install
+1. Install
 ```bash
 python3 -m pip install -e
 ```
@@ -43,7 +43,7 @@ btcli run --subtensor.network finney
 cd ~/.bittensor/bittensor
 ```
 
-2. Jump back ton the master branch
+1. Jump back to the master branch
 ```bash
 git checkout master
 ```
