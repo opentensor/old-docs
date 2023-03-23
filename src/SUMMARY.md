@@ -46,3 +46,7 @@
 
 - [Validator Hyperparameters](Hyperparameters.md)
 
+- [Developing Subtensor network with Rinzler](Rinzler.md)
+
+- [Switching Branches](SwitchingBranches.md)
+
