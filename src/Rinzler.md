@@ -7,21 +7,22 @@ Docker and Bittensor installed and are on the
 ## Running a Rinzler Endpoint
 
 1. Open the Bittensor directory
-```bash
-cd ~/.bittensor
-```
+   ```bash
+   cd ~/.bittensor
+   ```
 
 1. Clone into the Rinzler repository
-```bash
-git clone https://github.com/opentensor/rinzler
-```
+   ```bash
+   git clone https://github.com/opentensor/rinzler
+   ```
 
 1. Open the Rinzler repository
-```bash
-cd ~/.bittensor/rinzler
-```
+   ```bash
+   cd ~/.bittensor/rinzler
+   ```
 
 1. Run a Rinzler endpoint locally
-```bash
-sudo docker compose up -d
-```
+   ```bash
+   sudo docker compose up -d
+   ```
+
