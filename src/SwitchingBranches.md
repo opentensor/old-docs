@@ -18,7 +18,7 @@ To begin testing the Finney network, hop to the Finney branch.
 
 1. Jump to the finney branch
 
-   ```
+   ```bash
    git checkout release/3.7.0
    ```
 
