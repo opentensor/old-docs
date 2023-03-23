@@ -1,4 +1,6 @@
-# Testing Finney
+# Switching Branches
+
+## Testing Finney
 
 To begin testing the Finney network, hop to the Finney branch.
 
@@ -22,7 +24,7 @@ To begin testing the Finney network, hop to the Finney branch.
    python3 -m pip install -e
    ```
 
-# Finney Chain Endpoint
+## Finney Chain Endpoint
 
 You can connect to the custom chain endpoint
 `wss://public.finney.opentensor.ai:443` by adding the following flag to your
@@ -36,7 +38,7 @@ For example:
 btcli run --subtensor.network finney
 ```
 
-# Return to the master branch
+## Return to the master branch
 
 1. Remain in the Bittensor directory
    ```bash
