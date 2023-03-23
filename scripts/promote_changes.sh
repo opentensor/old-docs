@@ -66,7 +66,7 @@ case "$ORIGIN_BRANCH" in
 esac
 
 
-ORIGIN_TYPE="$(get_remote_origin_type $ORIGIN_BRANCH)"
+ORIGIN_TYPE="$(get_remote_origin_type "$ORIGIN_BRANCH")"
 case $ORIGIN_TYPE in
     $REMOTE_ORIGIN_HTTP)
     REMOTE_URL=$REMOTE_HTTP
@@ -79,19 +79,19 @@ esac
 echo_info "Creating git remote '$REMOTE_NAME' '$REMOTE_URL' if not exists"
 
 REMOTE_ALREADY_EXIST="$(check_if_remote_exists)"
-if [ $REMOTE_ALREADY_EXIST == "no" ]; then
-    git remote add $REMOTE_NAME $REMOTE_URL
+if [ "$REMOTE_ALREADY_EXIST" == "no" ]; then
+    git remote add "$REMOTE_NAME" "$REMOTE_URL"
 fi
 
 REMOTE_ALREADY_EXIST="$(check_if_remote_exists)"
-if [ $REMOTE_ALREADY_EXIST == "no" ]; then
+if [ "$REMOTE_ALREADY_EXIST" == "no" ]; then
     echo_error "Something went wrong, unable to create git remote $REMOTE_NAME"
 fi
 
 echo_good_news "Remote exists '$REMOTE_NAME' -> $REMOTE_URL"
 
 USER_NAME="$(git config user.name)"
-if [ -z $USER_NAME ]; then
+if [ -z "$USER_NAME" ]; then
     USER_NAME='unknown'
 fi
 
@@ -99,14 +99,14 @@ TS=$(date +%Y_%m_%d)
 BRANCH_TO_PUSH="promote-changes/$TS/$USER_NAME"
 
 echo_info "Pushing changes to remote branch '$BRANCH_TO_PUSH'"
-git push $REMOTE_NAME main:$BRANCH_TO_PUSH
+git push "$REMOTE_NAME" "main:$BRANCH_TO_PUSH"
 
 case $OSTYPE in
     "linux-gnu"*)
-        xdg-open https://github.com/opentensor/docs/pull/new/$BRANCH_TO_PUSH
+        xdg-open "https://github.com/opentensor/docs/pull/new/$BRANCH_TO_PUSH"
     ;;
     "darwin"*)
-        open https://github.com/opentensor/docs/pull/new/$BRANCH_TO_PUSH
+        open "https://github.com/opentensor/docs/pull/new/$BRANCH_TO_PUSH"
     ;;
     *)
         echo_warning "OS type '$OSTYPE' not supported."
