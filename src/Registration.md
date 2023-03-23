@@ -95,4 +95,5 @@ Enter the subnetwork that you wish to register too.
 
 ## Enter your wallet
 
-Enter the name of your coldkey and hotkey credentials. *note: you will need a separate hotkey for each miner you register.*
+Enter the name of your coldkey and hotkey credentials.
+> Note: you will need a separate hotkey for each miner you register.
