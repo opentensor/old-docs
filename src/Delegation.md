@@ -33,13 +33,36 @@ btcli my_delegates
 
 **Delegate key owner**
 
-Emissions received = **E** * **0.18**+(**Sn**/**St**)*(**E**-**E** * **.18**)
+\\[
+  Emissions\\ received =
+  \mathrm{E} \cdot 0.18 +
+    \left(
+      \mathrm{Sn} / \mathrm{St}
+    \right)
+    \cdot
+    \left(
+      \mathrm{E} - \mathrm{E}
+      \cdot
+      0.18
+    \right)
+\\]
 
 *~delegates receive an 18% tax*
 
 **Delegated stake owners**
 
-Emissions received = (**Sn**/**St**)*(**E**-**E** * **.18**)
+\\[
+  Emissions\\ received =
+    \left(
+      \mathrm{Sn} / \mathrm{St}
+    \right)
+    \cdot
+    \left(
+      \mathrm{E} - \mathrm{E}
+      \cdot
+      0.18
+    \right)
+\\]
 
 *~delegated stake owners pay an 18% tax through emissions*
 
