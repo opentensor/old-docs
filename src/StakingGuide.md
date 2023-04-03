@@ -1,6 +1,9 @@
-# Staking to Opentensor Foundation
-In addition to running your own miner or validator, you also have the option to delegate your Tao to the Opentensor Foundation validation pool. In essence, 
-delegating Tao simply means you are staking to the foundation's validator, instead of running your own. You can simply 'undelegate' your Tao to take it back from the pool at any time.
+
+# Staking to a Delegate
+In addition to running your own Server or Validator, you also have the option to delegate your Tao to the Opentensor Foundation validation pool. In essence, 
+delegating Tao simply means you are staking to the Foundation's Validator, instead of running your own. You can simply 'undelegate' your Tao to take it back from the pool at any time.
+
+For a list of Delegates and their hotkeys: https://github.com/opentensor/bittensor/blob/master/delegates.json
 
 
 1. Add your Bittensor wallet to the [Polkadot Extension](https://polkadot.js.org/extension/) wallet in your browser (you will need your mnemonic to do this). Once you've done so, navigate to [Polkadot JS](https://polkadot.js.org/apps/?rpc=wss://entrypoint-finney.opentensor.ai:443#/accounts) and your account should be displayed there.
