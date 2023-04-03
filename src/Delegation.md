@@ -1,25 +1,33 @@
 # Delegation
 
-Any hotkey may become a delegate and receive nominations of stake from other wallets in the network. Key owners of delegates collect an 18% "take" on emissions of all delegated Tao.
+Any hotkey may become a delegate and receive nominations of stake from other
+wallets in the network. Key owners of delegates collect an 18% "take" on
+emissions of all delegated Tao.
 
-When a coldkey creates a hotkey delegate, it will receive all of the emissions from the stake it adds to its hotkey delegate. The delegate owner will also collect 18% of the emissions from all delegated stake.
+When a coldkey creates a hotkey delegate, it will receive all of the emissions
+from the stake it adds to its hotkey delegate. The delegate owner will also
+collect 18% of the emissions from all delegated stake.
 
 ## Turn your hotkey into a delegate:
-```
+
+```bash
 btcli nominate
 ```
 
 ## Stake to a delegate account:
-```
+
+```bash
 btcli delegate
 ```
 
 ## List all the delegates in the network:
-```
+
+```bash
 btcli list_delegates
 ```
 
 ## Show who you are delegating to:
+
 ```bash
 btcli my_delegates
 ```
@@ -33,13 +41,36 @@ btcli my_delegates
 
 **Delegate key owner**
 
-Emissions received = **E** * **0.18**+(**Sn**/**St**)*(**E**-**E** * **.18**)
+\\[
+  Emissions\\ received =
+  \mathrm{E} \cdot 0.18 +
+    \left(
+      \mathrm{Sn} / \mathrm{St}
+    \right)
+    \cdot
+    \left(
+      \mathrm{E} - \mathrm{E}
+      \cdot
+      0.18
+    \right)
+\\]
 
 *~delegates receive an 18% tax*
 
 **Delegated stake owners**
 
-Emissions received = (**Sn**/**St**)*(**E**-**E** * **.18**)
+\\[
+  Emissions\\ received =
+    \left(
+      \mathrm{Sn} / \mathrm{St}
+    \right)
+    \cdot
+    \left(
+      \mathrm{E} - \mathrm{E}
+      \cdot
+      0.18
+    \right)
+\\]
 
 *~delegated stake owners pay an 18% tax through emissions*
 

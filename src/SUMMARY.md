@@ -2,8 +2,6 @@
 
 # Learn
 
-- [FINNEY UPDATE](Finney.md)
-
 - [Introduction](index.md)
 
 - [The Protocol](nested/TheProtocol2.md)
@@ -30,7 +28,7 @@
 
 - [Delegation](Delegation.md)
 
-- [Delegation to via PolkadotJS](StakingGuide.md)
+- [Delegation via PolkadotJS](StakingGuide.md)
 
 - [Fine Tuning](nested/FineTuning.md)
 
