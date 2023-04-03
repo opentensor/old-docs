@@ -2,8 +2,6 @@
 
 # Learn
 
-- [FINNEY UPDATE](Finney.md)
-
 - [Introduction](index.md)
 
 - [The Protocol](nested/TheProtocol2.md)
