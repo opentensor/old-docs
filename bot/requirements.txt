@@ -1,0 +1,5 @@
+langchain==0.0.133
+openai
+chromadb
+google-search-results
+unstructured

@@ -1,4 +1,0 @@
-langchain
-openai
-chromadb
-google-search-results
