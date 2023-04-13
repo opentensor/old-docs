@@ -44,3 +44,6 @@
 
 - [Validator Hyperparameters](Hyperparameters.md)
 
+- [Prompt Subnetwork](PromptSubnet.md)
+
+- [Finney Testnet](TestNet.md)
