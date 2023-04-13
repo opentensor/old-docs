@@ -3,7 +3,7 @@
 
 
 
-# Update your miners and restart them on the new Finney network
+# Update your Servers and restart them on the new Finney network
 
 ## Do not transfer, stake, unstake, or perform chain operations on nakamoto, since these will not be reflected on the finney chain
 
@@ -52,7 +52,7 @@ btcli run --netuid 3
 
 Net UID 3 is the only available network at this time.
 
-Over the next 48 hours registrations will be turned off on Finney, giving all miners on the previous network time to begin their Servers/Validators and time for the incentive mechanism to re-stabilize. Devs will be avialable to help people bridge this period on the official Bittensor discord.
+Over the next 48 hours registrations will be turned off on Finney, giving all Servers on the previous network time to begin their Servers/Validators and time for the incentive mechanism to re-stabilize. Devs will be avialable to help people bridge this period on the official Bittensor discord.
 
 # StakePruningMin
 
@@ -60,7 +60,7 @@ The StakePruningMin hyperparemter, which provided deregistration immunity to any
 
 # Delegating
 
-Delegation introduces a new way for miners to stake Tao to support the network's most honest and innovative Validators. Any hotkey may nominate themselves as a delegate and receive stake delegations from other wallets in the network. Key owners of delegates collect an 18% "take" on emissions of all delegated Tao.
+Delegation introduces a new way for Servers to stake Tao to support the network's most honest and innovative Validators. Any hotkey may nominate themselves as a delegate and receive stake delegations from other wallets in the network. Key owners of delegates collect an 18% "take" on emissions of all delegated Tao.
 Learn more [here](Delegation.md)
 ## Turn your hotkey into a delegate
 ```bash
@@ -91,7 +91,7 @@ btcli recycle_register
 
 # Specifying subnetworks
 
-While the Finney upgrade will not introduce any new subnetworks intially, they are on the horizon. Miners need to specify which subnetwork they are mining or registering on with ``--netuid`` or by following the user interface prompts.
+While the Finney upgrade will not introduce any new subnetworks intially, they are on the horizon. Servers need to specify which subnetwork they are mining or registering on with ``--netuid`` or by following the user interface prompts.
 
 For example, run on subnetwork 3:
 

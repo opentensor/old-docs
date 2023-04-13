@@ -1,8 +1,8 @@
 # Nobunaga Guide
 
-## Testing Miners With Nobunaga
+## Testing Servers With Nobunaga
 
-*Nobunaga is the test network used for running practice miners.* 
+*Nobunaga is the test network used for running practice Servers.* 
 
 ### 1. **Change the Directory to Bittensor**
 

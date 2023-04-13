@@ -80,7 +80,7 @@ Every running miner must be connected to a registered hotkey. This code will spe
 ## Specifying a port 
 
 
-Specifying a port to which to access the network is important because you will benefit from entering a low traffic area. This will generally be one above 1024 and below 65535. Each miner needs to have a unique port, so if you have two miners running on the same machine, they will require two separate ports.
+Specifying a port to which to access the network is important because you will benefit from entering a low traffic area. This will generally be one above 1024 and below 65535. Each miner needs to have a unique port, so if you have two Servers running on the same machine, they will require two separate ports.
  
 
 The miner communicates with the network through its communication endpoint, the axon. This is where the argument is made. 

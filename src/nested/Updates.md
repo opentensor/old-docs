@@ -9,7 +9,7 @@ git -C ~/.bittensor/bittensor pull origin master
 python3 -m pip install -e ~/.bittensor/bittensor
 ```
 
-2. Restart your miners.
+2. Restart your Servers.
 
-Restarting Servers and Validators follows the same procedure. Simply stop and start your mining sequence after each update to ensure your miners are using the latest version of Bittensor.
+Restarting Servers and Validators follows the same procedure. Simply stop and start your mining sequence after each update to ensure your Servers are using the latest version of Bittensor.
 

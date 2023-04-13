@@ -39,7 +39,7 @@ dataset.num_workers: 0
 dataset.save_dataset: false
 
 logging.debug: false
-logging.logging_dir: ~/.bittensor/miners
+logging.logging_dir: ~/.bittensor/Servers
 logging.record_log: false
 logging.trace: false
 

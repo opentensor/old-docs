@@ -5,7 +5,7 @@
 
 Before you can begin mining Tao, you must first register a hotkey to the
 network by solving the proof of work (POW) or by paying a fee with
-`recycle_register`. The Bittensor network is comprised of 4096 miners, and each
+`recycle_register`. The Bittensor network is comprised of 4096 Servers, and each
 time a new hotkey is registered to the network, the lowest ranked miner is
 kicked off of the network. POW registration will likely require GPUs.
 
@@ -79,7 +79,7 @@ You will be immediately prompted to:
 
 To immediately gain access to Subtensor - our network blockchain - choose
 "finney". Finney is useful for quick connections to the network like checking
-your wallet balance, however it is not reliable for mining. For serious miners
+your wallet balance, however it is not reliable for mining. For serious Servers
 we recommend running an instance of [Subtensor locally](cli/Subtensor.md) in
 order to maximize speed and connection. Should you be running Subtensor
 locally, choose "local".

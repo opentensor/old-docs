@@ -20,17 +20,17 @@ The part of the miner that contains cold storage. Remains on device.
 
 ### Axon
 
-Miners receive requests from other peers in the network via the axon.
+Servers receive requests from other peers in the network via the axon.
 
 
 ### Dendrite 
 
-Miners send requests to other peers in the network via the dendrite. 
+Servers send requests to other peers in the network via the dendrite. 
 
 
 ### Metagraph
 
-A Python torch object that produces a view into the network. This tool is used internally by miners and also for network analysis. 
+A Python torch object that produces a view into the network. This tool is used internally by Servers and also for network analysis. 
 
 
 ## Network 
