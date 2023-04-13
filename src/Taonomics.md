@@ -8,7 +8,7 @@ Tao is the token for Bittensor and gatekeeps access, representing bandwidth to t
 
 # Emission Split
 
-Servers and Validators evenly split emissions per block, with the most emissions issued to the best-performing miners.
+Servers and Validators evenly split emissions per block, with the most emissions issued to the best-performing Servers.
 
 
 # Validation and B (Bonds)
