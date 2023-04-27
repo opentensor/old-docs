@@ -9,7 +9,7 @@ Tao is the token for Bittensor and gatekeeps access, representing bandwidth to t
 **Emission Split**: Each subnetwork \\(h\\) receives a set percentage \\(E_h\\) of total emission \\(E=\sum_h E_h\\).
 Servers and Validators evenly split emissions per block, with the most emissions issued to the best-performing Servers and largest Validators.
 
-**Weights**: Each Validator \\(i\\) evaluates the relative utility of each Server \\(j\\), and sets weights \\(\sum_jW_{ij}=1\\) on-chain, signed with Validator hotkey. A relatively high weight indicates relatively high Server utility.
+**Weights**: Each Validator \\(i\\) evaluates the relative utility of each Server \\(j\\), and sets weights \\(\sum_jW_{ij}=1\\) on-chain, signed with the Validator hotkey. A relatively high weight indicates relatively high Server utility.
 
 **Prerank**: Server rank \\(R_j\\) is the sum of weighted stake set on \\(j\\), before consensus. A high rank indicates that majority stake agrees on relatively high utility of a Server.
 \\[P_j = \sum_i S_i \cdot W_{ij}\\]
@@ -24,7 +24,7 @@ Servers and Validators evenly split emissions per block, with the most emissions
 **Server Incentive**: Server rank \\(R_j\\) is the sum of weighted stake set on \\(j\\), which is also the Server incentive ratio \\(I_j\\). Better performing Servers get relatively higher rank and incentive.
 \\[I_j = R_j = \sum_i S_i \cdot \min\left( W_{ij}, C_j \right)\\]
 
-**Server Trust**: The ratio of Server \\(j\\) rank \\(R_j\\) to its prerank \\(P_j\\) is the trust \\(T_j\\) in the initial weights set on the Server. High Server trust means that mostly trusted Validators set weights on it.
+**Server Trust**: The ratio of Server \\(j\\) rank \\(R_j\\) to its prerank \\(P_j\\) is the trust \\(T_j\\) in the initial weights set on the Server. High Server trust indicates that mostly trusted Validators set weights on it.
 \\[T_j = \frac{R_j}{P_j}\\]
 
 **Validator Bonds**: Validators accumulate bonded relationships \\(B_{ij}\\) in the Servers they rank, adding \\(\Delta B_{ij} = S_i \cdot \min \left( W_{ij}, C_j \right)\\) (normalized across Validators) via exponential moving average at each epoch \\(t\\) (typically \\(\alpha=0.1\\)).
