@@ -19,15 +19,15 @@ Servers and Validators evenly split emissions per block, with the most emissions
 <img src="images/consensus_plots.pdf"  height="200">
 
 **Validator Trust**: Clip weights above consensus to penalize overweighting, the sum of consensus-clipped weight is then Validator trust \\(V_i\\), which is the weighting power remaining after consensus (initially starts with 100% power). High Validator trust means it is typically setting weights in agreement with majority stake.
-\\[V_i = \sum_j\max\left( W_{ij}, C_j \right)\\]
+\\[V_i = \sum_j\min\left( W_{ij}, C_j \right)\\]
 
 **Server Incentive**: Server rank \\(R_j\\) is the sum of weighted stake set on \\(j\\), which is also the Server incentive ratio \\(I_j\\). Better performing Servers get relatively higher rank and incentive.
-\\[I_j = R_j = \sum_i S_i \cdot \max\left( W_{ij}, C_j \right)\\]
+\\[I_j = R_j = \sum_i S_i \cdot \min\left( W_{ij}, C_j \right)\\]
 
 **Server Trust**: The ratio of Server \\(j\\) rank \\(R_j\\) to its prerank \\(P_j\\) is the trust \\(T_j\\) in the initial weights set on the Server. High Server trust means that mostly trusted Validators set weights on it.
 \\[T_j = \frac{R_j}{P_j}\\]
 
-**Validator Bonds**: Validators accumulate bonded relationships \\(B_{ij}\\) in the Servers they rank, adding \\(\Delta B_{ij} = S_i \cdot \max \left( W_{ij}, C_j \right)\\) (normalized across Validators) via exponential moving average at each epoch \\(t\\) (typically \\(\alpha=0.1\\)).
+**Validator Bonds**: Validators accumulate bonded relationships \\(B_{ij}\\) in the Servers they rank, adding \\(\Delta B_{ij} = S_i \cdot \min \left( W_{ij}, C_j \right)\\) (normalized across Validators) via exponential moving average at each epoch \\(t\\) (typically \\(\alpha=0.1\\)).
 \\[B_{ij}^{(t)} = \alpha \Delta B_{ij} + (1-\alpha) B_{ij}^{(t-1)} \\]
 
 **Validator Reward**: Validators receive a portion (typically 50%) of the incentive of bonded Servers as reward \\(D_i\\) for setting weights in consensus.
