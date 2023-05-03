@@ -6,7 +6,7 @@
 
 - [The Protocol](nested/TheProtocol2.md)
 
-- [Taonomics](tokenomics.md)
+- [Taonomics](Taonomics.md)
 
 # Tutorials
 
