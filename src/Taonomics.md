@@ -16,7 +16,7 @@ Servers and Validators evenly split emissions per block, with the most emissions
 
 **Consensus**: On-chain consensus then calculates stake-based median weight \\(C_j\\) for each Server \\(j\\), which is the maximum weight supported by at least \\(\kappa\\)-majority stake, so that stake sum (as ratio of total active stake) of active Validators setting at least consensus weight is \\(\kappa\\) (typically \\(\kappa=0.5\\)).
 \\[C_j = \max w:\quad \kappa \le \sum_i S_i \cdot \left( w \le W_{ij} \right)\\]
-<img src="images/consensus_plots.pdf"  height="200">
+<img src="images/consensus_plots.pdf">
 
 **Validator Trust**: Clip weights above consensus to penalize overweighting, the sum of consensus-clipped weight is then Validator trust \\(V_i\\), which is the weighting power remaining after consensus (initially starts with 100% power). High Validator trust means it is typically setting weights in agreement with majority stake.
 \\[V_i = \sum_j\min\left( W_{ij}, C_j \right)\\]
@@ -34,7 +34,8 @@ Servers and Validators evenly split emissions per block, with the most emissions
 \\[D_i = \sum_j B_{ij} \cdot I_j\\]
 
 **Consensus Guarantees**: Unfairly high self-weight set by minority-stake cabals gets clipped at consensus and removes significant voting power. Optimal cabal attacks aim to set self-weights that maximize honest self-weight (utility) required for retaining majority stake. Subtensor implements on-chain consensus and verifies its guarantees via integration tests. It also maps guarantees for given weight standard deviations by simulating large networks and optimizing cabal attacks:
-<img src="images/consensus_guarantees.pdf"  height="520">
+
+<img src="images/consensus_guarantees.pdf">
 
 **KEY**
 ---
