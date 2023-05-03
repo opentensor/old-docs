@@ -33,9 +33,14 @@ Servers and Validators evenly split emissions per block, with the most emissions
 **Validator Reward**: Validators receive a portion (typically 50%) of the incentive of bonded Servers as reward \\(D_i\\) for setting weights in consensus.
 \\[D_i = \sum_j B_{ij} \cdot I_j\\]
 
-**Consensus Guarantees**: Unfairly high self-weight set by minority-stake cabals gets clipped at consensus and removes significant voting power. Optimal cabal attacks aim to set self-weights that maximize honest self-weight (utility) required for retaining majority stake. Subtensor implements on-chain consensus and verifies its guarantees via integration tests. It also maps guarantees for given weight standard deviations by simulating large networks and optimizing cabal attacks:
+**Emission**: Neurons can simultaneously act as Server and Validator, and generally its emission comprises Server incentive \\(I_i/2\\) and Validator reward \\(D_i/2\\), since it is granting half incentive to its bondholders and gains half incentive from those Servers it is bonded to.
+\\[E_i = \left(I_i + D_i\right)\left/2\right.\\]
+
+**Consensus Guarantees**: Unfairly high self-weight set by minority-stake cabals gets clipped at consensus and removes significant voting power. Optimal cabal attacks aim to set self-weights that maximize honest self-weight (utility) required for retaining majority stake. Subtensor implements on-chain consensus and verifies its guarantees via integration tests. It also maps guarantees for given weight standard deviations by simulating large networks and optimizing cabal attacks.
 
 <img src="images/consensus_guarantees.pdf">
+
+We assume majority stake is honest and sets accurate weights on the entire network, while minority stake can form a cabal that colludes to maximize its emission by setting high self-weight. Weights standard deviation is the extent of natural deviation due to sampling noise of validators measuring server performance, where each validator sets a different weight on a given server. Higher weight deviation increases the major utility requirement, since noise weakens the consensus. However, weights standard deviation is typically less than 40%, and if at least 60% stake is honest and controls 73% utility then it can still retain its stake, since it will receive at least 60% of emissions.
 
 **KEY**
 ---
