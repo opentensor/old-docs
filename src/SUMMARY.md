@@ -1,6 +1,6 @@
 
 
-# Learn
+# Concepts 
 
 - [Introduction](index.md)
 
@@ -8,7 +8,7 @@
 
 - [Taonomics](tokenomics.md)
 
-# Tutorials
+# Guides
 
 - [Updates](nested/Updates.md)
 
