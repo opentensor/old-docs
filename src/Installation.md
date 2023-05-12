@@ -1,72 +1,79 @@
-# Getting started
+# Installation
 
-This section will guide you through the basic steps necessary to run a miner in the Bittensor network. Considering the rapid expansion of - and competition within - the network since its launch in November 2021, registration difficulty is constantly shifting and there is no guarantee that the same caliber of hardware will always be sufficient. As of now, the bare minimum hardware requirement to register in the network is:
+Bittensor installation requires two installations: Bittensor and Subtensor. Bittensor is the python-based machine learning layer, whereas Subtensor is the rust-based blockchain consensus layer. They must run concurrently for each model. 
 
-- NVIDIA GPU
-- 100GB of disk space
-- Ubuntu LTS releases or Macintosh 
-- A good and stable internet connection
-
-To run a functional Server:
-
-- NVIDIA GPU 
-- 8GB of VRAM
-- 32 GB of RAM
-- 200GB of disk space
-- Ubuntu LTS releases or Macintosh 
-- A good and stable internet connection
-
-To run a Validator:
-
-- 16 dedicated CPU cores
-- 16 GB of RAM
-- 100GB of disk space
-- Ubuntu LTS releases or Macintosh 
-- A good and stable internet connection 
-
-*as of March 20, 2023*
-*these requirements are subject to increase*
-
-
+- **NOTE**
+    
+    It is highly recommend to **install Bittensor first** and then install Subtensor.
+    
 
 ## Installing Bittensor
 
+There are three ways to install Bittensor. 
 
-To begin, paste this script into your macOS Terminal or Linux shell prompt:
+1. Using the installer script. This is the easiest method and is recommended if you are new. Simply paste the following into your terminal.
+    
+    ```bash
+    /bin/bash -c "$(curl -fsSL [https://raw.githubusercontent.com/opentensor/bittensor/master/scripts/install.sh](https://raw.githubusercontent.com/opentensor/bittensor/master/scripts/install.sh))
+    ```
+    
+2. Using pip.
+    
+    ```bash
+    pip3 install bittensor
+    ```
+    
+3. From source.
+    
+    ```bash
+    git clone [https://github.com/opentensor/bittensor.git](https://github.com/opentensor/bittensor.git)
+    $ python3 -m pip install -e bittensor/
+    ```
+    
 
+Once installed, you can verify your installation by running the [Bittensor Command Line Interface](https://www.notion.so/Bittensor-Command-Line-Interface-btcli-f2f87e792037423493bfaacd5e3fea4d) (CLI) with `btcli --help`. The Bittensor CLI is the primary tool for interfacing with the Bittensor network. 
 
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/opentensor/bittensor/master/scripts/install.sh)"
-```
+## Run Subtensor on Docker
 
+Subtensor can be run straight through the included Docker container. This is the fastest and most reliable method to run Subtensor as Docker takes care of all required setup.
 
-You will be notified when the installation is complete, and the next step will be to create your keys.
+1. Clone the Subtensor repository.
+    
+    ```bash
+    git clone https://github.com/opentensor/subtensor.git ~/.bittensor
+    ```
+    
+    This will clone the Subtensor repository to `~/.bittensor`.
+    
+2. Run Subtensor in a Docker container. 
+    
+    ```bash
+    cd ~/.bittensor/subtensor && docker-compose up -d
+    ```
+    
+    This will run the blockchain in a Docker container, and will take about 5 minutes to fully synchronize with the rest of the network before it is useable. 
+    
 
+## Run Subtensor Natively
 
-## Creating your keys
-### Creating your coldkey
+You can also run Subtensor natively, this has a few advantages as it will run faster than a Docker container and allows you to use specific flags. 
 
-
-Your coldkey remains on your device and holds your "cold storage". Currency in cold storage cannot be used for immediate activity in the network 
-
-
-```
-btcli new_coldkey
-```
-
-
-You will be prompted to name your wallet (which refers to the coldkey in this instance) and choose a password, before being provided with a unique mnemonic device. Record this information privately and securely.
-
-
-#### Creating your hotkey
-
-
-This key contains your "hot storage": currency that can be used for immediate activity in the network. Your coldkey can have multiple hotkeys attached to it,  while each hotkey can only be associated with one coldkey. 
-
-
-```
-btcli new_hotkey
-```
-
-
-You will be prompted to complete the same steps as with the last key, in addition to specifying which coldkey you would like to connect your hotkey to. 
+1. [Install Rust locally.](https://www.rust-lang.org/tools/install)
+    
+    ```bash
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    ```
+    
+2. Install the correct nightly toolchain.
+    
+    ```bash
+    cd ~/.bittensor/subtensor && ./scripts/init.sh
+    ```
+    
+3. Build and compile Subtensor. This process will take a long time. 
+    
+    ```bash
+    cargo build --release --features runtime-benchmarks
+    ```
+    
+4. Simply copy/paste the line to run Subtensor from `docker-compose.yml`
