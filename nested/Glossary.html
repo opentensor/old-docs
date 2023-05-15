@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Preload font file -->
+        <link rel="preload" as="font" type="font/ttf" href="../fonts/Haffer-Regular.ttf" crossorigin>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Glossary</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/custom.css">
+
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item "><a href="../index.html">Introduction</a></li><li class="chapter-item "><a href="../nested/TheProtocol2.html">The Protocol</a></li><li class="chapter-item "><a href="../tokenomics.html">Taonomics</a></li><li class="chapter-item affix "><li class="part-title">Tutorials</li><li class="chapter-item "><a href="../nested/Updates.html">Updates</a></li><li class="chapter-item "><a href="../Installation.html">Installation</a></li><li class="chapter-item "><a href="../cli/Subtensor.html">Subtensor</a></li><li class="chapter-item "><a href="../cli/Basicbtcli.html">Wallet</a></li><li class="chapter-item "><a href="../Registration.html">Registering a Miner</a></li><li class="chapter-item "><a href="../cli/MinerPreperation.html">Running a Miner</a></li><li class="chapter-item "><a href="../css/ServerCustomization.html">Server Customization</a></li><li class="chapter-item "><a href="../css/ValidatorCustomization.html">Validator Customization</a></li><li class="chapter-item "><a href="../Delegation.html">Delegation</a></li><li class="chapter-item "><a href="../StakingGuide.html">Delegation via PolkadotJS</a></li><li class="chapter-item "><a href="../nested/FineTuning.html">Fine Tuning</a></li><li class="chapter-item "><a href="../cli/ConfigurationMethods.html">Methods of Configuration</a></li><li class="chapter-item "><a href="../nested/TheDataset.html">Bittensor Dataset</a></li><li class="chapter-item expanded "><a href="../nested/Glossary.html" class="active">Glossary</a></li><li class="chapter-item "><a href="../Arguments.html">Configuration Settings</a></li><li class="chapter-item "><a href="../nested/ReturnCodes.html">Return Codes</a></li><li class="chapter-item "><a href="../Hyperparameters.html">Validator Hyperparameters</a></li><li class="chapter-item "><a href="../PromptSubnet.html">Prompt Subnetwork</a></li><li class="chapter-item "><a href="../TestNet.html">Finney Testnet</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/opentensor/docs" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/opentensor/docs/edit/main/src/nested/Glossary.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="glossary"><a class="header" href="#glossary">Glossary</a></h1>
+<hr />
+<h2 id="miner-architecture"><a class="header" href="#miner-architecture">Miner Architecture</a></h2>
+<h3 id="minerneuronpeernode"><a class="header" href="#minerneuronpeernode">Miner/Neuron/Peer/Node</a></h3>
+<p>Used interchangeably to refer to a participant in the network. </p>
+<h3 id="hotkey"><a class="header" href="#hotkey">Hotkey</a></h3>
+<p>The part of the miner that contains &quot;hot storage&quot;. It is loaded into the network and gives ability to set weights (for Validators). </p>
+<h3 id="coldkey"><a class="header" href="#coldkey">Coldkey</a></h3>
+<p>The part of the miner that contains cold storage. Remains on device.</p>
+<h3 id="axon"><a class="header" href="#axon">Axon</a></h3>
+<p>Servers receive requests from other peers in the network via the axon.</p>
+<h3 id="dendrite"><a class="header" href="#dendrite">Dendrite</a></h3>
+<p>Servers send requests to other peers in the network via the dendrite. </p>
+<h3 id="metagraph"><a class="header" href="#metagraph">Metagraph</a></h3>
+<p>A Python torch object that produces a view into the network. This tool is used internally by Servers and also for network analysis. </p>
+<h2 id="network"><a class="header" href="#network">Network</a></h2>
+<h3 id="tao"><a class="header" href="#tao">Tao</a></h3>
+<p>The digital token that functions as currency in the network. Tao uses the same tokenomics as Bitcoin with a 4 year halving cycle and a max supply of 21 millions tokens.</p>
+<h3 id="subtensor"><a class="header" href="#subtensor">Subtensor</a></h3>
+<p>The network blockchain. </p>
+<h3 id="nakamoto"><a class="header" href="#nakamoto">Nakamoto</a></h3>
+<p>Our main network. </p>
+<h3 id="nobunaga"><a class="header" href="#nobunaga">Nobunaga</a></h3>
+<p>Our test network. </p>
+<h3 id="block-step"><a class="header" href="#block-step">Block step</a></h3>
+<p>Occurs every 12 seconds. The blockchain is updated, and newly minted Tao is distributed to the system. </p>
+<h3 id="uid"><a class="header" href="#uid">UID</a></h3>
+<p>The unique identifying number for each Miner. Represents its position in the network. There are currently 4096 UIDs available in the network. </p>
+<h3 id="forward-requests"><a class="header" href="#forward-requests">Forward Requests</a></h3>
+<p>The first stage of the transaction in which a Validator sends data to a Server in the form of tokens, and the the Server sends embeddings back. </p>
+<h3 id="backward-requests"><a class="header" href="#backward-requests">Backward Requests</a></h3>
+<p>The second stage of the transaction in which the Validator sends feedback (in the form of gradients) to the Server.</p>
+<h2 id="consensus-mechanism"><a class="header" href="#consensus-mechanism">Consensus Mechanism</a></h2>
+<h3 id="stake"><a class="header" href="#stake">Stake</a></h3>
+<p>Equivalent to the amount of Tao attached to the Miner's hotkey. For Validators, more stake translates to rankings being worth more. For Servers, more stake translates to a lower likelihood of being deregistered from the network. </p>
+<h3 id="rank"><a class="header" href="#rank">Rank</a></h3>
+<p>The raw score given to a Server by a Validators, combined with the stake of the Validator. </p>
+<h3 id="trust"><a class="header" href="#trust">Trust</a></h3>
+<p>This score represents the number of non-zero (approval) rankings that Servers receives from Validators. The trust score is used to determine whether a Server has achieved consensus in the network. The more stake a Validator has, the more trust scores it can distribute. </p>
+<h3 id="consensus"><a class="header" href="#consensus">Consensus</a></h3>
+<p>Achievement of a Server who has received a non-zero ranking from more than 50% of the stake in the network. Servers who reach consensus receive significantly higher rewards than those who have not. </p>
+<h3 id="incentive"><a class="header" href="#incentive">Incentive</a></h3>
+<p>The inflation achieved by a Server before dividends are distributed. The incentive is a combination of the rank and consensus scores. </p>
+<h3 id="inflation"><a class="header" href="#inflation">Inflation</a></h3>
+<p>The amount of currency (1 tao) released into the network at each block step. The single Tao is distributed amongst all peers in the network according to their performance.</p>
+<h3 id="emissions"><a class="header" href="#emissions">Emissions</a></h3>
+<p>Refers to the portion of the one Tao distributed to a single peer each block step.</p>
+<h3 id="dividends"><a class="header" href="#dividends">Dividends</a></h3>
+<p>When Validators rank Servers, they take on part ownership of them through the bonding matrix. When a Server's incentive is calculated, a portion of this is distributed to Validators who have bonds.</p>
+<h3 id="bonding-matrix"><a class="header" href="#bonding-matrix">Bonding Matrix</a></h3>
+<p>Refers to the bonds that Validators hold in Servers. The higher the stake the Validator has, and the more staked in the Server, the larger the dividend the Validator will receive.</p>
+<h3 id="embeddings"><a class="header" href="#embeddings">Embeddings</a></h3>
+<p>Also referred to as representations, embeddings are a way of expressing information (i.e the comprehensible meaning of a word) as a very high-dimensional vector.</p>
+<h3 id="logits"><a class="header" href="#logits">Logits</a></h3>
+<p>The probability of a word in NTP (next token prediction) or MTP (masked token prediction).</p>
+<h3 id="next-token-prediction"><a class="header" href="#next-token-prediction">Next Token Prediction</a></h3>
+<p>Predicting an answer given a context before the place of prediction (i.e. predicting the next word in a sentence).</p>
+<p><img src="NextTokenPrediction.png" alt="logit/tokens" /></p>
+<h3 id="masked-token-prediction"><a class="header" href="#masked-token-prediction">Masked Token Prediction</a></h3>
+<p>Predicting an answer given a context before and after the place of prediction (i.e. predicting the next word in a sentence).</p>
+<p><img src="MaskedTokenPrediction.png" alt="logit/tokens" /></p>
+<h3 id="shapely-value"><a class="header" href="#shapely-value">Shapely Value</a></h3>
+<p>A measure of individuals' contributions in a cooperative game.</p>
+<h3 id="dataset"><a class="header" href="#dataset">Dataset</a></h3>
+<p>Bittensor uses a 1.5 Terrabyte corpus dataset for training known as the Mountain.</p>
+<h3 id="sigmoid-function"><a class="header" href="#sigmoid-function">Sigmoid Function</a></h3>
+<p>The sigmoid produces a threshold-like scaling that rewards connected peers and punishes the non-trusted.</p>
+<h3 id="chain-security"><a class="header" href="#chain-security">Chain Security</a></h3>
+<p>Connecting to the Polkadot infrastructure will offer greater network security. Polkadot takes the concept of validation security away from the chain so that the Polkadot relay chain is now responsible for security. Read more about <a href="https://wiki.polkadot.network/docs/learn-security">Polkadot security.</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../nested/TheDataset.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../Arguments.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../nested/TheDataset.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../Arguments.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

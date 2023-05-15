@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Preload font file -->
+        <link rel="preload" as="font" type="font/ttf" href="../fonts/Haffer-Regular.ttf" crossorigin>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Fine Tuning</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/custom.css">
+
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item "><a href="../index.html">Introduction</a></li><li class="chapter-item "><a href="../nested/TheProtocol2.html">The Protocol</a></li><li class="chapter-item "><a href="../tokenomics.html">Taonomics</a></li><li class="chapter-item affix "><li class="part-title">Tutorials</li><li class="chapter-item "><a href="../nested/Updates.html">Updates</a></li><li class="chapter-item "><a href="../Installation.html">Installation</a></li><li class="chapter-item "><a href="../cli/Subtensor.html">Subtensor</a></li><li class="chapter-item "><a href="../cli/Basicbtcli.html">Wallet</a></li><li class="chapter-item "><a href="../Registration.html">Registering a Miner</a></li><li class="chapter-item "><a href="../cli/MinerPreperation.html">Running a Miner</a></li><li class="chapter-item "><a href="../css/ServerCustomization.html">Server Customization</a></li><li class="chapter-item "><a href="../css/ValidatorCustomization.html">Validator Customization</a></li><li class="chapter-item "><a href="../Delegation.html">Delegation</a></li><li class="chapter-item "><a href="../StakingGuide.html">Delegation via PolkadotJS</a></li><li class="chapter-item expanded "><a href="../nested/FineTuning.html" class="active">Fine Tuning</a></li><li class="chapter-item "><a href="../cli/ConfigurationMethods.html">Methods of Configuration</a></li><li class="chapter-item "><a href="../nested/TheDataset.html">Bittensor Dataset</a></li><li class="chapter-item "><a href="../nested/Glossary.html">Glossary</a></li><li class="chapter-item "><a href="../Arguments.html">Configuration Settings</a></li><li class="chapter-item "><a href="../nested/ReturnCodes.html">Return Codes</a></li><li class="chapter-item "><a href="../Hyperparameters.html">Validator Hyperparameters</a></li><li class="chapter-item "><a href="../PromptSubnet.html">Prompt Subnetwork</a></li><li class="chapter-item "><a href="../TestNet.html">Finney Testnet</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/opentensor/docs" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/opentensor/docs/edit/main/src/nested/FineTuning.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="clm-model-tuning"><a class="header" href="#clm-model-tuning">CLM Model Tuning</a></h1>
+<p><em>Note: This script was adapted from Hugging Face's Transformers/language-modeling code.</em></p>
+<p>Welcome to the CLM Model Tuning walkthrough. This section will guide you through how to install and use our guide to fine-tune your models. </p>
+<h1 id="language-model-tuning-preface"><a class="header" href="#language-model-tuning-preface">Language model tuning preface</a></h1>
+<p>Fine-tuning the library models for language modeling on a text dataset for models like GPT and GPT-2. Causal languages like this are trained or fine-tuned using a causal language modeling (CLM) loss.</p>
+<p>In theory, serving a tuned model can increase incentive and earnings on the Bittensor network. However this depends on many factors: the choice of model, the data used for tuning, and (to a lesser extent), the hyperparameters used for tuning itself. This is not a silver bullet that will immediately guarantee higher earnings, but differences will be more pronounced once the Synapse update is released <em>(time of writing: July 25, 2022).</em></p>
+<p>In the following examples, we will run on datasets hosted on <a href="TheDataset.html">Bittensor's IPFS Genesis Dataset</a>, on Hugging Face's dataset <a href="https://huggingface.co/datasets">hub</a>, or with your own text files.</p>
+<p>For a full list of models that will work with this script, refer to this <a href="https://huggingface.co/models?filter=text-generation">link</a>.</p>
+<h2 id="installation-and-requirements"><a class="header" href="#installation-and-requirements">Installation and requirements</a></h2>
+<p>This code assumes you have Bittensor already installed on your machine and is meant to be run entirely separately. Some basic linux command line knowledge is assumed, but <a href="https://ubuntu.com/tutorials/command-line-for-beginners#1-overview">this guide</a> should provide a good starting point to navigate and move around files, directories, etc.</p>
+<p>To start, clone this repository: </p>
+<pre><code class="language-bash">git clone https://github.com/opentensor/clm_model_tuning 
+</code></pre>
+<p>Install the additional packages for this script:</p>
+<pre><code class="language-bash">pip install -r requirements.txt
+</code></pre>
+<p>All of the following commands assume you are working from this folder:</p>
+<pre><code class="language-bash">cd clm_model_tuning
+</code></pre>
+<h2 id="fine-tuning-on-bittensor"><a class="header" href="#fine-tuning-on-bittensor">Fine-tuning on Bittensor</a></h2>
+<p>By default, this script will fine-tune GPT2 for Bittensor's mountain dataset. Running:</p>
+<pre><code class="language-bash">python3 finetune_using_clm.py
+</code></pre>
+<p>will tune gpt2 with Bittensor's dataset and save the output to <code>tuned-model</code>.</p>
+<p>To change the model you are tuning to, e.g. distilgpt2, run:</p>
+<pre><code class="language-bash">python3 finetune_using_clm.py model.name=distilgpt2
+</code></pre>
+<p><em>A full list of models that can be trained by this script are available on <a href="https://huggingface.co/models?filter=text-generation">Hugging Face</a>.</em></p>
+<h2 id="fine-tuning-on-hugging-face-datasets"><a class="header" href="#fine-tuning-on-hugging-face-datasets">Fine-tuning on Hugging Face datasets</a></h2>
+<p>Any text dataset on <a href="https://huggingface.co/datasets">Hugging Face</a> should work by default by overriding the <code>dataset.name</code> and <code>dataset.config</code> parameters:</p>
+<pre><code class="language-bash">python3 finetune_using_clm.py dataset.name=wikitext dataset.config_name=wikitext-103-v1
+</code></pre>
+<h2 id="fine-tuning-on-your-own-data"><a class="header" href="#fine-tuning-on-your-own-data">Fine-tuning on your own data</a></h2>
+<p>If you have a .txt file saved locally, you can override <code>dataset.name</code>:</p>
+<pre><code class="language-bash">python3 finetune_using_clm.py dataset.name=./path/to/your/data.txt
+</code></pre>
+<p><em>Note if using your own data, you may have many short sentences and the block size may be insufficient for reasonable performance. It's recommended you pass the flag <code>dataset.concatenate_raw=true</code> to give the model more context when training. This will reduce the number of batches.</em></p>
+<h2 id="configuring-training-parameters"><a class="header" href="#configuring-training-parameters">Configuring training parameters</a></h2>
+<p>All configurable parameters are visible and documented in <code>conf/config.yaml</code>. The defaults are chosen for quick training and not tuned; you will need to experiment and adjust these.</p>
+<p>Note: The above parameters are the only commands you can override with this script. That is, you may not pass flags you would normally use when running btcli (i.e. <code>--neuron.device</code> will not work). If there is a flag you wish to modify feel free to submit a feature request.</p>
+<p>To view the changeable parameters, open <code>conf/config.yaml</code> in whatever text editor you prefer, or use <code>cat conf/config.yaml</code> to view them.</p>
+<p>You do not need to edit this file to change the parameters; they may be overridden when you call this script. e.g., if you wish to change the model to <code>distilgpt2</code>, and the output directory to <code>distilgpt-tuned</code>, you would run:</p>
+<pre><code class="language-bash">python3 finetune_using_clm.py model.name=distilgpt2 output_dir=distilgpt-tuned
+</code></pre>
+<p><em>Note the nested structure in the config, since <code>model</code> is above <code>name</code> in <code>conf.yaml</code>, you must override <code>model.name</code> when invoking the command.</em></p>
+<h2 id="serving-custom-models-on-bittensor"><a class="header" href="#serving-custom-models-on-bittensor">Serving custom models on Bittensor</a></h2>
+<p>To serve your tuned model on Bittensor, just override <code>neuron.model_name</code> with the path to your tuned model:</p>
+<pre><code class="language-bash">btcli run ..... --neuron.model_name=/home/{YOUR_USENAME}/clm_model_tuning/tuned-model
+</code></pre>
+<h2 id="limitations-and-warnings"><a class="header" href="#limitations-and-warnings">Limitations and warnings</a></h2>
+<p>Early stopping is not yet supported. Many features are implemented but not thoroughly tested, if you encounter an issue, reach out on discord or (preferably) create an issue on <a href="https://github.com/opentensor/clm_model_tuning">this github page</a>.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../StakingGuide.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../cli/ConfigurationMethods.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../StakingGuide.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../cli/ConfigurationMethods.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

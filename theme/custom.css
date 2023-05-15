@@ -1,0 +1,18 @@
+hr {
+    display: none; 
+} 
+
+h1, h2, h3, h4, p, li {
+    font-family: 'Haffer', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}   
+
+h1, h2 {
+    font-weight: 600;
+}
+
+.Taokenomics2 {
+    --width: 16;
+    --height: 16;
+}
