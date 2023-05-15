@@ -10,6 +10,7 @@
 # API
 - [Prompting API](api.md)
 - [API Responses](responses.md)
+- [Return Codes](return_codes.md)
 
 # NETWORK
 - [Bittensor Network and Subnetworks](subnetworks.md)

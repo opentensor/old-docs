@@ -32,4 +32,8 @@ To delegate to a Validator Hotkey:
 ```bash
 btcli delegate
 ```
-This will display a list of delegates along with information such as a description of their project, the earnings stats, and other pertinent data. 
+This will display a list of delegates along with information such as a description of their project, the earnings stats, and other pertinent data. Finally, it is also possible to view all delegates that a user has delegated to:
+
+```bash
+btcli my_delegates
+```
