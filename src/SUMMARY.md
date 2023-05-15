@@ -9,10 +9,13 @@
 
 # API
 - [Prompting API](api.md)
-- [Manipulate Responses](responses.md)
+- [API Responses](responses.md)
 
 # NETWORK
+- [Bittensor Network and Subnetworks](subnetworks.md)
+- [Delegation and Staking](delegation_staking.md)
 - [Run a Neuron](neuron.md)
 - [Run a Validator](validator.md)
+- [Bittensor Test Network](testnet.md)
 - [Taonomics](taonomics.md)
 

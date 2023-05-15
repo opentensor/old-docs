@@ -1,6 +1,8 @@
 # Prompting API
 
-Presently, the Bittensor API supports causal language models and text completion inference. 
+> NOTE: The Bittensor API is actively under development, and hence the API pages are subject to change as more functionality is added.
+
+Presently, the Bittensor API supports causal language models and text completion inference. Expect this page to continuously update as we develop more API calls. 
 
 ```python
 import bittensor

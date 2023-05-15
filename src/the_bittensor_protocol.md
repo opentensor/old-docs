@@ -3,7 +3,7 @@
 Bittensor provides an API for accessing machine learning models hosted on the Bittensor network. The network uses incentives to ensure these models are valuable and aligned to clients needs by driving the network towards producing maximal value, diversity, and low inference latency.
 
 <p align="center">
-<img src="images/protocol.png" alt="Bittensor Input/Output Architecture" width=400, height=400>
+<img src="images/protocol.png" alt="Bittensor Input/Output Architecture" width=400, height=450>
 </p>
 
 Bittensor absorbs various modalities of machine intelligence, all of which are accessible through the API. Currently, those supported include text completion and causal language modelling tasks. 
