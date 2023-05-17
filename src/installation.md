@@ -1,11 +1,6 @@
 # Installation
 
-Bittensor installation requires two installations: Bittensor and Subtensor. Bittensor is the python-based machine learning layer, whereas Subtensor is the rust-based blockchain consensus layer. They must run concurrently for each model.
-
-- **NOTE**
-
-    It is highly recommend to **install Bittensor first** and then install Subtensor.
-
+To install Bittensor, two components are needed: Bittensor, the Python-based machine learning layer, and Subtensor, the Rust-based blockchain consensus layer. Both components must be executed concurrently for each model. It is highly recommended that users install Bittensor before installing Subtensor. 
 
 ## Installing Bittensor
 
