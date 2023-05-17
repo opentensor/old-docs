@@ -1,14 +1,12 @@
-# Create a Wallet
+# The Wallet
 
-Your Bittensor wallet is your tool to interact with the Bittensor network. It helps  hold your Tao and to interface with the different APIs run by application running on top of Bittensor. 
+The Bittensor wallet is a crucial tool for interacting with the network: it can be used to hold TAO and to interface with applications connected to the network. 
 
-Wallets on Bittensor consist of a coldkey and a hotkey. A Coldkey can contain many Hotkeys, whereas a Hotkey can only belong to one Coldkey. A Coldkey is meant to store funds securely and thus cannot be used to sign the extrinsic operations needed to participate in validation. Hotkeys, on the other hand, are meant to sign extrinsic operations like registration, staking, unstaking, and delegation. 
+Each wallet consists of a coldkey and hotkey. A coldkey may contain many hotkeys, while each hotkey can only belong to a single coldkey. Coldkeys store funds securely, while hotkeys are used for all extrinsic operations such as registration, staking, unstaking and delegation.
 
 # Using BTCLI
 
-Let’s create a wallet — or Coldkey — with one Hotkey associated with it. 
-
-1. First, create a new coldkey by pasting the following command to your terminal and following the steps.
+1. To create a coldkey, paste the following command into your terminal: 
 
 ```bash
 btcli new_coldkey
@@ -30,6 +28,4 @@ btcli regen_coldkey
 
 Simply navigate to [Bittensor](http://bittensor.com) and click the `0.00` at the top right corner. 
 
-![Bittensor Wallet UI](images/wallet.png)
-
-Click `create` to create a brand new wallet, or `import` to import your mnemonic from an existing wallet. Finally, click `Access` to Send, Receive, or Stake your Tao.
+Select `create` to create a new wallet or `import` to import your mnemonic from an existing wallet. The "access" option can be used if you have already created a wallet using the website and have not chosen to "forget" it. Once you have accessed your account, you can send, receive, or stake your TAO. 
