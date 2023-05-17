@@ -1,4 +1,4 @@
-# Bittensor Command Line Interface (btcli)
+# BTCLI
 
 The Bittensor command line interface is the primary command line tool to deploy, analyze, and interface with the Bittensor network. It can be used to run a model, stake, unstake, nominate, delegate, and more. 
 
