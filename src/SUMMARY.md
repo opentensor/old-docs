@@ -13,10 +13,10 @@
 - [Return Codes](return_codes.md)
 
 # NETWORK
-- [Bittensor Network and Subnetworks](subnetworks.md)
+- [Network and Subnetworks](subnetworks.md)
 - [Delegation and Staking](delegation_staking.md)
-- [Run a Neuron](neuron.md)
-- [Run a Validator](validator.md)
-- [Bittensor Test Network](testnet.md)
+- [Running a Neuron](neuron.md)
+- [Running a Validator](validator.md)
+- [Test Network](testnet.md)
 - [Taonomics](taonomics.md)
 
