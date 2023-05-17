@@ -3,8 +3,8 @@
 
 # LEARN
 - [Installation](installation.md)
-- [Bittensor Command Line Interface (btcli)](btcli.md)
-- [Bittensor Wallet](wallet.md)
+- [BTCLI](btcli.md)
+- [Wallet](wallet.md)
 - [Registration](registration.md)
 
 # API
