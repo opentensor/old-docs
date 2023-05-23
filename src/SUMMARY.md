@@ -1,49 +1,22 @@
+# Summary
+[The Bittensor Protocol](the_bittensor_protocol.md)
 
+# LEARN
+- [Installation](installation.md)
+- [BTCLI](btcli.md)
+- [Wallet](wallet.md)
+- [Registration](registration.md)
 
-# Learn
+# API
+- [Prompting API](api.md)
+- [API Responses](responses.md)
+- [Return Codes](return_codes.md)
 
-- [Introduction](index.md)
+# NETWORK
+- [Network and Subnetworks](subnetworks.md)
+- [Delegation and Staking](delegation_staking.md)
+- [Running a Neuron](neuron.md)
+- [Running a Validator](validator.md)
+- [Test Network](testnet.md)
+- [Taonomics](taonomics.md)
 
-- [The Protocol](nested/TheProtocol2.md)
-
-- [Taonomics](tokenomics.md)
-
-# Tutorials
-
-- [Updates](nested/Updates.md)
-
-- [Installation](Installation.md)
-
-- [Subtensor](cli/Subtensor.md)
-
-- [Wallet](cli/Basicbtcli.md)
-
-- [Registering a Miner](Registration.md)
-
-- [Running a Miner](cli/MinerPreperation.md)
-     
-- [Server Customization](css/ServerCustomization.md)
-
-- [Validator Customization](css/ValidatorCustomization.md)
-
-- [Delegation](Delegation.md)
-
-- [Delegation via PolkadotJS](StakingGuide.md)
-
-- [Fine Tuning](nested/FineTuning.md)
-
-- [Methods of Configuration](cli/ConfigurationMethods.md)
-
-- [Bittensor Dataset](nested/TheDataset.md)
-
-- [Glossary](nested/Glossary.md)
-
-- [Configuration Settings](Arguments.md)
-  
-- [Return Codes](nested/ReturnCodes.md)
-
-- [Validator Hyperparameters](Hyperparameters.md)
-
-- [Prompt Subnetwork](PromptSubnet.md)
-
-- [Finney Testnet](TestNet.md)
