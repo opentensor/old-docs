@@ -14,7 +14,7 @@ Without participating directly in Bittensor’s incentive mechanism, i.e. before
             https://taostats.io/
 ...      
 ```
-The exact method of interacting with Bittensor through these endpoints may be distinct to them, however, by default the bittensor API is designed to work with the Opentensor Foundations entrypoint onto Bittensor. 
+The exact method of interacting with Bittensor through these endpoints may be distinct to them and we recommend visiting their website to see how. However, by default the bittensor API is designed to work with the Opentensor Foundations entrypoint onto Bittensor which can be queried out of the box.
 
 ```python
 import bittensor as bt
@@ -37,7 +37,7 @@ bt.prompt( "What should I do today?", return_all = True )
 	...
 ] 
 ```
-Note in order to specify an entrypoint you must retrieve the hotkey of the validator endpoint to use. For instance, to specify the endpoint owned by the hotkey
+Note in order to specify a differnent entrypoint you must retrieve the hotkey of the validator endpoint to use. For example, to specify the endpoint owned by the hotkey
 ```5F4tQyWrhfGVcNhoqeiNsR6KjD4wMZ2kfhLj4oHYuyHbZAc3```, you can run the following. Note, unless that endpoint has specifically opened up access to this form of query, you are likely to have your messages blacklisted. 
 
 ```python

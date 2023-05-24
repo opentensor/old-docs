@@ -1,9 +1,6 @@
 # Summary
 [Introduction](introduction.md)
-
 [Getting Started](getting_started.md)
-[Using btcli](using_btcli.md)
-[Subnetworks](subnetworks.md)
 [Clients](clients.md)
 [Registration](registration.md)
 [Mining](mining.md)

@@ -1,6 +1,6 @@
 # Using btcli
 
-The Bittensor command line interface (btcli) binary comes pre-installed with the bittensor API. You can use btcli to deploy, analyze, and interface with the Bittensor network, for instance stake or unstake funds, run miners, check network state etc. All of these operations act on wallets which you have created by following the instructions on the previous page. To list all of your wallets run ```btcli list```. 
+The Bittensor command line interface (btcli) binary comes pre-installed with the bittensor API. You can use btcli to deploy, analyze, and interface with the Bittensor network, for instance stake or unstake funds, run miners, check network state etc. All of these operations are performed on wallets which you have created by following the instructions on the [previous page](#getting_started.md). To list all of your wallets run ```btcli list```. 
 ```bash
 btcli list
 Wallets
@@ -9,12 +9,12 @@ Wallets
        └── my_first_hotkey (<ss58_address>)
 ```
 
-This shows the wallet addresses [ss58 encoded](https://docs.substrate.io/reference/address-formats/#:~:text=case%20L%20(l)-,Address%20type,address%20bytes%20that%20follow%20it.&text=Simple%20account%2Faddress%2Fnetwork%20identifier,directly%20as%20such%20an%20identifier.) for the coldkey and hotkey we created on the previous page. Using the wallet addresses of others or your own wallets, you can send TAO using ```btcli transfer```.
+This shows the wallet addresses of the public keys associated with your cold and hot keys. The address are [ss58 encoded](https://docs.substrate.io/reference/address-formats/#:~:text=case%20L%20(l)-,Address%20type,address%20bytes%20that%20follow%20it.&text=Simple%20account%2Faddress%2Fnetwork%20identifier,directly%20as%20such%20an%20identifier) which is a compact representation of the keys. If you want to transfer TAO or recieve it, you can specify this address as the destination when performing ```btcli transfer```, while using the [website wallet](www.bittensor.com), or other community tool.
 ```bash 
 btcli transfer --wallet.name YOUR_WALLET_NAME --dest DESTINATION_SS58_ADDRESS --amount AMOUNT_IN_TAO
 ```
 
-To inspect the balances of wallets you can use ```btcli inspect```.
+Btcli can also be used to inspect the balances of wallets you have made ```btcli inspect```.
 ```bash
 btcli inspect --wallet.name YOUR_WALLET_NAME
 ```
