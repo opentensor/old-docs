@@ -1,4 +1,4 @@
-# Run a Neuron
+# Miners
 
 Running a Bittensor Neuron consists of two steps: [Registration](registration.md) and [Serving a Neuron](neuron.md).
 

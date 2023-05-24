@@ -1,8 +1,25 @@
-# BTCLI
+# Using btcli
 
-The Bittensor command line interface is the primary command line tool to deploy, analyze, and interface with the Bittensor network. It can be used to run a model, stake, unstake, nominate, delegate, and more. 
+The Bittensor command line interface (btcli) binary comes pre-installed with the bittensor API. You can use btcli to deploy, analyze, and interface with the Bittensor network, for instance stake or unstake funds, run miners, check network state etc. All of these operations act on wallets which you have created by following the instructions on the previous page. To list all of your wallets run ```btcli list```. 
+```bash
+btcli list
+Wallets
+└─
+    my_wallet (<ss58_address>)
+       └── my_first_hotkey (<ss58_address>)
+```
 
-You can `btcli --help` command as follows to see a full list of commands
+This shows the wallet addresses [ss58 encoded](https://docs.substrate.io/reference/address-formats/#:~:text=case%20L%20(l)-,Address%20type,address%20bytes%20that%20follow%20it.&text=Simple%20account%2Faddress%2Fnetwork%20identifier,directly%20as%20such%20an%20identifier.) for the coldkey and hotkey we created on the previous page. Using the wallet addresses of others or your own wallets, you can send TAO using ```btcli transfer```.
+```bash 
+btcli transfer --wallet.name YOUR_WALLET_NAME --dest DESTINATION_SS58_ADDRESS --amount AMOUNT_IN_TAO
+```
+
+To inspect the balances of wallets you can use ```btcli inspect```.
+```bash
+btcli inspect --wallet.name YOUR_WALLET_NAME
+```
+
+Additional commands can be viewed by running ```btcli --help```
 
 ```bash
 $ btcli --help
@@ -44,4 +61,5 @@ optional arguments:
                         arguemnts have been set.
 ```
 
-Subsequently, each command has flags to help specify the configurations. For example, `--wallet.name` specifies the name of the Coldkey being used. You can see a list of these configuration flags by calling `—help` on a btcli command, as follows:
+
+
