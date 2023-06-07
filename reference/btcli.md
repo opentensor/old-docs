@@ -54,7 +54,7 @@ optional arguments:
 
 <Accordion title="Wallets">
 
-#### **List wallets**
+### List wallets
 Lists all wallets locally stored on your machine under path `--wallet.path`. Outputs addresses are [ss58 encoded](https://docs.substrate.io/reference/address-formats/#:~:text=case%20L%20(l)-,Address%20type,address%20bytes%20that%20follow%20it.&text=Simple%20account%2Faddress%2Fnetwork%20identifier,directly%20as%20such%20an%20identifier) required as desinstations for ```btcli transfer```
 **Usage**: ```btcli list [OPTIONS]```
 ```bash dark
@@ -64,35 +64,35 @@ Wallets
     my_wallet (<ss58_address>)
        └── my_first_hotkey (<ss58_address>)
 ```
-#### **New Coldkey**
+### New Coldkey
 Create a new wallet with encrypted coldkey [EdDSA cryptographic keypair](https://en.wikipedia.org/wiki/EdDSA#Ed25519)
 **Usage**: ```btcli new_coldkey [OPTIONS]```
 ```bash dark
 btcli new_coldkey
 ```
 
-#### **New Hotkey**
+### New Hotkey
 Create a [EdDSA cryptographic keypair](https://en.wikipedia.org/wiki/EdDSA#Ed25519) hotkey associated with a wallet.
 **Usage**: ```btcli new_hotkey [OPTIONS]```
 ```bash dark
 btcli new_hotkey
 ```
 
-#### **Regenerate Hotkey**
+### Regenerate Hotkey
 Regenerate a hotkey from mnemonic.
 **Usage**: ```btcli regen_hotkey [OPTIONS]```
 ```bash dark
 btcli regen_hotkey
 ```
 
-#### **Regenerate Coldkey**
+### Regenerate Coldkey
 Regenerate a wallet encrypted coldkey file from mnemonic or seed.
 **Usage**: ```btcli regen_coldkey [OPTIONS]```
 ```bash dark
 btcli regen_coldkey
 ```
 
-#### **Regenerate Coldkeypub**
+### Regenerate Coldkeypub
 Regenerate a wallet with just the public seed of your coldkey.
 **Usage**: ```btcli regen_coldkeypub [OPTIONS]```
 ```bash dark
@@ -104,14 +104,14 @@ btcli regen_coldkeypub
 
 <Accordion title="Registration">
 
-#### **POW registration**
+### POW registration
 Begins a proof of word registration.
 **Usage**: ```btcli register [OPTIONS]```
 ```bash dark
 btcli register
 ```
 
-#### **Recycle registration**
+### Recycle registration
 Initiates a TAO recycle registration.
 **Usage**: ```btcli recycle_register [OPTIONS]```
 ```bash dark
@@ -122,21 +122,21 @@ btcli recycle_register
 
 <Accordion title="Transfers/Staking">
 
-#### **Transfer Tao**
+### Transfer Tao
 Transfers TAO from a wallet coldkey to another wallet public key address. Destination addresses must be [ss58 encoded](https://docs.substrate.io/reference/address-formats/#:~:text=case%20L%20(l)-,Address%20type,address%20bytes%20that%20follow%20it.&text=Simple%20account%2Faddress%2Fnetwork%20identifier,directly%20as%20such%20an%20identifier).
 **Usage**: ```btcli transfer [OPTIONS]```
 ```bash dark
 btcli transfer
 ```
 
-#### **Stake Tao**
+### Stake Tao
 Stake TAO from the coldkey balance to the hotkey staking account.
 **Usage**: ```btcli stake [OPTIONS]```
 ```bash dark
 btcli stake
 ```
 
-#### **Unstake Tao**
+### Unstake Tao
 Remove stake TAO from the hotkey staking account and add it to the coldkey.
 **Usage**: ```btcli unstake [OPTIONS]```
 ```bash dark
@@ -147,7 +147,7 @@ btcli unstake
 
 <Accordion title="Delegation">
 
-#### **Delegate Tao**
+### Delegate Tao
 List all active delegates available for delegated TAO.
 **Usage**: ```btcli list_delegates```
 ```bash dark
@@ -155,28 +155,28 @@ btcli list_delegates
 ```
 ![List Delegates](/images/list_delegates.png 'Output of List Delegates')
 
-#### **Delegate Tao**
+### Delegate Tao
 Delegate TAO from the coldkey balance to the hotkey staking account of a delegate.
 **Usage**: ```btcli delegate [OPTIONS]```
 ```bash dark
 btcli delegate
 ```
 
-#### **Undelegate Tao**
+### Undelegate Tao
 Remove TAO from the hotkey balance of delegate you have previously delegated to.
 **Usage**: ```btcli undelegate [OPTIONS]```
 ```bash dark
 btcli undelegate
 ```
 
-#### **Nominate**
+### Nominate
 Nominate a hotkey as a delegate as a prerequisite for recieving delegations.
 **Usage**: ```btcli nominate [OPTIONS]```
 ```bash dark
 btcli nominate
 ```
 
-#### **My Delegates**
+### My Delegates
 Create a hotkey associated to a wallet.
 **Usage**: ```btcli new_hotkey [OPTIONS]```
 ```bash dark
@@ -188,7 +188,7 @@ btcli new_hotkey
 
 <Accordion title="Misc">
 
-#### **Update Bittensor**
+### Update Bittensor
 Update your Bittensor installation
 **Usage**: ```btcli update [OPTIONS]```
 ```bash dark
