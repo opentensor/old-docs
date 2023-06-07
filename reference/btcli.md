@@ -1,10 +1,10 @@
----
+
 ## Btcli
----
+
 
 The Bittensor command line interface (btcli) comes [installed](../getting-started/installation) with the bittensor API and can be used to stake or unstake funds, run miners, check network state, and even deploy, analyze, and interface with the Bittensor network.
 
----
+
 
 <Accordion title="Basic Commands">
 
@@ -51,7 +51,7 @@ optional arguments:
 
 </Accordion>
 
----
+
 <Accordion title="Wallets">
 
 #### **List wallets**
@@ -101,7 +101,7 @@ btcli regen_coldkeypub
 </Accordion>
 
 
----
+
 <Accordion title="Registration">
 
 #### **POW registration**
@@ -119,7 +119,7 @@ btcli recycle_register
 ```
 </Accordion>
 
----
+
 <Accordion title="Transfers/Staking">
 
 #### **Transfer Tao**
@@ -144,7 +144,7 @@ btcli unstake
 ```
 </Accordion>
 
----
+
 <Accordion title="Delegation">
 
 #### **Delegate Tao**
@@ -185,7 +185,7 @@ btcli new_hotkey
 </Accordion>
 
 
----
+
 <Accordion title="Misc">
 
 #### **Update Bittensor**

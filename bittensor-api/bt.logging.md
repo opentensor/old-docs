@@ -8,12 +8,12 @@
 
 
 
----
+
 title: bt.logging
----
+
 # Logging Reference Documentation
 
----
+
 ## Introduction
 The `Logging` interfaces with bittensor internal logging system.
 
@@ -49,7 +49,7 @@ bt.logging.trace(message)
 bt.logging.success(message)
 bt.logging.critical(message)
 bt.logging.error(message)
->>> 2023-05-29 09:27:25.426 |       INFO       | message                           
+>>> 2023-05-29 09:27:25.426 |       INFO       | message
 
 # Log using prefex suffix design
 bt.logging.info(prefix, message)

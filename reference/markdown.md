@@ -1,23 +1,23 @@
----
+
 part: Documentation
 title: Markdown Usage
 description: While this is not a complete markdown reference, here are markdown features that you can use right away in your books.
 tags: [markdown, reference, NextBook, md]
 updated: '2021-03-14'
----
+
 
 ## Front Matter
 
 YAML front matter can be used to add title, description, part info, tags and update date to your pages. This page includes a front matter like this:
 
 ```yaml nocopy
----
+
 part: Documentation
 title: Markdown Usage
 description: While this is not a complete markdown reference, here are markdown features that you can use right away in your books.
 tags: [markdown, reference, NextBook, md]
 updated: '2021-03-14'
----
+
 ```
 
 ## HTML Tags
@@ -41,7 +41,7 @@ Subscript: H<sub>2</sub>O
 
 This is <mark>highlighted</mark> text.
 ```
-results in: 
+results in:
 
 **This is bold text**
 
@@ -55,19 +55,19 @@ Superscript: 19<sub>th</sub>
 
 Subscript: H<sub>2</sub>O
 
-This is <mark>highlighted</mark> 
+This is <mark>highlighted</mark>
 
 ## Horizontal Lines
 
 Both of these work:
 
 ```text nocopy
----
+
 ***
 ```
 results in:
 
----
+
 ***
 
 ## Blockquotes
@@ -81,7 +81,7 @@ results in:
 > >
 > > > ...or with spaces between arrows.
 ```
-results in: 
+results in:
 
 > Here is a blockquote.
 
@@ -102,7 +102,7 @@ Footnote 2 link. [^second]
 
 [^second]: Simple footnote text.
 ```
-results in: 
+results in:
 
 Footnote 1 link. [^first]
 
@@ -133,7 +133,7 @@ Most of the time you'll use codefences. Here is a simple example, but you can do
 echo "Hello World"
 ```
 ````
-results in: 
+results in:
 
 ```bash nocopy
 #!/bin/bash
@@ -197,7 +197,7 @@ results in:
 
 ## Tables
 
-Tables are a bit tricky, because you have to use all those pipes, but this is how markdown was designed. Using a special markdown editor like [Typora](https://typora.io/) will make your life easier with these. 
+Tables are a bit tricky, because you have to use all those pipes, but this is how markdown was designed. Using a special markdown editor like [Typora](https://typora.io/) will make your life easier with these.
 
 ### Standard Columns
 
@@ -253,12 +253,12 @@ results in:
 You will use images a lot! Drop your images or svg vectors in public folder and link to them. NextBook will autoscale them for small displays. You can add captions and `alt` information to your images.
 
 ```text nocopy
-![The Octocat](/images/octocat.png) 
+![The Octocat](/images/octocat.png)
 ![The Surface](/images/surface.jpg 'The Surface Device')
 ```
 results in:
 
-![he Octocat](/images/octocat.png) 
+![he Octocat](/images/octocat.png)
 ![The Surface](/images/surface.jpg 'The Surface Device')
 
 If you use [Excalidraw](https://excalidraw.com/) svg drawings and want them to change colors accordingly in dark mode, add `|ex` to image alt text. See below example in light/dark modes:
@@ -281,7 +281,7 @@ Links can be auto-detected, but it would be better to be implicit and have suppo
 - Autoconverted link https://github.com/remarkjs
 - Cross page [absolute link](/nextbook/getting-started) for single page app navigation.
 - Link to [part of a page](#links)
-- Linking with image: 
+- Linking with image:
 - [![Deploy with Vercel raw][1]][2]
 
 [1]:  https://vercel.com/button
@@ -369,7 +369,7 @@ While [markdown spec](https://commonmark.org) does not offer any tabbed interfac
 <Tabs>
   <Tab title="Windows Directions">
       Install via [chocolatey](https://chocolatey.org):
-  
+
       `choco install python`
   </Tab>
   <Tab title="macOS Directions">
@@ -399,7 +399,7 @@ results in:
   </Tab>
   <Tab title="Linux Directions">
     Install via apt:
-    
+
     `sudo apt install python3`
   </Tab>
 </Tabs>
@@ -407,10 +407,10 @@ results in:
 
 
 
----
+
 part: Documentation
 title: Fenced Code Block Usage
----
+
 
 Oftentimes, you need to display a code example on the page. This example could be as simple as a one-liner or as complex as a diff view. Below are the ways you can use fenced code blocks with NextBook.
 
@@ -436,7 +436,7 @@ be displayed in monospace font.
 
 ### Theme-Aware Highlighting
 
-You can add syntax highlighting by specifying code's [language](https://prismjs.com/index.html#supported-languages) after triple ```. NextBook uses [PrismJS](https://github.com/PrismJS) for themes and language definitions as it is currently the most complete one. 
+You can add syntax highlighting by specifying code's [language](https://prismjs.com/index.html#supported-languages) after triple ```. NextBook uses [PrismJS](https://github.com/PrismJS) for themes and language definitions as it is currently the most complete one.
 
 When application's theme changes, so does the fenced code theme. Try it now by pressing <kbd>T</kbd>.
 
@@ -514,7 +514,7 @@ Any code block will have automatic `Copy` icon clicking which copies contents of
 
 ## Code Header Information
 
-You can display various information like title and link to source in code header. 
+You can display various information like title and link to source in code header.
 
 ### Code Title
 
@@ -721,7 +721,7 @@ results in:
 You can also pass every other parameter mentioned above together. Here we are adding some of them:
 
 ~~~
-```html numbered marked=2,5,6,10 title=public/index.html link=https://gist.github.com/amiroff/04d57ef025845b191d9cd30c7ca13f20 
+```html numbered marked=2,5,6,10 title=public/index.html link=https://gist.github.com/amiroff/04d57ef025845b191d9cd30c7ca13f20
 <!DOCTYPE html>
 <html lang='en'>
 <head>
@@ -736,7 +736,7 @@ You can also pass every other parameter mentioned above together. Here we are ad
 </html>
 ```
 ~~~
-results in 
+results in
 
 ```html numbered marked=2,5,6,10 title=public/index.html link=https://gist.github.com/amiroff/04d57ef025845b191d9cd30c7ca13f20 nocopy
 <!DOCTYPE html>
@@ -769,7 +769,7 @@ To escape (prevent from displaying as highlighted code) block and simply display
     <title>Document</title>
 </head>
 <body>
-    
+
 </body>
 </html>
 ```
@@ -788,17 +788,17 @@ will result in:
     <title>Document</title>
 </head>
 <body>
-    
+
 </body>
 </html>
 ```
 ~~~
 
 
----
+
 part: Documentation
 title: Using MDX
----
+
 
 ## What Is MDX?
 

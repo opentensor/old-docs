@@ -1,4 +1,4 @@
----
+
 part: glossary
 title: index
 ---

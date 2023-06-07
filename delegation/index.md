@@ -1,4 +1,4 @@
----
+
 part: delegation
 title: index
 ---

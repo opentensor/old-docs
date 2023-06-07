@@ -1,12 +1,12 @@
----
+
 ## Delegation
----
+
 
 Delegation occurs when TAO is transferred to a hotkey that is not owned by the delegate, and enables external users, or those without sufficent TAO to run a validator,  to increase their earning by accruing dividends. This mechanism prompts growth and facilitates efficient resource allocation around value-producing nodes, enhancing the overall utility of the network. In order to receive delegated TAO from the network ```delegates```, hotkeys can nominate themselves as ```nominates```. Of the TAO earned through delegation, the nominates are entitled to an 18% "tax" for owning the nominated hotkey, while the rest is distributed to the delegate in proportion to their delegated stake. The delegation cut is presently a hard coded, but subject to change as the network evolves.
 
 ### Viewing Available Delegates
 Hotkeys only become available for delegation once they have `nominated` themselves. To see a list of nominated validators you can run `btcli list_delegates`
-```bash dark 
+```bash dark
 $ btcli list_delegates
 ```
 ![List Delegates](/images/list_delegates.png 'Output of List Delegates')
@@ -29,13 +29,13 @@ $ btcli list_delegates
 
 ### Delegating TAO
 You delegate TAO using btcli. This will show a list of delegates sorted by stake on your terminal. Read this list to find your delegate and use the index to select which to send stake to.
-```bash dark 
+```bash dark
 $ btcli delegate
 ```
 
 ### Showing My Delegations
 To show all your previously made delegations run `btcli my_delegates`, use `--all` to show delegations across all wallets.
-```bash dark 
+```bash dark
 $ btcli my_delegates
 ```
 
@@ -49,9 +49,9 @@ $ btcli nominate
 ```
 
 ### Signing Delegates
----
 
-Signing your delegate name, URL and description makes it show when others run btcli list_delegates. To do this you need to submit a pull request to the bittensor-delegates repo. 
+
+Signing your delegate name, URL and description makes it show when others run btcli list_delegates. To do this you need to submit a pull request to the bittensor-delegates repo.
 
 
 1. Generating your details

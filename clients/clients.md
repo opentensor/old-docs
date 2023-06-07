@@ -1,26 +1,26 @@
----
-## API 
----
 
-The Bittensor API allows clients to query the network through endpoints that have been made accessible by network validators. Clients using the network do not have to be otherwise involved in the incentive mechanism of the network. The default endpoint that is accessed through the API belongs to the [Opentensor Foundation](https://opentensor.ai/), however, any network validator is able to provide a unique entrypoint.  
+## API
+
+
+The Bittensor API allows clients to query the network through endpoints that have been made accessible by network validators. Clients using the network do not have to be otherwise involved in the incentive mechanism of the network. The default endpoint that is accessed through the API belongs to the [Opentensor Foundation](https://opentensor.ai/), however, any network validator is able to provide a unique entrypoint.
 
 All entrypoints can be viewed using `btcli list_delegates`:
 
 ```bash dark
-0      Openτensor Foundaτion 
-            https://opentensor.ai/      
+0      Openτensor Foundaτion
+            https://opentensor.ai/
 
-1      Foundry                      
-            https://foundrydigital.com/      
+1      Foundry
+            https://foundrydigital.com/
 
-3      τaosτaτs                     
+3      τaosτaτs
             https://taostats.io/
-...      
+...
 ```
 
 
----
-### Querying the Network 
+
+### Querying the Network
 
 Text prompting requests can be sent via `bt.prompt`.
 ```python numbered dark
@@ -40,7 +40,7 @@ content = [
 should_I_buy_a_boat = bt.prompt( content = content )
 ```
 
----
+
 ### Integrating with Langchain
 
 The BittensorLLM object can be integrated with langchain.
@@ -52,7 +52,7 @@ ll = openai.llm( api_key = **** )
 llm( 'prompt me' )
 ```
 
----
+
 ### Getting Multiple Responses
 
 You can return multiple responses for a single prompt.
@@ -64,22 +64,22 @@ bt.prompt( "What should I do today?", return_all = True )
 	'You should write in your journal.',
 	'Mine bittensor.'
 	...
-] 
+]
 ```
 
----
-### Specifying an Entrypoint 
+
+### Specifying an Entrypoint
 
 You can specify a unique entrypoint endpoint to query by its hotkey.
-> NOTE: Note, unless that endpoint has specifically opened up access to this form of query, you are likely to have your messages blacklisted. 
+> NOTE: Note, unless that endpoint has specifically opened up access to this form of query, you are likely to have your messages blacklisted.
 ```python numbered dark
 # Specify a separate entrypoint based on the delegate key.
-open_endpoint_hotkey = "5F4tQyWrhfGVcNhoqeiNsR6KjD4wMZ2kfhLj4oHYuyHbZAc3" 
+open_endpoint_hotkey = "5F4tQyWrhfGVcNhoqeiNsR6KjD4wMZ2kfhLj4oHYuyHbZAc3"
 print ( bt.prompt( "Heraclitus was a ", hotkey = open_endpoint_hotkey ) )
 'Greek philosopher known for his doctrine of change and the famous quote, "No man ever steps in the same river twice."'
 ```
 
----
+
 ### Using a Validator Key
 
 Power users who have a validator key registered on the network already do not need to access the network indirectly, and can instead make RPC connections directly to miners like so:

@@ -1,6 +1,6 @@
----
+
 ## Wallets
----
+
 
 The Bittensor wallet is the core ownership and identity technology around which all functionalities of the network are carried out. A wallet consists of a [coldkey](../glossary/glossary)  and a [hotkey](../glossary/glossary) pairing of two seperate [EdDSA cryptographic keypairs](https://en.wikipedia.org/wiki/EdDSA#Ed25519) that are responsible for different functionalities within the ecosystem, but are logically connected via the API.
 
@@ -70,7 +70,7 @@ If you need to regenerate your wallets, you can use the cli with your mnemonic.
 ```bash dark
 btcli regen_coldkey --mnemonic **** *** **** **** ***** **** *** **** **** **** ***** *****
 ```
----
+
 
 ### 03 External Wallet
 

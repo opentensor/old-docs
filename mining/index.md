@@ -1,4 +1,4 @@
----
+
 part: mining
 title: index
 ---

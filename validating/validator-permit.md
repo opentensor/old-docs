@@ -1,6 +1,6 @@
----
+
 title: Validator Permit
----
+
 Only the largest 128 validators, in terms of stake, on any particular subnetwork are considered to have `validator permit`. Validators with permit are considered active within Bittensor's mining mechanism, Yuma Consensus, can validate the network, and get `dividends`.
 
 ### How do I check to see if my validator has permit?

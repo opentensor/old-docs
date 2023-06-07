@@ -1,8 +1,8 @@
----
-title: Signing Delegates
----
 
-Signing your delegate name, URL and description makes it show when others run btcli list_delegates. To do this you need to submit a pull request to the bittensor-delegates repo. 
+title: Signing Delegates
+
+
+Signing your delegate name, URL and description makes it show when others run btcli list_delegates. To do this you need to submit a pull request to the bittensor-delegates repo.
 
 1. Generating your details
 ```bash dark title=bittensor/scripts/validator_info_signature/generate.py link=https://github.com/opentensor/bittensor/scripts/validator_info_signature/generate.py
