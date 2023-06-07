@@ -1,5 +1,5 @@
 
-title: Signing Delegates
+# Signing Delegates
 
 
 Signing your delegate name, URL and description makes it show when others run btcli list_delegates. To do this you need to submit a pull request to the bittensor-delegates repo.

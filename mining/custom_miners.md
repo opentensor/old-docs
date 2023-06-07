@@ -1,5 +1,5 @@
 
-title: Custom Miners
+# Custom Miners
 
 Miners must service the unique task-loads required by validators which are then evaluated
 

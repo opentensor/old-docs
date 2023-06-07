@@ -1,4 +1,4 @@
 
 part: clients
-title: index
+# index
 ---

@@ -5,7 +5,7 @@
 <Accordion title="Testnet">
 
 
-title: Testnet
+# Testnet
 
 The Bittensor Testnet is built to verify incoming changes and features made by developers. The block explorer can be reached [here](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftest.finney.opentensor.ai%3A443#/explorer).
 
@@ -30,7 +30,7 @@ The consensus mechanism, validation, and mining are all identical between the te
 <Accordion title="Difficulty Adjustment">
 
 
-title: Difficulty Adjustment
+# Difficulty Adjustment
 
 The POW and Recycle difficulties are adaptively adjusted every 100 blocks based on the following 4 cases.
 

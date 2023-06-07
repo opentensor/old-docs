@@ -3,7 +3,7 @@
 <Accordion title="Difficulty">
 
 
-title: Difficulty Adjustment
+# Difficulty Adjustment
 
 The POW and Recycle difficulties are adaptively adjusted every 100 blocks based on the following 4 cases.
 

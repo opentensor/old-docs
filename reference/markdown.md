@@ -1,6 +1,6 @@
 
 part: Documentation
-title: Markdown Usage
+# Markdown Usage
 description: While this is not a complete markdown reference, here are markdown features that you can use right away in your books.
 tags: [markdown, reference, NextBook, md]
 updated: '2021-03-14'
@@ -13,7 +13,7 @@ YAML front matter can be used to add title, description, part info, tags and upd
 ```yaml nocopy
 
 part: Documentation
-title: Markdown Usage
+# Markdown Usage
 description: While this is not a complete markdown reference, here are markdown features that you can use right away in your books.
 tags: [markdown, reference, NextBook, md]
 updated: '2021-03-14'
@@ -409,7 +409,7 @@ results in:
 
 
 part: Documentation
-title: Fenced Code Block Usage
+# Fenced Code Block Usage
 
 
 Oftentimes, you need to display a code example on the page. This example could be as simple as a one-liner or as complex as a diff view. Below are the ways you can use fenced code blocks with NextBook.
@@ -797,7 +797,7 @@ will result in:
 
 
 part: Documentation
-title: Using MDX
+# Using MDX
 
 
 ## What Is MDX?
