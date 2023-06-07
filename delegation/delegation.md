@@ -41,7 +41,7 @@ $ btcli my_delegates
 
 ### Becoming a delegate
 You can `nominate` your hotkey to become and active delegate by running `btcli nominate`.
-> You can [sign](../delegation/signing) your delegate information to give the hotkey a recognizable name an description.
+> You can [sign](delegation/signing) your delegate information to give the hotkey a recognizable name an description.
 ```bash dark
 $ btcli nominate
     --wallet.name YOUR_WALLET_NAME

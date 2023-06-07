@@ -55,7 +55,7 @@ print ('uid', uid, ' owned by hotkey:', subnet.hotkeys[ uid ], 'assoicated with 
 
 ### Viewing Parameters
 
-Through [registration](../subnetworks/registration) hotkeys cycle in and out of each subnetwork depending on their performance according to subnetworks [validators](../validating/validating). Stake `metagraph.S` across subnetwork is universal. This validation method is performed by validators setting a set of weights `metagraph.W` on the chain based on their subjective valuations of the miners across the network.
+Through [registration](subnetworks/registration) hotkeys cycle in and out of each subnetwork depending on their performance according to subnetworks [validators](validating/validating). Stake `metagraph.S` across subnetwork is universal. This validation method is performed by validators setting a set of weights `metagraph.W` on the chain based on their subjective valuations of the miners across the network.
 
 ```python numbered dark
 import bittensor as bt

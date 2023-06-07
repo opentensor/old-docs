@@ -1,7 +1,7 @@
 
 ## Validating
 
-Network validation is thus open to participants who have [registered](../subnetworks/registration) a UID on any subnetwork **and** who have enough TAO staked on their hotkey to be considered a [top 128 validator](../validating/validator-permit).
+Network validation is thus open to participants who have [registered](subnetworks/registration) a UID on any subnetwork **and** who have enough TAO staked on their hotkey to be considered a [top 128 validator](validating/validator-permit).
 
 ### Staking
 
@@ -26,7 +26,7 @@ btcli delegate
 ```
 ### Running a Validator
 
-After attaining enough TAO for a [validator permit](../validating/validator-permit) we recommend running Bittensor's [core validator](https://github.com/opentensor/bittensor/tree/text_prompting/neurons/text/prompting/validators). You can run and install the core validator from [source](https://github.com/opentensor/bittensor.git).
+After attaining enough TAO for a [validator permit](validating/validator-permit) we recommend running Bittensor's [core validator](https://github.com/opentensor/bittensor/tree/text_prompting/neurons/text/prompting/validators). You can run and install the core validator from [source](https://github.com/opentensor/bittensor.git).
 ```bash dark
 $ git clone https://github.com/opentensor/bittensor.git
 $ python3 -m pip install -e bittensor/

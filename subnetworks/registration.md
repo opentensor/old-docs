@@ -23,7 +23,7 @@ There are two methods of registrations:
       btcli recycle_register --netuid SELECTED_NETUID --wallet.name YOUR_COLDKEY --wallet.hotkey YOUR_HOTKEY
       ```
 
-Once the registration cost has been paid, the miner enters the network by replacing an older underperforming miner and can now [mine](../mining/mining) themselves from that slot.
+Once the registration cost has been paid, the miner enters the network by replacing an older underperforming miner and can now [mine](mining/mining) themselves from that slot.
 
 
 ### 01 Proof of Work
