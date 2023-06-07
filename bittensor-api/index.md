@@ -5,7 +5,7 @@
 
 <Accordion title="Subtensor">
 
-title: bt.subtensor
+# bt.subtensor
 
 # Subtensor Class Reference Documentation
 
@@ -524,24 +524,6 @@ Returns information about a subnet with a given `netuid` as of a specified block
 
 </Accordion>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <Accordion title="Delegation">
 
 
@@ -824,7 +806,7 @@ obj = bt.subtensor( config, network, chain_endpoint )
 <Accordion title="Basic Commands">
 
 
-title: bt.wallet
+# bt.wallet
 
 # Wallet Class Reference Documentation
 
@@ -1003,7 +985,7 @@ Creates a coldkey from a suri string. Optionally encrypts and overwrites existin
 <Accordion title="Metagraph">
 
 
-title: bt.metagraph
+# bt.metagraph
 
 # Chain State Torch Interface
 
@@ -1211,7 +1193,7 @@ Loads the Metagraph object's state_dict from the specified directory path.
 
 
 
-title: bt.logging
+# bt.logging
 
 # Logging Reference Documentation
 
