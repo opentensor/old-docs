@@ -19,10 +19,11 @@ Follow [this](mining/mining) link to begin.
 ```bash
 bittensor/
     neurons/
-        text_prompting/
-            miners/
-                GPT4ALL/
-                    neuron.py
+        text/
+            prompting/
+                miners/
+                    GPT4ALL/
+                        neuron.py
 ```
 
 
