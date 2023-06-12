@@ -1,12 +1,12 @@
 
-## Btcli
+### [btcli}
 
 
 The Bittensor command line interface (btcli) comes [installed](getting-started/installation) with the bittensor API and can be used to stake or unstake funds, run miners, check network state, and even deploy, analyze, and interface with the Bittensor network.
 
 
 
-<Accordion title="Basic Commands">
+<Accordion title="_basic commands">
 
 ```bash dark
 btcli [COMMAND]
@@ -52,7 +52,7 @@ optional arguments:
 </Accordion>
 
 
-<Accordion title="Wallets">
+<Accordion title="_wallets">
 
 ### List wallets
 Lists all wallets locally stored on your machine under path `--wallet.path`. Outputs addresses are [ss58 encoded](https://docs.substrate.io/reference/address-formats/#:~:text=case%20L%20(l)-,Address%20type,address%20bytes%20that%20follow%20it.&text=Simple%20account%2Faddress%2Fnetwork%20identifier,directly%20as%20such%20an%20identifier) required as desinstations for ```btcli transfer```
