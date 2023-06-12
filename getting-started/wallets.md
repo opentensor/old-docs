@@ -1,4 +1,6 @@
 
+## wallet
+
 The Bittensor wallet is the core ownership and identity technology around which all functionalities of the network are carried out. A wallet consists of a [coldkey](glossary/glossary)  and a [hotkey](glossary/glossary) pairing of two seperate [EdDSA cryptographic keypairs](https://en.wikipedia.org/wiki/EdDSA#Ed25519) that are responsible for different functionalities within the ecosystem, but are logically connected via the API.
 
 The [coldkey](glossary/glossary) is encrypted on your device and is used to store funds securely and perform high risk operations, such as transfers and staking, while the [hotkey](glossary/glossary) is unencrypted, and used for less secure operations such as signing messages into the network, running miners, and validating the network.
@@ -11,7 +13,7 @@ Once you have [installed bittensor](getting-started/installation), you can a wal
 
 
 
-### _btcli 
+### btcli 
 
 
 ```bash dark
@@ -42,7 +44,7 @@ If you want to encrypt your hotkey, use `btcli new_hotkey --use_password`.
 
 
 
-### _python 
+### python 
 
 
 ```python numbered dark
@@ -87,13 +89,35 @@ btcli regen_coldkey --mnemonic **** *** **** **** ***** **** *** **** **** **** 
 
 
 
-### _external wallet
+
+
+
+
+
+
+
+
+
+### external wallet
 
 To create a wallet without installing bittensor you can use the wallet on [Bittensor](http://bittensor.com). Click the **0.00** in the top right corner. Select **create** to create a new wallet or **import** to import your mnemonic from an existing wallet. The "access" option can be used if you have already created a wallet using the website and have not chosen to "forget" it. Once you have accessed your account, you can send, receive, or stake your TAO.
 
 
 
-### _bt.wallet
+
+
+
+
+
+
+
+
+
+
+
+
+
+### bt.wallet
 
 
 <Accordion title="_examples">
