@@ -11,10 +11,9 @@ Once you have [installed bittensor](getting-started/installation), you can a wal
 
  through the Bittensor website, or use a secondary tool like [subkey](https://docs.substrate.io/reference/command-line-tools/subkey/). Both of these options allow you to use TAO without installing Bittensor.
 
-### 01 btcli
 
+### btcli <Accordion title="">
 
-<Accordion title="">
 
 ```bash dark
 $ btcli new_coldkey --wallet.name my_coldkey
