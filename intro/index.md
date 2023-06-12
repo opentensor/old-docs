@@ -1,7 +1,4 @@
-
-
-## Overview
-
+## [overview]
 
 
 Bittensor is a mining network, similar to Bitcoin, that offers censorship-resistant access to a decentralized network of machine learning models. By leveraging digital incentives and rewarding participants directly for their contributions of computational resources, expertise and innovation, Bittensor establishes a comprehensive,  open-source ecosystem of artificial intelligence competencies. The native currency, TAO, constitutes both reward and access token to the network.
@@ -10,7 +7,7 @@ This documentation covers the three primary ways that users can interact with Bi
 
 
 
-### 01 Mining
+### _mining
 
 Individuals contributing value to the network in return for compensation in the form of TAO. Start [here](mining/mining).
 
@@ -27,7 +24,7 @@ bittensor/
 ```
 
 
-### 02 Validating
+### _validating
 
 Tao holders who wish to govern Bittensor directly and use the network at its full capactiy bandwidth and fidelity.  Start [here](validating/validating).
 
@@ -40,7 +37,7 @@ bittensor/
                 core/
                     neuron.py
 ```
-### 03 API
+### _api
 
 Users, researchers or companies, seeking to access bittensor directly using client facing APIs. Start [here](clients/clients).
 
