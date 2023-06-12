@@ -746,9 +746,9 @@ The string returned by this method is identical to the one provided by the `__st
 
 
 
-<Accordion title="Initialization">
 
-## Initialization
+
+### Initialization
 
 To initialize an instance of the `Subtensor` class, you'll need to provide three arguments:
 
@@ -756,20 +756,6 @@ To initialize an instance of the `Subtensor` class, you'll need to provide three
 import bittensor as bt
 obj = bt.subtensor( config, network, chain_endpoint )
 ```
-
-</Accordion>
-
-
-
-
-
-
-
-
-
-
-
-<Accordion title="Arguments">
 
 ### Arguments
 - `config (bt.Config, optional, defaults=bt.subtensor.config())`:
@@ -783,10 +769,6 @@ obj = bt.subtensor( config, network, chain_endpoint )
     an entry point node from that network.
 - `chain_endpoint (str, default=None)`:
     The subtensor endpoint flag. If set, overrides the network argument.
-
-
-</Accordion>
-
 
 
 
