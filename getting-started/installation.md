@@ -1,5 +1,5 @@
 
-## [installation]
+## [getting started]
 
 
 There are three primary methods of installing Bittensor on your local machine: using a script, with pip install and from source.

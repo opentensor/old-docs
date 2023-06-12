@@ -1,7 +1,7 @@
 
 # [OVERVIEW](intro/index.md)
 
-# [GETTING STARTED](getting-started/installation.md)
+# [INSTALLATION](getting-started/installation.md)
 
 # [WALLET](getting-started/wallets.md)
 

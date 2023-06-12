@@ -1,5 +1,5 @@
 
-## Subnetworks
+## [subnetworks]
 
 
 
@@ -8,7 +8,7 @@ Bittensor runs multiple self-contained economic markets incentivizing access to 
 
 
 
-### Viewing Subnetworks
+### _viewing subnetworks
 
 You can uses `btcli list_subnets` to show all currently running subnetworks on bittensor.
 ```bash dark
@@ -28,7 +28,8 @@ NETUID  NEURONS  MAX_N   DIFFICULTY  TEMPO  CON_REQ  EMISSION  BURN(τ)
         BURN: TAO recycle cost per registration.
 ```
 
-### Viewing State
+### _viewing state
+
 To extract more fine grained information about each subnetwork use `bt.metagraph`.
 ```python numbered dark
 import bittensor as bt
@@ -53,7 +54,7 @@ uid = 123
 print ('uid', uid, ' owned by hotkey:', subnet.hotkeys[ uid ], 'assoicated with coldkey': subnet.coldkey[ uid ] )
 ```
 
-### Viewing Parameters
+### _viewing parameters
 
 Through [registration](subnetworks/registration) hotkeys cycle in and out of each subnetwork depending on their performance according to subnetworks [validators](validating/validating). Stake `metagraph.S` across subnetwork is universal. This validation method is performed by validators setting a set of weights `metagraph.W` on the chain based on their subjective valuations of the miners across the network.
 
