@@ -98,7 +98,7 @@ btcli regen_coldkey --mnemonic **** *** **** **** ***** **** *** **** **** **** 
 
 
 
-### external wallet
+### _external wallet
 
 To create a wallet without installing bittensor you can use the wallet on [Bittensor](http://bittensor.com). Click the **0.00** in the top right corner. Select **create** to create a new wallet or **import** to import your mnemonic from an existing wallet. The "access" option can be used if you have already created a wallet using the website and have not chosen to "forget" it. Once you have accessed your account, you can send, receive, or stake your TAO.
 
@@ -117,10 +117,10 @@ To create a wallet without installing bittensor you can use the wallet on [Bitte
 
 
 
-### bt.wallet
+### _bt.wallet
 
 
-<Accordion title="_examples">
+<Accordion title="examples()">
 
 ```python dark
 import bittensor as bt
@@ -138,7 +138,7 @@ wallet = bt.wallet( name = 'my_coldkey', hotkey = 'my_first_hotkey', path = '~/p
 
 </Accordion>
 
-<Accordion title="_methods">
+<Accordion title="methods()">
 
 
 #### create_coldkey_from_uri
