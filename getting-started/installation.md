@@ -1,10 +1,10 @@
 
-## Installation
+### [installation]
 
 
 There are three primary methods of installing Bittensor on your local machine: using a script, with pip install and from source.
 
-### 01 Script
+### _script
 
 This is the most straightforward method and is recommended for the novice user as it will pre-install requirements, like Python, if they are not already present on your machine. Simply paste the following into your terminal:
 
@@ -13,14 +13,14 @@ This is the most straightforward method and is recommended for the novice user a
 ```
 
 
-### 02 pip
+### _pip
 
 ```bash dark
 pip3 install bittensor
 ```
 
 
-### 03 Source
+### _source
 
 ```bash dark
 git clone https://github.com/opentensor/bittensor.git
@@ -33,7 +33,8 @@ import bittensor as bt
 print( bt.__version__ )
 ```
 
-### 04 Installation on Apple M chip
+### _installation on apple m1 chip 
+
 There are quite a few Python libraries that are not yet compatible with Apple M chipset architecture. The best way to use Bittensor on this hardware is through Conda and Miniforge. The Opentensor team has created a Conda environment that makes installing Bittensor on these systems very easy. Simply download the YAML file [here](https://github.com/opentensor/bittensor/blob/master/scripts/environments/apple_m1_environment.yml). 
 
 > NOTE: This tutorial assumes you have installed conda on mac, if you have not done so already you can install it from [here](https://conda.io/projects/conda/en/latest/user-guide/install/macos.html).
