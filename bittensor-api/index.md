@@ -2,15 +2,11 @@
 ## API Reference
 
 
-
-<Accordion title="Subtensor">
-
-### Introduction
+### Subtensor 
 
 The `Subtensor` is utilized for managing interactions with the subtensor chain. It serves as an interface to communicate with "Finney", Bittensor's main blockchain network, or others, enabling operations like querying and transacting.
 
-
-## Examples
+<Accordion title="Examples">
 
 ```python dark
 # Creating a default chain connection to remote finney instance.
@@ -28,9 +24,10 @@ sub = bt.subtensor( chain_endpoint = "ws://127.0.0.1:9944" )
 
 
 
+</Accordian>
 
 
-
+<Accordion title="Extrinsics">
 
 
 
