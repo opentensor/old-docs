@@ -6,7 +6,7 @@
 
 The `Subtensor` is utilized for managing interactions with the subtensor chain. It serves as an interface to communicate with "Finney", Bittensor's main blockchain network, or others, enabling operations like querying and transacting.
 
-<Accordion title="Examples">
+### Examples
 
 ```python dark
 # Creating a default chain connection to remote finney instance.
@@ -23,15 +23,11 @@ sub = bt.subtensor( chain_endpoint = "ws://127.0.0.1:9944" )
 ```
 
 
+### Methods 
 
-</Accordion>
 
 
 <Accordion title="Extrinsics">
-
-
-
-<Accordion title="Methods">
 
 
 
