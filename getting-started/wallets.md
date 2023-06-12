@@ -36,9 +36,9 @@ If you want to encrypt your hotkey, use `btcli new_hotkey --use_password`.
 
 </Accordion>
 
-### 02 Python
+### Python
 
-<Accordion title="Expand">
+### <Accordion title="Python">
 
 ```python numbered dark
 import bittensor as bt
