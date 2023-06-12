@@ -14,7 +14,7 @@ Once you have [installed bittensor](getting-started/installation), you can a wal
 ### 01 btcli
 
 
-<Accordion title="Expand">
+<Accordion title="">
 
 ```bash dark
 $ btcli new_coldkey --wallet.name my_coldkey
