@@ -99,8 +99,8 @@ To create a wallet without installing bittensor you can use the wallet on [Bitte
 ### _bt.wallet
 
 
+<Accordion title="_examples">
 
-#### Examples
 ```python dark
 import bittensor as bt
 
@@ -115,9 +115,9 @@ wallet = bt.wallet( name = 'my_coldkey', hotkey = 'my_first_hotkey', path = '~/p
 ```
 
 
+</Accordion>
 
-
-#### Methods
+<Accordion title="_methods">
 
 
 #### create_coldkey_from_uri
@@ -148,56 +148,56 @@ create_new_coldkey( self, n_words:int = 12, use_password: bool = True, overwrite
 Creates a new coldkey, optionally encrypts it with the user's inputed password and saves to disk.
 
 
-### new_hotkey
+#### new_hotkey
 ```python
 new_hotkey( self, n_words:int = 12, use_password: bool = False, overwrite:bool = False) -> 'Wallet'
 ```
 Creates a new hotkey, optionally encrypts it with the user's inputed password and saves to disk.
 
 
-### create_new_hotkey
+#### create_new_hotkey
 ```python
 create_new_hotkey( self, n_words:int = 12, use_password: bool = False, overwrite:bool = False) -> 'Wallet'
 ```
 Creates a new hotkey, optionally encrypts it with the user's inputed password and saves to disk.
 
 
-### regenerate_coldkeypub
+#### regenerate_coldkeypub
 ```python
 regenerate_coldkeypub( self, ss58_address: Optional[str] = None, public_key: Optional[Union[str, bytes]] = None, overwrite: bool = False ) -> 'Wallet'
 ```
 Regenerates the coldkeypub from passed ss58_address or public_key and saves the file
 
 
-### regenerate_coldkey
+#### regenerate_coldkey
 ```python
 regenerate_coldkey(self, use_password: bool = True, overwrite: bool = False, **kwargs) -> 'Wallet'
 ```
 Regenerates the coldkey from passed mnemonic, seed, or json encrypts it with the user's password and saves the file.
 
 
-### regenerate_hotkey
+#### regenerate_hotkey
 ```python
 regenerate_hotkey(self, use_password: bool = True, overwrite: bool = False, **kwargs) -> 'Wallet'
 ```
 Regenerates the hotkey from passed mnemonic, seed, or json encrypts it with the user's password and saves the file.
 
 
-### __str__
+#### __str__
 ```python
 __str__(self)
 ```
 Returns a string representation of the Wallet.
 
 
-### __repr__
+#### __repr__
 ```python
 __repr__(self)
 ```
 Returns the same string representation as `__str__`.
 
 
-### create_if_non_existent
+#### create_if_non_existent
 ```python
 create_if_non_existent(self, coldkey_use_password:bool = True, hotkey_use_password:bool = False) -> 'Wallet'
 ```
@@ -205,7 +205,7 @@ Creates coldkeypub and hotkeys if they don't exist.
 
 
 
-### create
+#### create
 ```python
 create(self, coldkey_use_password:bool = True, hotkey_use_password:bool = False) -> 'Wallet'
 ```
@@ -228,7 +228,7 @@ set_coldkey(self, keypair: 'bittensor.Keypair', encrypt: bool = True, overwrite:
 Sets the hotkey, coldkeypub, and coldkey, respectively. Each can optionally be encrypted and overwritten.
 
 
-### get_coldkey, get_hotkey, get_coldkeypub
+#### get_coldkey, get_hotkey, get_coldkeypub
 ```python
 get_coldkey(self, password: str = None ) -> 'bittensor.Keypair'
 get_hotkey(self, password: str = None ) -> 'bittensor.Keypair'
@@ -244,7 +244,7 @@ create_coldkey_from_uri(self, uri:str, use_password: bool = True, overwrite:bool
 Creates a coldkey from a suri string. Optionally encrypts and overwrites existing coldkey.
 
 
-
+</Accordion>
 
 
 
