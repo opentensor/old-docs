@@ -37,7 +37,24 @@ If you want to encrypt your hotkey, use `btcli new_hotkey --use_password`.
 
 </Accordion>
 
-### python <Accordion title="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### python 
+
+<Accordion title="">
 
 ```python numbered dark
 import bittensor as bt
@@ -77,22 +94,33 @@ btcli regen_coldkey --mnemonic **** *** **** **** ***** **** *** **** **** **** 
 ```
 </Accordion>
 
-### 03 External Wallet
+
+
+
+
+
+
+
+
+
+
+
+### external wallet
+
+<Accordion title="">
+
 
 
 To create a wallet without installing bittensor you can use the wallet on [Bittensor](http://bittensor.com). Click the **0.00** in the top right corner. Select **create** to create a new wallet or **import** to import your mnemonic from an existing wallet. The "access" option can be used if you have already created a wallet using the website and have not chosen to "forget" it. Once you have accessed your account, you can send, receive, or stake your TAO.
 
-
-<Accordion title="Basic Wallet Commands">
-
-
-# bt.wallet
-
-# Wallet Class Reference Documentation
+</Accordion>
 
 
-## Introduction
-The `Wallet` acts as an interface over a coldkey, hotkey pairing.
+
+
+### bt.wallet
+
+<Accordion title="">
 
 ## Examples
 ```python dark
