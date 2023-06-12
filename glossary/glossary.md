@@ -1,13 +1,13 @@
 
-## Glossary
+## [glossary]
 
 
 
-### Subnetworks
+#### Subnetworks
 Self-contained economic markets incentivizing access to different forms of machine intelligence access, for instance; subnetwork 1 produces completions from text prompts and subnetwork 2 incentivizes the production of informationally dense embeddings from text. These economic domains are called "subnetworks".
 
 
-### UIDS
+#### UIDS
 The set of positions available in each [subnetwork](#subnetworks). UIDs increment like indices from 0 to the size of the network. i.e. 0 to 1023 for a 1024 sized subnetwork. UIDs can be owned by a wallet who has registered into the position within side each [subnetwork](#subnetworks).
 
 
