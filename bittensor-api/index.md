@@ -24,7 +24,7 @@ sub = bt.subtensor( chain_endpoint = "ws://127.0.0.1:9944" )
 
 
 
-</Accordian>
+</Accordion>
 
 
 <Accordion title="Extrinsics">
