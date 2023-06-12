@@ -12,9 +12,19 @@ Once you have [installed bittensor](getting-started/installation), you can a wal
  through the Bittensor website, or use a secondary tool like [subkey](https://docs.substrate.io/reference/command-line-tools/subkey/). Both of these options allow you to use TAO without installing Bittensor.
 
 
-### btcli 
 
-<Accordion title="">
+
+
+
+
+
+
+
+
+
+
+
+### btcli 
 
 
 ```bash dark
@@ -35,14 +45,6 @@ $ btcli new_hotkey --wallet.name my_coldkey --wallet.hotkey my_first_hotkey
 !> As previously mentioned, the hotkey is **not** encrypted on the device whereas the coldkey **is**.
 If you want to encrypt your hotkey, use `btcli new_hotkey --use_password`.
 
-</Accordion>
-
-
-
-
-
-
-
 
 
 
@@ -54,7 +56,6 @@ If you want to encrypt your hotkey, use `btcli new_hotkey --use_password`.
 
 ### python 
 
-<Accordion title="">
 
 ```python numbered dark
 import bittensor as bt
@@ -92,37 +93,21 @@ If you need to regenerate your wallets, you can use the cli with your mnemonic.
 ```bash dark
 btcli regen_coldkey --mnemonic **** *** **** **** ***** **** *** **** **** **** ***** *****
 ```
-</Accordion>
-
-
-
-
-
-
-
-
 
 
 
 
 ### external wallet
 
-<Accordion title="">
-
-
-
 To create a wallet without installing bittensor you can use the wallet on [Bittensor](http://bittensor.com). Click the **0.00** in the top right corner. Select **create** to create a new wallet or **import** to import your mnemonic from an existing wallet. The "access" option can be used if you have already created a wallet using the website and have not chosen to "forget" it. Once you have accessed your account, you can send, receive, or stake your TAO.
-
-</Accordion>
-
 
 
 
 ### bt.wallet
 
-<Accordion title="">
 
-## Examples
+
+#### Examples
 ```python dark
 import bittensor as bt
 
