@@ -1,5 +1,5 @@
 
-## API
+### [api]
 
 
 The Bittensor API allows clients to query the network through endpoints that have been made accessible by network validators. Clients using the network do not have to be otherwise involved in the incentive mechanism of the network. The default endpoint that is accessed through the API belongs to the [Opentensor Foundation](https://opentensor.ai/), however, any network validator is able to provide a unique entrypoint.
@@ -20,7 +20,7 @@ All entrypoints can be viewed using `btcli list_delegates`:
 
 
 
-### Querying the Network
+### _querying the network
 
 Text prompting requests can be sent via `bt.prompt`.
 ```python numbered dark
@@ -41,7 +41,7 @@ should_I_buy_a_boat = bt.prompt( content = content )
 ```
 
 
-### Integrating with Langchain
+### _integrating with langchain
 
 The BittensorLLM object can be integrated with langchain.
 ```python numbered dark removed=2,4 added=1,3
@@ -53,7 +53,7 @@ llm( 'prompt me' )
 ```
 
 
-### Getting Multiple Responses
+### _getting multiple responses
 
 You can return multiple responses for a single prompt.
 ```python numbered dark
@@ -68,7 +68,7 @@ bt.prompt( "What should I do today?", return_all = True )
 ```
 
 
-### Specifying an Entrypoint
+### _specifying an entrypoint
 
 You can specify a unique entrypoint endpoint to query by its hotkey.
 > NOTE: Note, unless that endpoint has specifically opened up access to this form of query, you are likely to have your messages blacklisted.
@@ -80,7 +80,7 @@ print ( bt.prompt( "Heraclitus was a ", hotkey = open_endpoint_hotkey ) )
 ```
 
 
-### Using a Validator Key
+### _using a validator key
 
 Power users who have a validator key registered on the network already do not need to access the network indirectly, and can instead make RPC connections directly to miners like so:
 ```python numbered dark
