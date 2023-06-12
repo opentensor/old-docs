@@ -139,31 +139,31 @@ wallet = bt.wallet( name = 'my_coldkey', hotkey = 'my_first_hotkey', path = '~/p
 
 
 
-## Methods
+#### Methods
 
 
-### create_coldkey_from_uri
+#### create_coldkey_from_uri
 ```python
 create_coldkey_from_uri(self, uri:str, use_password: bool = True, overwrite:bool = False) -> 'Wallet'
 ```
 Creates coldkey from suri string, optionally encrypts it with the user's inputed password.
 
 
-### create_hotkey_from_uri
+#### create_hotkey_from_uri
 ```python
 create_hotkey_from_uri( self, uri:str, use_password: bool = False, overwrite:bool = False) -> 'Wallet'
 ```
 Creates hotkey from suri string, optionally encrypts it with the user's inputed password.
 
 
-### new_coldkey
+#### new_coldkey
 ```python
 new_coldkey( self, n_words:int = 12, use_password: bool = True, overwrite:bool = False) -> 'Wallet'
 ```
 Creates a new coldkey, optionally encrypts it with the user's inputed password and saves to disk.
 
 
-### create_new_coldkey
+#### create_new_coldkey
 ```python
 create_new_coldkey( self, n_words:int = 12, use_password: bool = True, overwrite:bool = False) -> 'Wallet'
 ```
@@ -234,14 +234,14 @@ create(self, coldkey_use_password:bool = True, hotkey_use_password:bool = False)
 Similar to `create_if_non_existent`, creates coldkeypub and hotkeys if they don't exist.
 
 
-### recreate
+#### recreate
 ```python
 recreate(self, coldkey_use_password:bool = True, hotkey_use_password:bool = False ) -> 'Wallet'
 ```
 Creates new coldkeypub and hotkeys, overwriting existing ones.
 
 
-### set_hotkey, set_coldkeypub, set_coldkey
+#### set_hotkey, set_coldkeypub, set_coldkey
 ```python
 set_hotkey(self, keypair: 'bittensor.Keypair', encrypt: bool = False, overwrite: bool = False) -> 'bittensor.Keyfile'
 set_coldkeypub(self, keypair: 'bittensor.Keypair', encrypt: bool = False, overwrite: bool = False) -> 'bittensor.Keyfile'
@@ -259,7 +259,7 @@ get_coldkeypub(self, password: str = None ) -> 'bittensor.Keypair'
 Returns the coldkey, hotkey, and coldkeypub, respectively. If encrypted, requires a password.
 
 
-### create_coldkey_from_uri
+#### create_coldkey_from_uri
 ```python
 create_coldkey_from_uri(self, uri:str, use_password: bool = True, overwrite:bool = False) -> 'Wallet'
 ```
@@ -267,7 +267,7 @@ Creates a coldkey from a suri string. Optionally encrypts and overwrites existin
 
 
 
-</Accordion>
+
 
 
 
