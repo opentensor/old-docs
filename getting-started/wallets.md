@@ -4,7 +4,7 @@
 
 The Bittensor wallet is the core ownership and identity technology around which all functionalities of the network are carried out. A wallet consists of a [coldkey](glossary/glossary)  and a [hotkey](glossary/glossary) pairing of two seperate [EdDSA cryptographic keypairs](https://en.wikipedia.org/wiki/EdDSA#Ed25519) that are responsible for different functionalities within the ecosystem, but are logically connected via the API.
 
-The (glossary/glossary/#coldkey) is encrypted on your device and is used to store funds securely and perform high risk operations, such as transfers and staking, while the (glossary/glossary/#hotkey) is unencrypted, and used for less secure operations such as signing messages into the network, running miners, and validating the network.
+The [coldkey](glossary/glossary) is encrypted on your device and is used to store funds securely and perform high risk operations, such as transfers and staking, while the [hotkey](glossary/glossary) is unencrypted, and used for less secure operations such as signing messages into the network, running miners, and validating the network.
 
 Once you have [installed bittensor](getting-started/installation), you can a wallet locally on your machine in two ways, described below. You can also create an [external wallet](#03-external-wallet).
 
