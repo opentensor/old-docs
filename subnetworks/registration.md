@@ -1,5 +1,5 @@
 
-## Registration
+### [registration]
 
 Prior to mining TAO, miners must attain a UID slot within one of Bittensor's sub-networks via a competition. This step is called registration. At the time of writing, there are 1024 UIDs available on Subnetwork 1 and 4096 on Subnetwork 3.
 
@@ -26,7 +26,7 @@ There are two methods of registrations:
 Once the registration cost has been paid, the miner enters the network by replacing an older underperforming miner and can now [mine](mining/mining) themselves from that slot.
 
 
-### 01 Proof of Work
+### _proof of work
 
 Proof-of-Work (POW) registrations require miners to solve a SHA256 hashing problem before winning a UID. This route is recommmended for miners contributing raw compute power to Bittensor or don't have a previous token supply.
 ```bash dark
@@ -39,7 +39,7 @@ btcli register
 The POW registration does not requires only your `coldkeypub.txt` and `hotkey`. It is also possible to sign the registration extrinsic payload by a separate key.
 
 
-### 02 Recycle Registration
+### _recycle registration
 
 Recycle registrations allow a miner to recycle TAO back into the inflation mechanism (to be passed through the incentive mechanism at a later date) in exchange for a UID on a subnetwork. Recycle registrations cost TAO to execute but takes less time to activate than POW registration. They recommended for miners seeking to attain slots quickly and who already have a small amount of TAO at their disposal.
 ```bash dark
@@ -50,7 +50,7 @@ btcli recycle_register
 ```
 
 
-### Installing Cubit
+### _cubit
 
 It is highly recommended that you use a Nvidia GPU to register for a faster hash rate. To use your GPU during the hashing problem you must [install Cubit](https://github.com/opentensor/cubit).
 
@@ -66,7 +66,7 @@ btcli register
 ```
 
 
-### Cost Updates
+### _cost updates
 
 POW and the recycle regsistration cost are mutually adaptive, updating their costs on an `adjustment interval` so that the number of registrations over that interval remain constanct, i.e. 3 registrations per 100 blocks. Below is pseudo code for the update conditions.
 ```python numbered dark title=subtensor/pallets/subtensor/src/block_step link=https://github.com/opentensor/subtensor/pallets/subtensor/src/block_step.rs
@@ -94,7 +94,7 @@ NETUID  NEURONS  MAX_N   DIFFICULTY  TEMPO  CON_REQ  EMISSION  BURN(τ)
 ```
 
 
-### Inspecting UIDs
+### _inspecting uids
 
 Once a slot has been attained you can view the performance of you registered wallet you can run ```btcli overview --netuid```.
 
