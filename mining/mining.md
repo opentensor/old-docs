@@ -4,8 +4,7 @@
 Before mining you must [register](subnetworks/registration) the [hotkey of your wallet](getting-started/wallets) into a UID slot on one of Bittensor's [subnetworks](subnetworks/subnetworks), once this UID is yours you can run [your own miner](mining/custom_miners), or select one of Bittensor's many [pre-built miners](https://github.com/opentensor/bittensor/tree/text_prompting/neurons/text/prompting/miners).
 
 
-### _running pre-built miners
-
+### _running with pre-built
 
 Bittensor's [pre-built miners](https://github.com/opentensor/bittensor/tree/text_prompting/neurons/text/prompting/miners) are installed from [source](https://github.com/opentensor/bittensor.git). For instance,
 ```bash dark title=bittensor/neurons/text_prompting/miners/GPT4ALL link=https://github.com/opentensor/bittensor/tree/text_prompting/neurons/text/prompting/miners/GPT4ALL
@@ -22,12 +21,12 @@ $ tree bittensor
                         README.md           # GPT4ALL instructions.
                     ...
 ```
-Each miner comes with unqiue requirements and instructions in their source directory `bittensor/neurons/<subnetwork>/miners/<miner name>`.
+Each miner comes with unqiue requirements and instructions in their source directory **bittensor/neurons/<subnetwork>/miners/<miner name>**.
 ```bash dark
 # Installing miner requirements
 python3 -m pip install -r bittensor/neurons/text_prompting/miners/GPT4ALL/requirements.txt
 ```
-Each miner contains unique setup and hyperparameterization instructions. We recommend reading detailed instructions about each miner through their `--help` commands.
+Each miner contains unique setup and hyperparameterization instructions. We recommend reading detailed instructions about each miner through their **--help** commands.
 ```bash dark
 # Reading miner --help.
 python3 bittensor/neurons/text_prompting/miners/GPT4ALL/neuron.py
