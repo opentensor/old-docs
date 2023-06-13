@@ -29,13 +29,7 @@ print ('subnet 1 validator stake', subnet.S )
 print ('subnet 1 validator weights', subnet.W )
 ```
 
-Validators thus speculate
-
-
-TAO which has been locked into Bittensor's incentive mechanism and attached to a validator.
-
-However, consensus is rewarded by the network as validators accumulate **dividends** while remaining in agreement with others in the network.
-
+Validators thus speculateTAO which has been locked into Bittensor's incentive mechanism and attached to a validator.  However, consensus is rewarded by the network as validators accumulate **dividends** while remaining in agreement with others in the network.
 
 Under the hood, Bittensor’s economic market, is facilitated by a blockchain token mechanism, through which producers ([miners](mining/mining)) and the verification of the work done by those miners ([validators](validating/validating)) are rewarded. Miners host, train or otherwise procure machine learning systems into the network as a means of fulfilling the verification problems defined by the validators, like the ability to generate responses from prompts i.e. “What is the capital of Texas? and making them available to [clients](clients/clients).
 
