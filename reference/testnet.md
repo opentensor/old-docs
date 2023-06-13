@@ -1,11 +1,10 @@
 
-## Testnet & Difficulty
-
+### [testnet + difficulty]
 
 <Accordion title="Testnet">
 
 
-# Testnet
+### _testnet
 
 The Bittensor Testnet is built to verify incoming changes and features made by developers. The block explorer can be reached [here](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftest.finney.opentensor.ai%3A443#/explorer).
 
@@ -27,10 +26,9 @@ The consensus mechanism, validation, and mining are all identical between the te
 
 
 
-<Accordion title="Difficulty Adjustment">
+<Accordion title="(difficulty adjustment)">
 
-
-# Difficulty Adjustment
+### _difficulty adjustment 
 
 The POW and Recycle difficulties are adaptively adjusted every 100 blocks based on the following 4 cases.
 
@@ -48,7 +46,8 @@ The POW and Recycle difficulties are adaptively adjusted every 100 blocks based 
         `pow_difficulty = pow_difficulty * ( regs_this_interval + target_regs ) / 2 * target_regs`
 
 
-### Viewing current difficulty
+### _viewing current difficulty
+
 Using the cli
 ```bash dark
 btcli list_subnets

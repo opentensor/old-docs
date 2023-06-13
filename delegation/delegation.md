@@ -1,10 +1,11 @@
 
-## Delegation
+### [delegation]
 
 
 Delegation occurs when TAO is transferred to a hotkey that is not owned by the delegate, and enables external users, or those without sufficent TAO to run a validator,  to increase their earning by accruing dividends. This mechanism prompts growth and facilitates efficient resource allocation around value-producing nodes, enhancing the overall utility of the network. In order to receive delegated TAO from the network ```delegates```, hotkeys can nominate themselves as ```nominates```. Of the TAO earned through delegation, the nominates are entitled to an 18% "tax" for owning the nominated hotkey, while the rest is distributed to the delegate in proportion to their delegated stake. The delegation cut is presently a hard coded, but subject to change as the network evolves.
 
-### Viewing Available Delegates
+### _viewing available delegates 
+
 Hotkeys only become available for delegation once they have `nominated` themselves. To see a list of nominated validators you can run `btcli list_delegates`
 ```bash dark
 $ btcli list_delegates
@@ -27,19 +28,22 @@ $ btcli list_delegates
 | Desc    | Delegate defined description.                     |
 
 
-### Delegating TAO
+### _delegating tao
+
 You delegate TAO using btcli. This will show a list of delegates sorted by stake on your terminal. Read this list to find your delegate and use the index to select which to send stake to.
 ```bash dark
 $ btcli delegate
 ```
 
-### Showing My Delegations
+### _showing my delegations 
+
 To show all your previously made delegations run `btcli my_delegates`, use `--all` to show delegations across all wallets.
 ```bash dark
 $ btcli my_delegates
 ```
 
-### Becoming a delegate
+### _becoming a delegate
+
 You can `nominate` your hotkey to become and active delegate by running `btcli nominate`.
 > You can [sign](delegation/signing) your delegate information to give the hotkey a recognizable name an description.
 ```bash dark
@@ -48,7 +52,7 @@ $ btcli nominate
     --wallet.hotkye YOUR_HOTKEY_NAME
 ```
 
-### Signing Delegates
+### _signing delegates 
 
 
 Signing your delegate name, URL and description makes it show when others run btcli list_delegates. To do this you need to submit a pull request to the bittensor-delegates repo.
