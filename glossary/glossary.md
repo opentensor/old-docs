@@ -1,7 +1,7 @@
 
 ## [glossary]
 
-### _a-h
+### _a-e
 
 **axon**
 Servers receive requests from other peers in the network via the [dendrite](#dendrite).
@@ -62,16 +62,18 @@ The amount of [TAO](#tao) emitted into a [subnetwork](#subnetworks) on an [epoch
 **extrinsics**
 Functions called on a [blockchain](#blockchain) which append state and usually signed by a [wallet](#wallet)
 
+### _f-k
+
 **forward requests**
 The first stage of the transaction in which a [validator](#validators) sends a task a [miner](#miners) and the the [miner](#miners) sends task outputs back to the [validator](#validators)
 
 **hotkey**
 The part of the miner that contains "hot storage". It is loaded into the network and gives ability to set weights (for Validators).
 
-### _i-p
-
 **incentive**
 The proportion of [emission](#emission) a [miner](#miners)  recieves every [epoch](#epoch) across other [miners](#miners) within the subnetwork.
+
+### _l-p
 
 **logits**
 The probability of a word in NTP (next token prediction) or MTP (masked token prediction).
@@ -106,6 +108,8 @@ Bittensor's legacy test-network pre-March 2023
 **polkadot**
 Polkadot is a blockchain platform and cryptocurrency. The native cryptocurrency for the Polkadot blockchain is the DOT. It is designed to allow blockchains to exchange messages and perform transactions with each other without a trusted third-party.
 
+### _q-u
+
 **ranks**
 The column sum of the weight matrix [W](#weights) representing each miner's stake weighted rating according to the validators withing a [subnetwork](#subnetworks).
 ```python dark
@@ -134,7 +138,6 @@ An API build by [Polkadot](#polkadot) allowing the fast development of modular u
 **subtensor**
 Bittensor's [blockchain](#blockchain) build on [Polkadot](#pol) blockchain infrastructure [substrate](#substrate)
 
-
 **TAO**
 Bittensor unit of intelligence and value. TAO [inflation](#incentive) occurs continuously with block production.
 The digital token that functions as currency in the network. Tao uses the same tokenomics as Bitcoin with a 4 year halving cycle and a max supply of 21 millions tokens.
@@ -149,6 +152,8 @@ subnet.T
 **UIDs**
 The set of positions available in each [subnetwork](#subnetworks). UIDs increment like indices from 0 to the size of the network. i.e. 0 to 1023 for a 1024 sized subnetwork. UIDs can be owned by a wallet who has registered into the position within side each [subnetwork](#subnetworks).
 
+### _v-z
+
 **validators**
 Computers holds [TAO](#tao) who verify the abilities of [miners](#miners)  to perform the machine learning tasks required of their subnetwork. Validators run the continous process of validation in the classical machine learning train-test-validation process.
 
@@ -161,6 +166,5 @@ Vector lists of weights `w_i = [w_ij]` which are trained by [validators](#valida
 subnet = bittensor.metagraph(1)
 subnet.W
 ```
-
 **yuma consensus**
 The incentive mechanism detailed in the Bittensor Whitepaper around which [emission](#emission) is distributed.
