@@ -66,3 +66,5 @@ import bittensor as bt
 subnet = bt.metagraph( netuid = 1 )
 print ('subnet 1 validator dividends', subnet.D )
 ```
+
+
