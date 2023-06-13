@@ -225,7 +225,7 @@ create_if_non_existent(self, coldkey_use_password:bool = True, hotkey_use_passwo
 Creates coldkeypub and hotkeys if they don't exist.
 
 
-
+ 
 #### create
 ```python
 create(self, coldkey_use_password:bool = True, hotkey_use_password:bool = False) -> 'Wallet'
@@ -272,7 +272,7 @@ Creates a coldkey from a suri string. Optionally encrypts and overwrites existin
 
 
 
-chr
+
 
 
 
