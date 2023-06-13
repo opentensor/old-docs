@@ -17,8 +17,7 @@ The over the wire encoding of requests and responses subscribed to by [miners](#
 The moving average of the weights `B = alpha * W + (1 - alpha) * B`. Historical assessment of weights maintained on chain used for computing [dividends](#dividends).
 
 
-
-#### Blockchain
+#### blockchain
 A technology for building decentralized append only databases. Blockchains increase in size by appending blocks containing many [`extrinsics`](#extrinsics) which are unique function calls on the underlying state.
 
 #### blocks
@@ -140,7 +139,7 @@ Bittensor unit of intelligence and value. TAO [inflation](#incentive) occurs con
 The digital token that functions as currency in the network. Tao uses the same tokenomics as Bitcoin with a 4 year halving cycle and a max supply of 21 millions tokens.
 
 #### trust
-The average number of non-zero weights in the weight matrix [`W`](#weights) in a [subnetwork](#subnetworks)
+The average number of non-zero weights in the weight matrix [W](#weights) in a [subnetwork](#subnetworks)
 ```python dark
 subnet = bittensor.metagraph(1)
 subnet.T
@@ -150,17 +149,17 @@ subnet.T
 The set of positions available in each [subnetwork](#subnetworks). UIDs increment like indices from 0 to the size of the network. i.e. 0 to 1023 for a 1024 sized subnetwork. UIDs can be owned by a wallet who has registered into the position within side each [subnetwork](#subnetworks).
 
 #### validators
-Computers holds [`TAO`](#tao) who verify the abilities of [`Miners`](#miners)  to perform the machine learning tasks required of their subnetwork. Validators run the continous process of validation in the classical machine learning train-test-validation process.
+Computers holds [TAO](#tao) who verify the abilities of [miners](#miners)  to perform the machine learning tasks required of their subnetwork. Validators run the continous process of validation in the classical machine learning train-test-validation process.
 
 #### wallet
-The logical pairing of one [`coldkey`](#coldkey) with 1 or more [`hotkeys`](#hotkey) for the separation of security layers within side Bittensor.
+The logical pairing of one [coldkey](#coldkey) with 1 or more [hotkeys](#hotkey) for the separation of security layers within side Bittensor.
 
 #### weights
-Vector lists of weights `w_i = [w_ij]` which are trained by [`validators`](#validators) while verifying the outputs of [`Miners`](#miners). The weights from all validators on a [`subnetwork`](#subnetworks) aggregate into a single matrix [`W`](#weights) over which [`Yuma Consensus`](#yuma-consensus) is run.
+Vector lists of weights `w_i = [w_ij]` which are trained by [validators](#validators) while verifying the outputs of [miners](#miners). The weights from all validators on a [subnetwork](#subnetworks) aggregate into a single matrix [W](#weights) over which [Yuma Consensus](#yuma-consensus) is run.
 ```python dark
 subnet = bittensor.metagraph(1)
 subnet.W
 ```
 
 #### yuma consensus
-The incentive mechanism detailed in the Bittensor Whitepaper around which [`emission`](#emission) is distributed.
+The incentive mechanism detailed in the Bittensor Whitepaper around which [emission](#emission) is distributed.
