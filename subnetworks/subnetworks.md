@@ -26,7 +26,7 @@ NETUID  NEURONS  MAX_N   DIFFICULTY  TEMPO  CON_REQ  EMISSION  BURN(τ)
 
 ### _viewing state
 
-To extract more fine grained information about each subnetwork use `bt.metagraph`.
+To extract more fine grained information about each subnetwork use **bt.metagraph**.
 ```python numbered dark
 import bittensor as bt
 subnet = bt.metagraph( netuid = 1 )             # Get the current state.
@@ -42,7 +42,7 @@ subnet = bt.metagraph( netuid = 1 )
 assert subnet.uids.tolist() == [ 0, 1, 2, ... 1022, 1023 ]
 ```
 
-Each uid in the network belongs to a unique `hotkey` which in turn is connected to a unique `coldkey` which a miner has used to register with.
+Each uid in the network belongs to a unique **hotkey** which in turn is connected to a unique **coldkey** which a miner has used to register with.
 ```python numbered dark
 import bittensor as bt
 subnet = bt.metagraph( netuid = 1 )
