@@ -1,10 +1,6 @@
 
-### [testnet + difficulty]
+### [testnet]
 
-<Accordion title="Testnet">
-
-
-### _testnet
 
 The Bittensor Testnet is built to verify incoming changes and features made by developers. The block explorer can be reached [here](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftest.finney.opentensor.ai%3A443#/explorer).
 
@@ -17,45 +13,9 @@ This will point the system towards the testnet blockchain. You can also run a lo
 ./node-subtensor --chain test_finney --rpc-external --rpc-cors all --ws-external --no-mdns --sync warp --bootnodes /ip4/192.81.212.20/tcp/30333/p2p/12D3KooWQawexXodtsPEymJUX1X2eKzjNq6s8MvzEWtKwJ6mLmzy
 ```
 
-### Testnet Taonomics
+### _testnet taokenomics
 The consensus mechanism, validation, and mining are all identical between the test net and the main net, with the only exception being that there is no Tao issued to Neurons (meaning emissions are 0).
 
 
-</Accordion>
 
 
-
-
-<Accordion title="(difficulty adjustment)">
-
-### _difficulty adjustment 
-
-The POW and Recycle difficulties are adaptively adjusted every 100 blocks based on the following 4 cases.
-
-
-    1. Registrations exceed the target and there were more recycle registrations than pow registrations?
-        `burn_cost = burn_cost * ( burn_regs_this_interval + target_regs ) / 2 * target_regs`
-
-    2. Registrations exceed the target and there were not more recycle registrations than pow registrations?
-        `pow_difficulty = pow_difficulty * ( pow_regs_this_interval + target_regs ) / 2 * target_regs`
-
-    3. Registrations do not exceed the target and there were more recycle registrations than pow registrations?
-        `burn_difficulty = pow_difficulty * ( regs_this_interval + target_regs ) / 2 * target_regs`
-
-    4. Registrations do not exceed the target and there were not more recycle registrations than pow registrations?
-        `pow_difficulty = pow_difficulty * ( regs_this_interval + target_regs ) / 2 * target_regs`
-
-
-### _viewing current difficulty
-
-Using the cli
-```bash dark
-btcli list_subnets
-NETUID  NEURONS  MAX_N   DIFFICULTY  TEMPO  CON_REQ  EMISSION  BURN(τ)
-1       691    1.02 K   198.08 T    99     None     28.44%   τ4.75710
-3      4096    4.10 K   320.81 T    99     None     71.56%   τ1.00000
-    DIFFICULTY: Current proof of work difficulty
-    BURN: Current cost to register a key via recycle registration.
-```
-
-</Accordion>

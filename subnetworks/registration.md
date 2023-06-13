@@ -117,3 +117,36 @@ Once a slot has been attained you can view the performance of you registered wal
 | AXON        | 131.186.56.85:8091   |    The entrypoint advertised by this miner on bittensor blockchain.              |
 | HOTKEY_SS58 | 5F4tQyWr...          |    The raw ss58 encoded address of the miner's hotkey.                           |
 
+
+
+### _difficulty adjustment 
+
+The POW and Recycle difficulties are adaptively adjusted every 100 blocks based on the following 4 cases.
+
+
+    1. Registrations exceed the target and there were more recycle registrations than pow registrations?
+        `burn_cost = burn_cost * ( burn_regs_this_interval + target_regs ) / 2 * target_regs`
+
+    2. Registrations exceed the target and there were not more recycle registrations than pow registrations?
+        `pow_difficulty = pow_difficulty * ( pow_regs_this_interval + target_regs ) / 2 * target_regs`
+
+    3. Registrations do not exceed the target and there were more recycle registrations than pow registrations?
+        `burn_difficulty = pow_difficulty * ( regs_this_interval + target_regs ) / 2 * target_regs`
+
+    4. Registrations do not exceed the target and there were not more recycle registrations than pow registrations?
+        `pow_difficulty = pow_difficulty * ( regs_this_interval + target_regs ) / 2 * target_regs`
+
+
+### _viewing current difficulty
+
+Using the cli
+```bash dark
+btcli list_subnets
+NETUID  NEURONS  MAX_N   DIFFICULTY  TEMPO  CON_REQ  EMISSION  BURN(τ)
+1       691    1.02 K   198.08 T    99     None     28.44%   τ4.75710
+3      4096    4.10 K   320.81 T    99     None     71.56%   τ1.00000
+    DIFFICULTY: Current proof of work difficulty
+    BURN: Current cost to register a key via recycle registration.
+```
+
+
