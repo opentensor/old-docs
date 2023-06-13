@@ -1,12 +1,12 @@
 
-## API Reference
+### [api reference]
 
 
-### Subtensor 
+### _subtensor 
 
 The `Subtensor` is utilized for managing interactions with the subtensor chain. It serves as an interface to communicate with "Finney", Bittensor's main blockchain network, or others, enabling operations like querying and transacting.
 
-### Examples
+### _examples
 
 ```python dark
 # Creating a default chain connection to remote finney instance.
@@ -23,11 +23,10 @@ sub = bt.subtensor( chain_endpoint = "ws://127.0.0.1:9944" )
 ```
 
 
-### Methods 
+### _methods 
 
 
-
-<Accordion title="Extrinsics">
+<Accordion title="(extrinsics)">
 
 
 
@@ -148,7 +147,7 @@ Removes stake from each hotkey in the list to a common coldkey.
 
 
 
-<Accordion title="Hyperparameters">
+<Accordion title="(hyperparameters)">
 
 ### rho
 ```python
@@ -308,7 +307,7 @@ Returns the network Tempo hyperparameter if the network exists. Inputs are `netu
 
 
 
-<Accordion title="Account Functions">
+<Accordion title="(account functions)">
 
 ### get_total_stake_for_hotkey
 ```python
@@ -382,7 +381,7 @@ Returns the prometheus information for the specified hotkey account if it exists
 
 
 
-<Accordion title="Global State">
+<Accordion title="(global state)">
 
 
 ### block
@@ -439,7 +438,7 @@ Returns the transaction rate limit as of a specified block. If no block is provi
 
 
 
-<Accordion title="Subnetwork Stake">
+<Accordion title="(subnetwork stake)">
 
 ### subnet_exists
 ```python
@@ -513,7 +512,7 @@ Returns information about a subnet with a given `netuid` as of a specified block
 
 </Accordion>
 
-<Accordion title="Delegation">
+<Accordion title="(delegation)">
 
 
 
@@ -575,7 +574,7 @@ Returns a list of delegates that a given coldkey is staked to, as of a specified
 
 
 
-<Accordion title="Neuron information per subnet">
+<Accordion title="(neuron information per subnet)">
 
 ### is_hotkey_registered_any
 ```python
@@ -696,7 +695,7 @@ Returns the metagraph for the subnet associated with a given network user id (ne
 
 
 
-<Accordion title="Legacy">
+<Accordion title="(legacy)">
 
 ## Methods
 ### get_balance
@@ -748,7 +747,7 @@ The string returned by this method is identical to the one provided by the `__st
 
 
 
-### Initialization
+### _initialization
 
 To initialize an instance of the `Subtensor` class, you'll need to provide three arguments:
 
@@ -757,7 +756,7 @@ import bittensor as bt
 obj = bt.subtensor( config, network, chain_endpoint )
 ```
 
-### Arguments
+### _arguments
 - `config (bt.Config, optional, defaults=bt.subtensor.config())`:
     Subtensor config object containing arguments from bt.subtensor.config() which are automatically parsed from command line and ENV vars.
 - `network (str, optional, default='finney')`:
@@ -770,190 +769,7 @@ obj = bt.subtensor( config, network, chain_endpoint )
 - `chain_endpoint (str, default=None)`:
     The subtensor endpoint flag. If set, overrides the network argument.
 
-
-
-
-
-<Accordion title="Basic Commands">
-
-
-# bt.wallet
-
-# Wallet Class Reference Documentation
-
-
-## Introduction
-The `Wallet` acts as an interface over a coldkey, hotkey pairing.
-
-## Examples
-```python dark
-import bittensor as bt
-
-# Creating a default wallet coldkey = default, hotkey = default, path = ~/.bittensor/wallets
-wallet = bt.wallet()
-
-# Create wallet by parsing --wallet.name, --wallet.hotkey and --wallet.path from the command line.
-wallet = bt.wallet( config = bt.wallet.config() )
-
-# Create wallet by explicitly setting names of coldkey, hotkey and path.
-wallet = bt.wallet( name = 'my_coldkey', hotkey = 'my_first_hotkey', path = '~/path/to/wallets/dir' )
-```
-
-## Methods
-
-
-### create_coldkey_from_uri
-```python
-create_coldkey_from_uri(self, uri:str, use_password: bool = True, overwrite:bool = False) -> 'Wallet'
-```
-Creates coldkey from suri string, optionally encrypts it with the user's inputed password.
-
-
-### create_hotkey_from_uri
-```python
-create_hotkey_from_uri( self, uri:str, use_password: bool = False, overwrite:bool = False) -> 'Wallet'
-```
-Creates hotkey from suri string, optionally encrypts it with the user's inputed password.
-
-
-### new_coldkey
-```python
-new_coldkey( self, n_words:int = 12, use_password: bool = True, overwrite:bool = False) -> 'Wallet'
-```
-Creates a new coldkey, optionally encrypts it with the user's inputed password and saves to disk.
-
-
-### create_new_coldkey
-```python
-create_new_coldkey( self, n_words:int = 12, use_password: bool = True, overwrite:bool = False) -> 'Wallet'
-```
-Creates a new coldkey, optionally encrypts it with the user's inputed password and saves to disk.
-
-
-### new_hotkey
-```python
-new_hotkey( self, n_words:int = 12, use_password: bool = False, overwrite:bool = False) -> 'Wallet'
-```
-Creates a new hotkey, optionally encrypts it with the user's inputed password and saves to disk.
-
-
-### create_new_hotkey
-```python
-create_new_hotkey( self, n_words:int = 12, use_password: bool = False, overwrite:bool = False) -> 'Wallet'
-```
-Creates a new hotkey, optionally encrypts it with the user's inputed password and saves to disk.
-
-
-### regenerate_coldkeypub
-```python
-regenerate_coldkeypub( self, ss58_address: Optional[str] = None, public_key: Optional[Union[str, bytes]] = None, overwrite: bool = False ) -> 'Wallet'
-```
-Regenerates the coldkeypub from passed ss58_address or public_key and saves the file
-
-
-### regenerate_coldkey
-```python
-regenerate_coldkey(self, use_password: bool = True, overwrite: bool = False, **kwargs) -> 'Wallet'
-```
-Regenerates the coldkey from passed mnemonic, seed, or json encrypts it with the user's password and saves the file.
-
-
-### regenerate_hotkey
-```python
-regenerate_hotkey(self, use_password: bool = True, overwrite: bool = False, **kwargs) -> 'Wallet'
-```
-Regenerates the hotkey from passed mnemonic, seed, or json encrypts it with the user's password and saves the file.
-
-
-### __str__
-```python
-__str__(self)
-```
-Returns a string representation of the Wallet.
-
-
-### __repr__
-```python
-__repr__(self)
-```
-Returns the same string representation as `__str__`.
-
-
-### create_if_non_existent
-```python
-create_if_non_existent(self, coldkey_use_password:bool = True, hotkey_use_password:bool = False) -> 'Wallet'
-```
-Creates coldkeypub and hotkeys if they don't exist.
-
-
-
-### create
-```python
-create(self, coldkey_use_password:bool = True, hotkey_use_password:bool = False) -> 'Wallet'
-```
-Similar to `create_if_non_existent`, creates coldkeypub and hotkeys if they don't exist.
-
-
-### recreate
-```python
-recreate(self, coldkey_use_password:bool = True, hotkey_use_password:bool = False ) -> 'Wallet'
-```
-Creates new coldkeypub and hotkeys, overwriting existing ones.
-
-
-### set_hotkey, set_coldkeypub, set_coldkey
-```python
-set_hotkey(self, keypair: 'bittensor.Keypair', encrypt: bool = False, overwrite: bool = False) -> 'bittensor.Keyfile'
-set_coldkeypub(self, keypair: 'bittensor.Keypair', encrypt: bool = False, overwrite: bool = False) -> 'bittensor.Keyfile'
-set_coldkey(self, keypair: 'bittensor.Keypair', encrypt: bool = True, overwrite: bool = False) -> 'bittensor.Keyfile'
-```
-Sets the hotkey, coldkeypub, and coldkey, respectively. Each can optionally be encrypted and overwritten.
-
-
-### get_coldkey, get_hotkey, get_coldkeypub
-```python
-get_coldkey(self, password: str = None ) -> 'bittensor.Keypair'
-get_hotkey(self, password: str = None ) -> 'bittensor.Keypair'
-get_coldkeypub(self, password: str = None ) -> 'bittensor.Keypair'
-```
-Returns the coldkey, hotkey, and coldkeypub, respectively. If encrypted, requires a password.
-
-
-### create_coldkey_from_uri
-```python
-create_coldkey_from_uri(self, uri:str, use_password: bool = True, overwrite:bool = False) -> 'Wallet'
-```
-Creates a coldkey from a suri string. Optionally encrypts and overwrites existing coldkey.
-
-
-
-</Accordion>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<Accordion title="Metagraph">
+<Accordion title="(metagraph)">
 
 
 # bt.metagraph
@@ -1158,7 +974,7 @@ Loads the Metagraph object's state_dict from the specified directory path.
 
 
 
-<Accordion title="Logging">
+<Accordion title="(logging)">
 
 
 

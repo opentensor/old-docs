@@ -1,5 +1,5 @@
 
-## [glossary]
+### [glossary]
 
 #### axon
 Servers receive requests from other peers in the network via the [dendrite](#dendrite).

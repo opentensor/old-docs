@@ -1,5 +1,5 @@
 
-### [wallet]
+## [wallet]
 
 The Bittensor wallet is the core ownership and identity technology around which all functionalities of the network are carried out. A wallet consists of a [coldkey](glossary/glossary)  and a [hotkey](glossary/glossary) pairing of two seperate [EdDSA cryptographic keypairs](https://en.wikipedia.org/wiki/EdDSA#Ed25519) that are responsible for different functionalities within the ecosystem, but are logically connected via the API.
 
@@ -120,7 +120,7 @@ To create a wallet without installing bittensor you can use the wallet on [Bitte
 ### _bt.wallet
 
 
-<Accordion title="examples()">
+<Accordion title="(examples)">
 
 ```python dark
 import bittensor as bt
@@ -138,7 +138,7 @@ wallet = bt.wallet( name = 'my_coldkey', hotkey = 'my_first_hotkey', path = '~/p
 
 </Accordion>
 
-<Accordion title="methods()">
+<Accordion title="(methods)">
 
 
 #### create_coldkey_from_uri
