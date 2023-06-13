@@ -149,7 +149,7 @@ subnet = bittensor.metagraph(1)
 subnet.T
 ```
 
-**UIDs
+#### UIDs
 The set of positions available in each [subnetwork](#subnetworks). UIDs increment like indices from 0 to the size of the network. i.e. 0 to 1023 for a 1024 sized subnetwork. UIDs can be owned by a wallet who has registered into the position within side each [subnetwork](#subnetworks).
 
 ### _v-z
