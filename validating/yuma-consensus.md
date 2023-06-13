@@ -1,5 +1,5 @@
 
-### [consensus]
+## [consensus]
 
 
 Bittensor's API is designed to allow Validators to write their own validation mechanisms and express their own subjective prefrences about what the network should learn. This both [1] facilitates the economic market through which producers ([miners](mining/mining)) are constantly driven to make their knowledge output more useful, in terms of speed, intelligence and diversity, but also [2] decentralizes Bittensor's the governance across multiple diverse stakeholders, ensuring that no single group has full control over what is learned.

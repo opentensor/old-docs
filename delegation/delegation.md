@@ -1,5 +1,5 @@
 
-### [delegation]
+## [delegation]
 
 
 Delegation occurs when TAO is transferred to a hotkey that is not owned by the delegate, and enables external users, or those without sufficent TAO to run a validator,  to increase their earning by accruing dividends. This mechanism prompts growth and facilitates efficient resource allocation around value-producing nodes, enhancing the overall utility of the network. In order to receive delegated TAO from the network **delegates**, hotkeys can nominate themselves as **nominates**. Of the TAO earned through delegation, the nominates are entitled to an 18% "tax" for owning the nominated hotkey, while the rest is distributed to the delegate in proportion to their delegated stake. The delegation cut is presently a hard coded, but subject to change as the network evolves.
