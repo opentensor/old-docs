@@ -1,5 +1,5 @@
 
-## [wallet]
+### [wallet]
 
 The Bittensor wallet is the core ownership and identity technology around which all functionalities of the network are carried out. A wallet consists of a [coldkey](glossary/glossary)  and a [hotkey](glossary/glossary) pairing of two seperate [EdDSA cryptographic keypairs](https://en.wikipedia.org/wiki/EdDSA#Ed25519) that are responsible for different functionalities within the ecosystem, but are logically connected via the API.
 
@@ -232,13 +232,11 @@ create(self, coldkey_use_password:bool = True, hotkey_use_password:bool = False)
 ```
 Similar to `create_if_non_existent`, creates coldkeypub and hotkeys if they don't exist.
 
-
 #### recreate
 ```python
 recreate(self, coldkey_use_password:bool = True, hotkey_use_password:bool = False ) -> 'Wallet'
 ```
 Creates new coldkeypub and hotkeys, overwriting existing ones.
-
 
 #### set_hotkey, set_coldkeypub, set_coldkey
 ```python
