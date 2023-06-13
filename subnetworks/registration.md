@@ -26,7 +26,7 @@ There are two methods of registrations:
 Once the registration cost has been paid, the miner enters the network by replacing an older underperforming miner and can now [mine](mining/mining) themselves from that slot.
 
 
-### _proof of work
+### _pow
 
 Proof-of-Work (POW) registrations require miners to solve a SHA256 hashing problem before winning a UID. This route is recommmended for miners contributing raw compute power to Bittensor or don't have a previous token supply.
 ```bash dark
@@ -137,7 +137,7 @@ The POW and Recycle difficulties are adaptively adjusted every 100 blocks based 
         `pow_difficulty = pow_difficulty * ( regs_this_interval + target_regs ) / 2 * target_regs`
 
 
-### _viewing current difficulty
+### _viewing difficulty
 
 Using the cli
 ```bash dark

@@ -7,12 +7,6 @@ The [coldkey](glossary/glossary) is encrypted on your device and is used to stor
 
 Once you have [installed bittensor](getting-started/installation), you can a wallet locally on your machine in two ways, described below. You can also create an [external wallet](#03-external-wallet) through the Bittensor website, or use a secondary tool like [subkey](https://docs.substrate.io/reference/command-line-tools/subkey/). Both of these options allow you to use TAO without installing Bittensor.
 
-
-
-
-
-
-
 ### _btcli 
 
 
@@ -33,16 +27,7 @@ $ btcli new_hotkey --wallet.name my_coldkey --wallet.hotkey my_first_hotkey
 ```
 
 As previously mentioned, the hotkey is **not** encrypted on the device whereas the coldkey **is**.
-If you want to encrypt your hotkey, use `btcli new_hotkey --use_password`.
-
-
-
-
-
-
-
-
-
+If you want to encrypt your hotkey, use **btcli new_hotkey --use_password**.
 
 ### _python 
 

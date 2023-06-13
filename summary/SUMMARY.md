@@ -19,7 +19,7 @@
 
 # [DELEGATION](delegation/delegation.md)
 
-# [TESTNET & DIFFICULTY](reference/testnet.md)
+# [TESTNET](reference/testnet.md)
 
 # [BTCLI](reference/btcli.md)
 
