@@ -6,11 +6,9 @@
 Bittensor runs multiple self-contained economic markets incentivizing access to different forms of machine intelligence, for instance; subnetwork 1 produces completions from text prompts and subnetwork 2 incentivizes the production of informationally dense embeddings from text. These economic domains are called "subnetworks".
 
 
-
-
 ### _viewing subnetworks
 
-You can uses `btcli list_subnets` to show all currently running subnetworks on bittensor.
+You can uses **btcli list_subnets** to show all currently running subnetworks on bittensor.
 ```bash dark
 $ btcli list_subnets
 NETUID  NEURONS  MAX_N   DIFFICULTY  TEMPO  CON_REQ  EMISSION  BURN(τ)
