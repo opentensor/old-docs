@@ -1,5 +1,5 @@
 
-### [btcli}
+## [btcli]
 
 
 The Bittensor command line interface (btcli) comes [installed](getting-started/installation) with the bittensor API and can be used to stake or unstake funds, run miners, check network state, and even deploy, analyze, and interface with the Bittensor network.

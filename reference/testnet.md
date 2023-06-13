@@ -1,5 +1,5 @@
 
-### [testnet]
+## [testnet]
 
 
 The Bittensor Testnet is built to verify incoming changes and features made by developers. The block explorer can be reached [here](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftest.finney.opentensor.ai%3A443#/explorer).
