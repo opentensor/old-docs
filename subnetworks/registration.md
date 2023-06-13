@@ -1,5 +1,5 @@
 
-### [registration]
+## [registration]
 
 Prior to mining TAO, miners must attain a UID slot within one of Bittensor's sub-networks via a competition. This step is called registration. At the time of writing, there are 1024 UIDs available on Subnetwork 1 and 4096 on Subnetwork 3.
 
