@@ -272,7 +272,7 @@ Creates a coldkey from a suri string. Optionally encrypts and overwrites existin
 
 
 
-
+chr
 
 
 
