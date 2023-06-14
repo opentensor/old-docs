@@ -135,7 +135,7 @@ unstake_multiple(self, wallet: 'bittensor.wallet', hotkey_ss58s: List[str], amou
 ```
 Removes stake from each hotkey in the list to a common coldkey.
 
-</Accordion>
+
 
 
 
@@ -745,8 +745,8 @@ The string returned by this method is identical to the one provided by the `__st
 
 
 
+<Accordion title="_initialization">
 
-### _initialization
 
 To initialize an instance of the `Subtensor` class, you'll need to provide three arguments:
 
@@ -754,6 +754,11 @@ To initialize an instance of the `Subtensor` class, you'll need to provide three
 import bittensor as bt
 obj = bt.subtensor( config, network, chain_endpoint )
 ```
+
+</Accordion>
+
+<Accordion title="_arguments">
+
 
 ### _arguments
 - `config (bt.Config, optional, defaults=bt.subtensor.config())`:
@@ -768,16 +773,17 @@ obj = bt.subtensor( config, network, chain_endpoint )
 - `chain_endpoint (str, default=None)`:
     The subtensor endpoint flag. If set, overrides the network argument.
 
-<Accordion title="(metagraph)">
+</Accordion>
 
 
 ### _bt.metagraph
 
 #### Chain State Torch Interface
 
-
-#### Introduction
 The `Metagraph` class holds the chain state of a particular subnetwork at a specific block.
+
+<Accordion title="_examples">
+
 
 #### Examples
 ```python dark
@@ -805,16 +811,21 @@ metagraph.save()
 metagraph.load()
 ```
 
-## Methods
 
-### S
+</Accordion>
+
+<Accordion title="_methods">
+
+
+
+#### S
 ```python
 def S(self) -> torch.FloatTensor
 ```
 Returns the total stake.
 
 
-### R
+#### R
 ```python
 def R(self) -> torch.FloatTensor
 ```
