@@ -383,7 +383,7 @@ Returns the prometheus information for the specified hotkey account if it exists
 <Accordion title="_global state">
 
 
-### block
+#### block
 ```python
 @property
 def block (self) -> int:
@@ -391,28 +391,28 @@ def block (self) -> int:
 Property that returns the current chain block.
 
 
-### total_issuance
+#### total_issuance
 ```python
 total_issuance (self, block: Optional[int] = None ) -> 'bittensor.Balance'
 ```
 Returns the total issuance of tokens as of a specified block. If no block is provided, the default is the current block.
 
 
-### total_stake
+#### total_stake
 ```python
 total_stake (self,block: Optional[int] = None ) -> 'bittensor.Balance'
 ```
 Returns the total amount of stake as of a specified block. If no block is provided, the default is the current block.
 
 
-### serving_rate_limit
+#### serving_rate_limit
 ```python
 serving_rate_limit (self, block: Optional[int] = None ) -> Optional[int]
 ```
 Returns the serving rate limit as of a specified block. If no block is provided, the default is the current block.
 
 
-### tx_rate_limit
+#### tx_rate_limit
 ```python
 tx_rate_limit (self, block: Optional[int] = None ) -> Optional[int]
 ```
@@ -759,8 +759,6 @@ obj = bt.subtensor( config, network, chain_endpoint )
 
 <Accordion title="_arguments">
 
-
-### _arguments
 - `config (bt.Config, optional, defaults=bt.subtensor.config())`:
     Subtensor config object containing arguments from bt.subtensor.config() which are automatically parsed from command line and ENV vars.
 - `network (str, optional, default='finney')`:
@@ -784,8 +782,6 @@ The `Metagraph` class holds the chain state of a particular subnetwork at a spec
 
 <Accordion title="_examples">
 
-
-#### Examples
 ```python dark
 import bittensor as bt
 
