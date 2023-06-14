@@ -27,4 +27,10 @@
 
 # [GLOSSARY](glossary/glossary.md)
 
+<Accordion title="API REFERENCE">
+  - [BT.SUBTENSOR](subtensor.md)
+  - [BT.METAGRAPH](subtensor.md)
+  - [BT.LOGGING](subtensor.md)
+</Accordion>
+
 
