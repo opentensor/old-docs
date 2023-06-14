@@ -771,15 +771,15 @@ obj = bt.subtensor( config, network, chain_endpoint )
 <Accordion title="(metagraph)">
 
 
-# bt.metagraph
+### _bt.metagraph
 
-# Chain State Torch Interface
+#### Chain State Torch Interface
 
 
-## Introduction
+#### Introduction
 The `Metagraph` class holds the chain state of a particular subnetwork at a specific block.
 
-## Examples
+#### Examples
 ```python dark
 import bittensor as bt
 
@@ -971,23 +971,14 @@ Loads the Metagraph object's state_dict from the specified directory path.
 
 
 
+### _bt.logging
 
-
-<Accordion title="(logging)">
-
-
-
-
-
-# bt.logging
-
-# Logging Reference Documentation
-
-
-## Introduction
 The `Logging` interfaces with bittensor internal logging system.
 
-## Examples
+<Accordion title="_examples">
+
+
+#### Examples
 ```python dark
 import bittensor as bt
 
@@ -1030,12 +1021,6 @@ bt.logging.critical(prefix, message)
 bt.logging.error(prefix, message)
 >>> 2023-05-29 09:27:47.184 |       INFO       | cat                           dogs
 ```
-
-
-
-
-
-
 
 
 </Accordion>
