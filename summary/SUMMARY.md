@@ -25,4 +25,19 @@
 
 # [API REFERENCE](bittensor-api/index.md)
 
+# [API REFERENCE](delegation/delegation.md)
+
+<Accordion title="API REFERENCE">
+
+- ## [BT.SUBTENSOR](bittensor-api/index.md)
+
+- ## [BT.METAGRAPH](bittensor-api/index.md)
+
+- ## [BT.METAGRAPH](bittensor-api/index.md)
+
+- ## [BT.METAGRAPH](bittensor-api/index.md)
+
+
+</Accordion>
+
 # [GLOSSARY](glossary/glossary.md)
