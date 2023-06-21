@@ -23,17 +23,6 @@
 
 # [BTCLI](reference/btcli.md)
 
-
-<Accordion title="API REFERENCE">
-
-- ## [BT.SUBTENSOR](bittensor-api/index.md)
-
-- ## [BT.METAGRAPH](bittensor-api/index.md)
-
-- ## [BT.METAGRAPH](bittensor-api/index.md)
-
-- ## [BT.METAGRAPH](bittensor-api/index.md)
-
-</Accordion>
+# [API REFERENCE](bittensor-api/index.md)
 
 # [GLOSSARY](glossary/glossary.md)
