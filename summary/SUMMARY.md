@@ -26,6 +26,3 @@
 # [API REFERENCE](bittensor-api/index.md)
 
 # [GLOSSARY](glossary/glossary.md)
-
-# [BTCLI](reference/btcli.md)
-
