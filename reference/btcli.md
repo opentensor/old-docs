@@ -13,7 +13,7 @@ btcli [COMMAND]
 $ btcli --help
 
 positional arguments:
-  {run,help,list,stake,update,inspect,weights,unstake,overview,register,transfer,nominate,new_hotkey,metagraph,new_coldkey,my_delegates,list_subnets,regen_hotkey,regen_coldkey,delegate,undelegate,list_delegates,regen_coldkeypub,recycle_register}
+  {list,stake,update,inspect,unstake,overview,register,transfer,nominate,new_hotkey,metagraph,new_coldkey,my_delegates,list_subnets,regen_hotkey,regen_coldkey,delegate,undelegate,list_delegates,regen_coldkeypub,recycle_register,senate,proposals,proposal_votes,senate_register,senate_leave,senate_vote}
     help                Displays the help
     list                List wallets
     stake               Stake to your hotkey accounts.
@@ -41,6 +41,12 @@ positional arguments:
     regen_coldkeypub    Regenerates a public coldkey from the public part of the
                         coldkey.
     recycle_register    Register a wallet to a network.
+    senate              View senate and it's members
+    proposals           View active triumvirate proposals and their status
+    proposal_votes      View an active proposal's votes by address.
+    senate_register     Register as a senate member to participate in proposals
+    senate_leave        Discard senate membership in the governance protocol
+    senate_vote         Vote on an active proposal by hash.
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -184,7 +190,51 @@ btcli new_hotkey
 ```
 </Accordion>
 
+<Accordion title="Governance">
 
+### View proposals
+List all active proposals for the Senate to vote on.
+**Usage**: ```btcli proposals```
+```bash dark
+btcli proposals
+```
+![Proposals](/images/list_proposals.png 'Output of Proposals')
+
+### View Senate
+View all delegates currently registered to Senate.
+**Usage**: ```btcli senate```
+```bash dark
+btcli senate
+```
+
+### Proposal Votes
+Inspect the votes for a single proposal.
+**Usage**: ```btcli proposal_votes [OPTIONS]```
+```bash dark
+btcli proposal_votes --proposal=[PROPOSAL_HASH]
+```
+
+### Senate Register
+Elect to join the Senate with your nominated hotkey.
+**Usage**: ```btcli senate_register [OPTIONS]```
+```bash dark
+btcli senate_register
+```
+
+### Senate Leave
+Disown your membership of a Senate seat with your nominated hotkey.
+**Usage**: ```btcli senate_leave [OPTIONS]```
+```bash dark
+btcli senate_leave
+```
+
+### Senate Vote
+Participate in a triumvirate proposal by voting with your senate hotkey.
+**Usage**: ```btcli senate_vote [OPTIONS]```
+```bash dark
+btcli senate_vote --proposal=[PROPOSAL_HASH]
+```
+</Accordion>
 
 <Accordion title="Misc">
 
