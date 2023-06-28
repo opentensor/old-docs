@@ -19,6 +19,8 @@
 
 # [DELEGATION](delegation/delegation.md)
 
+# [GOVERNANCE](governance/protocol.md)
+
 # [TESTNET](reference/testnet.md)
 
 # [BTCLI](reference/btcli.md)
