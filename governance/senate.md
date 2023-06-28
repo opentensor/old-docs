@@ -18,7 +18,7 @@ In the case that the Senate has all twelve seats filled and a delegate wishes to
 
 ### _joining the senate
 
-Delegates elect to join the Senate by using `btcli senate_register`, as long as they meet all the requirements listed in the [requirements](governance/senate#_requirements).
+Delegates elect to join the Senate by using `btcli senate_register`, as long as they meet all the requirements listed in the [requirements](governance/senate#requirements).
 
 After executing the register command and the transaction has been included in a block, they can confirm their membership with `btcli senate`.
 
