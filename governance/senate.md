@@ -12,7 +12,7 @@ In order to participate in the Senate, four requirements have to be met before a
 3. Their hotkey stake value is greater than 2% of the network's total stake amount, through delegation or self-stake.
 4. Has elected to participate in the Senate.
 
-Once all four of the requirements have been fulfilled by a coldkey-hotkey pair, they can vote on any proposal created by the [Triumvirate](governance/triumvirate).
+Once all four of the requirements have been fulfilled by a coldkey-hotkey pair, they can vote on any proposal created by the [Triumvirate](glossary/glossary#triumvirate).
 
 In the case that the Senate has all twelve seats filled and a delegate wishes to join, they will replace the lowest stake member as long as they have more stake in the network.
 
