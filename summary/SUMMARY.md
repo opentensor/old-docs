@@ -21,6 +21,8 @@
 
 # [GOVERNANCE](governance/protocol.md)
 
+# [SENATE](governance/senate.md)
+
 # [TESTNET](reference/testnet.md)
 
 # [BTCLI](reference/btcli.md)
