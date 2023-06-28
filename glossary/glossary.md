@@ -118,7 +118,7 @@ subnet.R
 ```
 
 #### RAO
-The smallest denomination of [`TAO`](#tao). `1 TAO` is eqvuivalent to 100,000,000 [`RAO`](#rao).
+The smallest denomination of [`TAO`](#tao). `1 TAO` is eqvuivalent to 1,000,000,000 (10^9 or 1 billion) [`RAO`](#rao).
 
 #### shapely value
 A measure of individuals' contributions in a cooperative game.
