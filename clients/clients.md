@@ -49,9 +49,7 @@ The BittensorLLM object can be integrated with langchain.
 
 ```python numbered dark removed=2,4 added=1,3
 import bittensor as bt
-from langchain import openai
 llm = bt.BittensorLLM()
-ll = openai.llm( api_key = **** )
 llm( 'prompt me' )
 ```
 
