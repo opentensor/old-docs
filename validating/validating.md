@@ -24,6 +24,7 @@ btcli nominate
 btcli delegate
     --delegate_ss58key DELEGATE_SS58KEY
 ```
+> NOTE: Note, you must retain a minimum "free" (unstaked) balance on your coldkey. This amount, the existential amount, is currently 500 RAO or 0.00000005 TAO
 ### _running a validator
 
 After attaining enough TAO for a [validator permit](validating/validator-permit) we recommend running Bittensor's [core validator](https://github.com/opentensor/bittensor/tree/text_prompting/neurons/text/prompting/validators). You can run and install the core validator from [source](https://github.com/opentensor/bittensor.git).

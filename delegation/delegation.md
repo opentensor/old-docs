@@ -34,6 +34,7 @@ You delegate TAO using btcli. This will show a list of delegates sorted by stake
 ```bash dark
 $ btcli delegate
 ```
+> NOTE: Note, you must retain a minimum "free" (unstaked) balance on your coldkey. This amount, the existential amount, is currently 500 RAO or 0.00000005 TAO
 
 ### _showing my delegations 
 
