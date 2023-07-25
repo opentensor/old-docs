@@ -5,7 +5,7 @@ The Bittensor wallet is the core ownership and identity technology around which 
 
 The [coldkey](glossary/glossary) is encrypted on your device and is used to store funds securely and perform high risk operations, such as transfers and staking, while the [hotkey](glossary/glossary) is unencrypted, and used for less secure operations such as signing messages into the network, running miners, and validating the network.
 
-Once you have [installed bittensor](getting-started/installation), you can a wallet locally on your machine in two ways, described below. You can also create an [external wallet](#03-external-wallet) through the Bittensor website, or use a secondary tool like [subkey](https://docs.substrate.io/reference/command-line-tools/subkey/). Both of these options allow you to use TAO without installing Bittensor.
+Once you have [installed bittensor](getting-started/installation), you can create a wallet locally on your machine in two ways, described below. You can also create an [external wallet](#03-external-wallet) through the Bittensor website, or use a secondary tool like [subkey](https://docs.substrate.io/reference/command-line-tools/subkey/). Both of these options allow you to use TAO without installing Bittensor.
 
 ### _btcli 
 
