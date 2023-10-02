@@ -51,7 +51,7 @@ $ tree ~/.bittensor/
                     my_first_hotkey     # Your unencrypted hotkey information.
 ```
 
-You can list all the local wallets stored in Bittensor's root directly with [btcli list](reference/btcli).
+You can list all the local wallets stored in Bittensor's root directly with [btcli wallet list](reference/btcli).
 ```bash dark nocopy
 $ btcli wallet list
 Wallets
@@ -59,7 +59,7 @@ Wallets
     my_wallet (<ss58_address>)
        └── my_first_hotkey (<ss58_address>)
 ```
-The [ss58 encoded](https://docs.substrate.io/reference/address-formats/#:~:text=case%20L%20(l)-,Address%20type,address%20bytes%20that%20follow%20it.&text=Simple%20account%2Faddress%2Fnetwork%20identifier,directly%20as%20such%20an%20identifier) strings shown above are compact representations of your public keys, use these as destinations for transfering TAO, for instance when using [btcli transfer](reference/btcli).
+The [ss58 encoded](https://docs.substrate.io/reference/address-formats/#:~:text=case%20L%20(l)-,Address%20type,address%20bytes%20that%20follow%20it.&text=Simple%20account%2Faddress%2Fnetwork%20identifier,directly%20as%20such%20an%20identifier) strings shown above are compact representations of your public keys, use these as destinations for transfering TAO, for instance when using [btcli wallet transfer](reference/btcli).
 
 **Be sure to store your mnemonics safely**
 
