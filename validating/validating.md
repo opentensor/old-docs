@@ -1,7 +1,7 @@
 
 ## [validating]
 
-Network validation is thus open to participants who have [registered](subnetworks/registration) a UID on any subnetwork **and** who have enough TAO staked on their hotkey to be considered a [top 128 validator](validating/validator-permit).
+Network validation is thus open to participants who have [registered](subnetworks/registration) a UID on any subnetwork **and** who have enough TAO staked on their hotkey to be considered a [top 64 validator](validating/validator-permit).
 
 ### _staking
 
@@ -22,7 +22,7 @@ btcli root delegate
 
 ### _validator permit
 
-Only the largest 128 validators, in terms of stake, on any particular subnetwork are considered to have **validator permit**. Validators with permit are considered active within Bittensor's mining mechanism, Yuma Consensus, can validate the network, and get **dividends**.
+Only the largest 64 validators, in terms of stake, on any particular subnetwork are considered to have **validator permit**. Validators with permit are considered active within Bittensor's mining mechanism, Yuma Consensus, can validate the network, and get **dividends**.
 
 **how do I check to see if my validator has permit?**
 The amount can be pulled from the metagraph based on your uid.
