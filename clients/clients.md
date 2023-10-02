@@ -4,7 +4,7 @@
 
 The Bittensor API allows clients to query the network through endpoints that have been made accessible by network validators. Clients using the network do not have to be otherwise involved in the incentive mechanism of the network. The default endpoint that is accessed through the API belongs to the [Opentensor Foundation](https://opentensor.ai/), however, any network validator is able to provide a unique entrypoint.
 
-All entrypoints can be viewed using **btcli list_delegates**:
+All entrypoints can be viewed using **btcli root list_delegates**:
 
 ```bash dark
 0      Openτensor Foundaτion
@@ -16,30 +16,6 @@ All entrypoints can be viewed using **btcli list_delegates**:
 3      τaosτaτs
             https://taostats.io/
 ...
-```
-
-
-
-### _querying the network
-
-Text prompting requests can be sent via **bt.prompt**.
-```python numbered dark
-import bittensor as bt
-print ( bt.prompt( "Heraclitus was a " ) )
-'Greek philosopher known for his doctrine of change and the famous quote, "No man ever steps in the same river twice."'
-```
-
-**bt.prompt** follows a role + message prompting format which allows system prompts and sequential followups.
-
-```python numbered dark
-import bittensor as bt
-content = [
-	{ 'role': 'system', 'content': 'You are my advisor' },
-	{ 'role': 'user', 'content': 'Should I buy a boat?' },
-	{ 'role': 'assistant', 'content': 'Willing to bring out another thousand?' },
-	{ 'role': 'user', 'content': 'Yes, where should I buy a boat?' },
-]
-should_I_buy_a_boat = bt.prompt( content = content )
 ```
 
 
