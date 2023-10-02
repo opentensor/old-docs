@@ -21,10 +21,22 @@ All entrypoints can be viewed using **btcli root list_delegates**:
 ### _validator key
 
 Power users who have a validator key registered on the network already do not need to access the network indirectly, and can instead make RPC connections directly to miners like so:
+
+With [prompting](https://github.com/opentensor/text-prompting#installation) installed. 
+
 ```python numbered dark
 import bittensor as bt
+import prompting
+
 wallet = bt.wallet() # Your validator wallet.
+dendrite = bt.dendrite(wallet=wallet)
 metagraph = bt.metagraph( netuid = 1 ) # Get state from subnetwork 1.
-dendrite = bt.text_prompting( keypair = wallet.hotkey, axon = metagraph.axons[ 10 ] ) # Connection to uid 10
-dendrite.forward( roles = ['system', 'user'], messages = ['you are my financial advisor', 'should I buy a boat?'] )
+uids =  [<your target query uids>]
+
+responses = await dendrite(
+        axons=[metagraph.axons[uid] for uid in uids],
+        synapse=prompting.protocol.Prompting(roles=["user"], messages=["Should I buy a boat?"]),
+        timeout=12,
+)
+[r.completion for r in responses] 
 ```
