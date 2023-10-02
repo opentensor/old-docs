@@ -8,7 +8,7 @@ Bittensor runs multiple self-contained economic markets incentivizing access to 
 
 You can uses **btcli list_subnets** to show all currently running subnetworks on bittensor.
 ```bash dark
-$ btcli list_subnets
+$ btcli subnets list
 NETUID  NEURONS  MAX_N   DIFFICULTY  TEMPO  CON_REQ  EMISSION  BURN(τ)
 1       691    1.02 K   198.08 T    99     None     28.44%   τ4.75710
 3      4096    4.10 K   320.81 T    99     None     71.56%   τ1.00000
