@@ -14,13 +14,13 @@ There are two methods of registrations:
 1. Proof-of-Work registration
 
       ```bash dark
-      btcli register --netuid SELECTED_NETUID --wallet.name YOUR_COLDKEY --wallet.hotkey YOUR_HOTKEY
+      btcli subnet register --netuid SELECTED_NETUID --wallet.name YOUR_COLDKEY --wallet.hotkey YOUR_HOTKEY
       ```
 
 2. TAO Recycle Registration
 
       ```bash dark
-      btcli recycle_register --netuid SELECTED_NETUID --wallet.name YOUR_COLDKEY --wallet.hotkey YOUR_HOTKEY
+      btcli subnet recycle_register --netuid SELECTED_NETUID --wallet.name YOUR_COLDKEY --wallet.hotkey YOUR_HOTKEY
       ```
 
 Once the registration cost has been paid, the miner enters the network by replacing an older underperforming miner and can now [mine](mining/mining) themselves from that slot.
@@ -30,7 +30,7 @@ Once the registration cost has been paid, the miner enters the network by replac
 
 Proof-of-Work (POW) registrations require miners to solve a SHA256 hashing problem before winning a UID. This route is recommmended for miners contributing raw compute power to Bittensor or don't have a previous token supply.
 ```bash dark
-btcli register
+btcli subnet register
       --netuid SUBNETWORK_NETUID_TARGET
       --wallet.name YOUR_COLDKEY_NAME
       --wallet.hotkey YOUR_HOTKEY_NAME
@@ -43,7 +43,7 @@ The POW registration does not requires only your `coldkeypub.txt` and `hotkey`. 
 
 Recycle registrations allow a miner to recycle TAO back into the inflation mechanism (to be passed through the incentive mechanism at a later date) in exchange for a UID on a subnetwork. Recycle registrations cost TAO to execute but takes less time to activate than POW registration. They recommended for miners seeking to attain slots quickly and who already have a small amount of TAO at their disposal.
 ```bash dark
-btcli recycle_register
+btcli subnet recycle_register
       --netuid SELECTED_NETUID
       --wallet.name YOUR_COLDKEY
       --wallet.hotkey YOUR_HOTKEY
@@ -60,7 +60,7 @@ python3 -m pip install bittensor[cubit]
 
 Once installed you can specify which GPU you are running your registration over or `--all` of them.
 ```bash dark
-btcli register
+btcli subnet register
       --cuda
       --all
 ```
@@ -83,9 +83,9 @@ elif regs <= target and recycle_regs <= pow_regs:
       pow_difficulty *= ( n_pow_regs + target_regs ) / (2 * target_regs)
 ```
 
-To view the current subnetwork difficulty on each subnet run `btcli list_subnets`
+To view the current subnetwork difficulty on each subnet run `btcli subnets list`
 ```bash dark
-btcli list_subnets
+btcli subnets list
 NETUID  NEURONS  MAX_N   DIFFICULTY  TEMPO  CON_REQ  EMISSION  BURN(τ)
 1       691    1.02 K   198.08 T    99     None     28.44%   τ4.75710
 3      4096    4.10 K   320.81 T    99     None     71.56%   τ1.00000
@@ -96,7 +96,7 @@ NETUID  NEURONS  MAX_N   DIFFICULTY  TEMPO  CON_REQ  EMISSION  BURN(τ)
 
 ### _inspecting uids
 
-Once a slot has been attained you can view the performance of you registered wallet you can run ```btcli overview --netuid```.
+Once a slot has been attained you can view the performance of you registered wallet you can run ```btcli wallet overview --netuid```.
 
 | Parameter         | Value | Description |
 | :---------------- | :------: | ----: |
@@ -141,7 +141,7 @@ The POW and Recycle difficulties are adaptively adjusted every 100 blocks based 
 
 Using the cli
 ```bash dark
-btcli list_subnets
+btcli subnets list
 NETUID  NEURONS  MAX_N   DIFFICULTY  TEMPO  CON_REQ  EMISSION  BURN(τ)
 1       691    1.02 K   198.08 T    99     None     28.44%   τ4.75710
 3      4096    4.10 K   320.81 T    99     None     71.56%   τ1.00000

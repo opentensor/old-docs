@@ -11,14 +11,14 @@ Once you have [installed bittensor](getting-started/installation), you can creat
 
 
 ```bash dark
-$ btcli new_coldkey --wallet.name my_coldkey
+$ btcli wallet new_coldkey --wallet.name my_coldkey
     IMPORTANT: Store this mnemonic in a secure (preferably offline place), as anyone who has possesion of this mnemonic can use it to regenerate the key and access your tokens.
     The mnemonic to the new coldkey is:
     **** *** **** **** ***** **** *** **** **** **** ***** *****
     You can use the mnemonic to recreate the key in case it gets lost. The command to use to regenerate the key using this mnemonic is:
     btcli regen_coldkey --mnemonic **** *** **** **** ***** **** *** **** **** **** ***** *****
 
-$ btcli new_hotkey --wallet.name my_coldkey --wallet.hotkey my_first_hotkey
+$ btcli wallet new_hotkey --wallet.name my_coldkey --wallet.hotkey my_first_hotkey
     IMPORTANT: Store this mnemonic in a secure (preferably offline place), as anyone who has possesion of this mnemonic can use it to regenerate the key and access your tokens.
     The mnemonic to the new hotkey is:
     **** *** **** **** ***** **** *** **** **** **** ***** *****
@@ -51,15 +51,15 @@ $ tree ~/.bittensor/
                     my_first_hotkey     # Your unencrypted hotkey information.
 ```
 
-You can list all the local wallets stored in Bittensor's root directly with [btcli list](reference/btcli).
+You can list all the local wallets stored in Bittensor's root directly with [btcli wallet list](reference/btcli).
 ```bash dark nocopy
-$ btcli list
+$ btcli wallet list
 Wallets
 └─
     my_wallet (<ss58_address>)
        └── my_first_hotkey (<ss58_address>)
 ```
-The [ss58 encoded](https://docs.substrate.io/reference/address-formats/#:~:text=case%20L%20(l)-,Address%20type,address%20bytes%20that%20follow%20it.&text=Simple%20account%2Faddress%2Fnetwork%20identifier,directly%20as%20such%20an%20identifier) strings shown above are compact representations of your public keys, use these as destinations for transfering TAO, for instance when using [btcli transfer](reference/btcli).
+The [ss58 encoded](https://docs.substrate.io/reference/address-formats/#:~:text=case%20L%20(l)-,Address%20type,address%20bytes%20that%20follow%20it.&text=Simple%20account%2Faddress%2Fnetwork%20identifier,directly%20as%20such%20an%20identifier) strings shown above are compact representations of your public keys, use these as destinations for transfering TAO, for instance when using [btcli wallet transfer](reference/btcli).
 
 **Be sure to store your mnemonics safely**
 
@@ -68,7 +68,7 @@ If someone has your mnemonic, they own your TAO. If you lose the password to you
 If you need to regenerate your wallets, you can use the cli with your mnemonic.
 
 ```bash dark
-btcli regen_coldkey --mnemonic **** *** **** **** ***** **** *** **** **** **** ***** *****
+btcli wallet regen_coldkey --mnemonic **** *** **** **** ***** **** *** **** **** **** ***** *****
 ```
 
 
