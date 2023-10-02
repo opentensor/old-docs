@@ -1,7 +1,7 @@
 
 ## [mining]
 
-Before mining you must [register](subnetworks/registration) the [hotkey of your wallet](getting-started/wallets) into a UID slot on one of Bittensor's [subnetworks](subnetworks/subnetworks), once this UID is yours you can run [your own miner](mining/custom_miners), or select one of Bittensor's many [pre-built miners](https://github.com/opentensor/bittensor/tree/text_prompting/neurons/text/prompting/miners).
+Before mining you must [register](subnetworks/registration) the [hotkey of your wallet](getting-started/wallets) into a UID slot on one of Bittensor's [subnetworks](subnetworks/subnetworks), once this UID is yours you can run your own miner or select one of Bittensor's many [pre-built miners](https://github.com/opentensor/bittensor/tree/text_prompting/neurons/text/prompting/miners).
 
 
 ### _running with pre-built
