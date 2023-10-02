@@ -1,7 +1,7 @@
 
 ## [validating]
 
-Network validation is thus open to participants who have [registered](subnetworks/registration) a UID on any subnetwork **and** who have enough TAO staked on their hotkey to be considered a [top 128 validator](validating/validator-permit).
+Network validation is thus open to participants who have [registered](subnetworks/registration) a UID on any subnetwork **and** who have enough TAO staked on their hotkey to be considered a [top 64 validator](validating/validator-permit).
 
 ### _staking
 
@@ -22,7 +22,7 @@ btcli root delegate
 
 ### _validator permit
 
-Only the largest 128 validators, in terms of stake, on any particular subnetwork are considered to have **validator permit**. Validators with permit are considered active within Bittensor's mining mechanism, Yuma Consensus, can validate the network, and get **dividends**.
+Only the largest 64 validators, in terms of stake, on any particular subnetwork are considered to have **validator permit**. Validators with permit are considered active within Bittensor's mining mechanism, Yuma Consensus, can validate the network, and get **dividends**.
 
 **how do I check to see if my validator has permit?**
 The amount can be pulled from the metagraph based on your uid.
@@ -34,10 +34,10 @@ my_uid = subnet.hotkeys.index( wallet.hotkey.ss58_address )
 print ('validator permit', subnet.validator_permit[ my_uid ])
 ```
 **how much TAO is required to attain a validator permit?**
-The amount of TAO required is depends on how the other largest 128 wallets distribute TAO across themselves. You can calculate the minimum using **bt.metagraph**:
+The amount of TAO required is depends on how the other largest 64 wallets distribute TAO across themselves. You can calculate the minimum using **bt.metagraph**:
 ```python numbered dark
 import bittensor as bt
 subnet = bt.metagraph(1)
-stake_requirement = subnet.S.sort()[0][-128:]
-print ('validator permit requirement', stake_requirement)
+top_64_stake = subnet.S.sort()[0][-64:].tolist()
+print (f'Current requirement for validator permits based on the top 64 stake stands at {min(top_64_stake)} tao')
 ```
