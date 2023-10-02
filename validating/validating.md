@@ -34,10 +34,10 @@ my_uid = subnet.hotkeys.index( wallet.hotkey.ss58_address )
 print ('validator permit', subnet.validator_permit[ my_uid ])
 ```
 **how much TAO is required to attain a validator permit?**
-The amount of TAO required is depends on how the other largest 128 wallets distribute TAO across themselves. You can calculate the minimum using **bt.metagraph**:
+The amount of TAO required is depends on how the other largest 64 wallets distribute TAO across themselves. You can calculate the minimum using **bt.metagraph**:
 ```python numbered dark
 import bittensor as bt
 subnet = bt.metagraph(1)
-stake_requirement = subnet.S.sort()[0][-128:]
-print ('validator permit requirement', stake_requirement)
+top_64_stake = subnet.S.sort()[0][-64:].tolist()
+print (f'Current requirement for validator permits based on the top 64 stake stands at {min(top_64_stake)} tao')
 ```
