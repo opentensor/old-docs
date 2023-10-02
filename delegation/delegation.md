@@ -6,9 +6,9 @@ Delegation occurs when TAO is transferred to a hotkey that is not owned by the d
 
 ### _viewing available delegates 
 
-Hotkeys only become available for delegation once they have **nominated** themselves. To see a list of nominated validators you can run **btcli list_delegates**
+Hotkeys only become available for delegation once they have **nominated** themselves. To see a list of nominated validators you can run **btcli root list_delegates**
 ```bash dark
-$ btcli list_delegates
+$ btcli root list_delegates
 ```
 ![List Delegates](/images/list_delegates.png 'Output of List Delegates')
 
@@ -32,14 +32,14 @@ $ btcli list_delegates
 
 You delegate TAO using btcli. This will show a list of delegates sorted by stake on your terminal. Read this list to find your delegate and use the index to select which to send stake to.
 ```bash dark
-$ btcli delegate
+$ btcli root delegate
 ```
 
 ### _showing my delegations 
 
 To show all your previously made delegations run **btcli my_delegates**, use **--all** to show delegations across all wallets.
 ```bash dark
-$ btcli my_delegates
+$ btcli root my_delegates
 ```
 
 ### _becoming a delegate
@@ -47,7 +47,7 @@ $ btcli my_delegates
 You can `nominate` your hotkey to become and active delegate by running **btcli nominate**.
 > You can [sign](delegation/signing) your delegate information to give the hotkey a recognizable name an description.
 ```bash dark
-$ btcli nominate
+$ btcli root nominate
     --wallet.name YOUR_WALLET_NAME
     --wallet.hotkye YOUR_HOTKEY_NAME
 ```
@@ -76,5 +76,4 @@ Validator signature: asdasdas
 
 3. Submit a PR.
 Visit this [bittensor repo](https://github.com/opentensor/bittensor) from here click `pull requests'. ...
-
 
