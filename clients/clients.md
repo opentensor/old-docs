@@ -18,45 +18,6 @@ All entrypoints can be viewed using **btcli root list_delegates**:
 ...
 ```
 
-
-### _langchain integration
-
-The BittensorLLM object can be integrated with langchain.
-
-```python numbered dark removed=2,4 added=1,3
-import bittensor as bt
-llm = bt.BittensorLLM()
-llm( 'prompt me' )
-```
-
-
-### _multiple responses
-
-You can return multiple responses for a single prompt.
-```python numbered dark
-bt.prompt( "What should I do today?", return_all = True )
-[
-	'You should buy a boat.',
-	'As a language model I cannot answer that question.',
-	'You should write in your journal.',
-	'Mine bittensor.'
-	...
-]
-```
-
-
-### _specifying entrypoint
-
-You can specify a unique entrypoint endpoint to query by its hotkey.
-> NOTE: Note, unless that endpoint has specifically opened up access to this form of query, you are likely to have your messages blacklisted.
-```python numbered dark
-# Specify a separate entrypoint based on the delegate key.
-open_endpoint_hotkey = "5F4tQyWrhfGVcNhoqeiNsR6KjD4wMZ2kfhLj4oHYuyHbZAc3"
-print ( bt.prompt( "Heraclitus was a ", hotkey = open_endpoint_hotkey ) )
-'Greek philosopher known for his doctrine of change and the famous quote, "No man ever steps in the same river twice."'
-```
-
-
 ### _validator key
 
 Power users who have a validator key registered on the network already do not need to access the network indirectly, and can instead make RPC connections directly to miners like so:
