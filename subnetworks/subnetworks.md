@@ -67,4 +67,46 @@ subnet = bt.metagraph( netuid = 1 )
 print ('subnet 1 validator dividends', subnet.D )
 ```
 
+### _creating a subnet
 
+Creating subnetworks on mainnet is competitive and the cost it determined by the rate at which new networks are being registered onto the chain. By default you must have at least 100 TAO in your owner wallet to create a subnetwork. However the exact amount will fluctuate based on demand. The code below shows how to get the current price of creating a subnetwork.
+
+```bash dark
+btcli subnet lock_cost
+>> Subnet lock cost: τ100.000000000
+```
+
+Use the `btcli subnet create` subcommand to register a new subnet.
+
+```bash dark
+# Run the register subnetwork command on the main chain.
+btcli subnet create
+>> Enter wallet name (default): owner # Enter your owner wallet name
+>> Enter password to unlock key: # Enter your wallet password.
+>> Register subnet? [y/n]: <y/n> # Select yes (y)
+>> ⠇ 📡 Registering subnet...
+✅ Registered subnetwork with netuid: 1 # Your subnet netuid will show here, save this for later.
+```
+
+
+Here is the help message to see what commands are avaialable via the `subnet` subcommand.
+```bash dark
+btcli subnet --help
+usage: btcli <command> <command args> subnets [-h]
+                                              {list,metagraph,lock_cost,create,register,recycle_register,hyperparameters}
+                                              ...
+
+positional arguments:
+  {list,metagraph,lock_cost,create,register,recycle_register,hyperparameters}
+                        Commands for managing and viewing subnetworks.
+    list                List all subnets on the network
+    metagraph           View a subnet metagraph information.
+    lock_cost           Return the lock cost to register a subnet
+    create              Create a new bittensor subnetwork on this chain.
+    register            Register a wallet to a network.
+    recycle_register    Register a wallet to a network.
+    hyperparameters     View subnet hyperparameters
+
+options:
+  -h, --help            show this help message and exit
+```
