@@ -69,7 +69,7 @@ print ('subnet 1 validator dividends', subnet.D )
 
 ### _creating a subnet
 
-Creating subnetworks on mainnet is competitive and the cost it determined by the rate at which new networks are being registered onto the chain. By default you must have at least 100 TAO in your owner wallet to create a subnetwork. However the exact amount will fluctuate based on demand. The code below shows how to get the current price of creating a subnetwork.
+Creating subnetworks on mainnet is competitive and the cost is determined by the rate at which new networks are being registered onto the chain. By default you must have at least 100 TAO in your owner wallet to create a subnetwork. However the exact amount will fluctuate based on demand. The code below shows how to get the current price of creating a subnetwork.
 
 ```bash dark
 btcli subnet lock_cost
