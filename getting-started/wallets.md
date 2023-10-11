@@ -268,15 +268,24 @@ For example:
 ```bash dark
 btcli wallet update
 >> Do you want to update all legacy wallets? [y/n]: n
->> Enter wallet name (default): default
+>> Enter wallet name (default): my_coldkey
 >> 
->> =====  wallet(default, default, ~/.bittensor/wallets/)  =====
+>> =====  wallet(my_coldkey, default, ~/.bittensor/wallets/)  =====
 >> You may update the keyfile to improve the security for storing your keys.
 >> While the key and the password stays the same, it would require providing your password once.
 >> 🔑Keyfile (Ansible Vault encrypted, ~/.bittensor/wallets/default/coldkey)>
 >> 
 >> Update keyfile? [y/n]: y
->> =====  wallet(vali_cold, default, ~/.bittensor/wallets/)  =====
+>> =====  wallet(my_coldkey, default, ~/.bittensor/wallets/)  =====
+>>
+>> Update keyfile? [y/n]: y
+>>
+>> Please make sure you have the mnemonic stored in case an error occurs during the transfer.
+>>
+>> Have you stored the mnemonic? [y/n]: y
+>>
+>> Enter password to update keyfile:
+>> ********
 >>
 >> ✅ Keyfile is updated. 
 >> 🔑 Keyfile (NaCl encrypted, ~/.bittensor/wallets/default/coldkey)>
